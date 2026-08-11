@@ -1,0 +1,46 @@
+{
+  "slug": "mustarrd-dvr-handoff",
+  "name": "Mustarrd DVR Handoff",
+  "description": "Mirrors Dispatcharr DVR recordings on catch-up channels to Mustarrd up to 72 hours ahead, then performs a final verified handoff before airtime.",
+  "author": "matrix2669",
+  "license": "MIT",
+  "repo_url": "https://github.com/matrix2669/Dispatcharr-Mustarrd-Plugin",
+  "registry_name": "Matrix2669 Plugins",
+  "registry_url": "https://github.com/matrix2669/dispatcharr-plugins",
+  "latest_version": "0.2.1",
+  "latest": {
+    "version": "0.2.1",
+    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.1",
+    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.1",
+    "commit_sha": "fa3f01d7e42cc8914a9c2a295e736b5a3c237f84",
+    "commit_sha_short": "fa3f01d",
+    "build_timestamp": "2026-08-11T23:22:00Z",
+    "min_dispatcharr_version": "v0.29.0"
+  },
+  "versions": [
+    {
+      "version": "0.2.1",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.1",
+      "commit_sha": "fa3f01d7e42cc8914a9c2a295e736b5a3c237f84",
+      "commit_sha_short": "fa3f01d",
+      "build_timestamp": "2026-08-11T23:22:00Z",
+      "min_dispatcharr_version": "v0.29.0"
+    },
+    {
+      "version": "0.2.0",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.0",
+      "commit_sha": "97c30d04a885f0dde7bd715934c9ff92deb095b9",
+      "commit_sha_short": "97c30d0",
+      "build_timestamp": "2026-08-11T23:00:00Z",
+      "min_dispatcharr_version": "v0.29.0"
+    },
+    {
+      "version": "0.1.0",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.1.0",
+      "commit_sha": "c72a08c291a58b3ae286ceb1224de8859fc034e1",
+      "commit_sha_short": "c72a08c",
+      "build_timestamp": "2026-08-11T22:19:00Z",
+      "min_dispatcharr_version": "v0.29.0"
+    }
+  ]
+}
