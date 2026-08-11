@@ -12,18 +12,18 @@
     "version": "0.2.1",
     "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.1",
     "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.1",
-    "commit_sha": "fa3f01d7e42cc8914a9c2a295e736b5a3c237f84",
-    "commit_sha_short": "fa3f01d",
-    "build_timestamp": "2026-08-11T23:22:00Z",
+    "commit_sha": "28dfd511ef5b56953d658bf3986e5492c4dda1c8",
+    "commit_sha_short": "28dfd51",
+    "build_timestamp": "2026-08-11T23:25:16Z",
     "min_dispatcharr_version": "v0.29.0"
   },
   "versions": [
     {
       "version": "0.2.1",
       "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.1",
-      "commit_sha": "fa3f01d7e42cc8914a9c2a295e736b5a3c237f84",
-      "commit_sha_short": "fa3f01d",
-      "build_timestamp": "2026-08-11T23:22:00Z",
+      "commit_sha": "28dfd511ef5b56953d658bf3986e5492c4dda1c8",
+      "commit_sha_short": "28dfd51",
+      "build_timestamp": "2026-08-11T23:25:16Z",
       "min_dispatcharr_version": "v0.29.0"
     },
     {
