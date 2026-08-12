@@ -8,23 +8,23 @@
   "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Mustarrd-Plugin/main/mustarrd-dvr-handoff/logo.png",
   "registry_name": "Matrix2669 Plugins",
   "registry_url": "https://github.com/matrix2669/dispatcharr-plugins",
-  "latest_version": "0.2.2",
+  "latest_version": "0.2.3",
   "latest": {
-    "version": "0.2.2",
-    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.2",
-    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.2",
-    "commit_sha": "d1c48b43b650db6b86853d7cd7510c0c8b1ed56f",
-    "commit_sha_short": "d1c48b4",
-    "build_timestamp": "2026-08-11T23:34:00Z",
+    "version": "0.2.3",
+    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.3",
+    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.3",
+    "commit_sha": "d124c25b2751b8599e5b4d0199416cc76566dc58",
+    "commit_sha_short": "d124c25",
+    "build_timestamp": "2026-08-12T00:11:41Z",
     "min_dispatcharr_version": "v0.29.0"
   },
   "versions": [
     {
-      "version": "0.2.2",
-      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.2",
-      "commit_sha": "d1c48b43b650db6b86853d7cd7510c0c8b1ed56f",
-      "commit_sha_short": "d1c48b4",
-      "build_timestamp": "2026-08-11T23:34:00Z",
+      "version": "0.2.3",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.3",
+      "commit_sha": "d124c25b2751b8599e5b4d0199416cc76566dc58",
+      "commit_sha_short": "d124c25",
+      "build_timestamp": "2026-08-12T00:11:41Z",
       "min_dispatcharr_version": "v0.29.0"
     },
     {
