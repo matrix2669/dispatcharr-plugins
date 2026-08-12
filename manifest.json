@@ -22,9 +22,9 @@
       "author": "matrix2669",
       "license": "MIT",
       "repo_url": "https://github.com/matrix2669/Dispatcharr-VOD-Newznab-Plugin",
-      "latest_version": "0.1.10",
+      "latest_version": "0.1.11",
       "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/plugins/dispatcharr-vod-newznab/manifest.json",
-      "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-VOD-Newznab-Plugin/zipball/v0.1.10",
+      "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-VOD-Newznab-Plugin/zipball/v0.1.11",
       "min_dispatcharr_version": "v0.29.0"
     }
   ]
