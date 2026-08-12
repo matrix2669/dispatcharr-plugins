@@ -10,9 +10,9 @@
       "license": "MIT",
       "repo_url": "https://github.com/matrix2669/Dispatcharr-Mustarrd-Plugin",
       "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Mustarrd-Plugin/main/mustarrd-dvr-handoff/logo.png",
-      "latest_version": "0.2.2",
+      "latest_version": "0.2.3",
       "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/plugins/mustarrd-dvr-handoff/manifest.json",
-      "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.2",
+      "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.3",
       "min_dispatcharr_version": "v0.29.0"
     }
   ]
