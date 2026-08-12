@@ -1,0 +1,30 @@
+{
+  "slug": "dispatcharr-vod-newznab",
+  "name": "Dispatcharr VOD Newznab",
+  "description": "Exposes raw Dispatcharr Xtream VOD variants to Sonarr/Radarr as a Newznab indexer and SABnzbd-compatible download client backed by Mustarrd.",
+  "author": "matrix2669",
+  "license": "MIT",
+  "repo_url": "https://github.com/matrix2669/Dispatcharr-VOD-Newznab-Plugin",
+  "registry_name": "Matrix2669 Plugins",
+  "registry_url": "https://github.com/matrix2669/dispatcharr-plugins",
+  "latest_version": "0.1.0",
+  "latest": {
+    "version": "0.1.0",
+    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-VOD-Newznab-Plugin/zipball/v0.1.0",
+    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-VOD-Newznab-Plugin/zipball/v0.1.0",
+    "commit_sha": "88b6a1474a2425be0e8869e7a6ed158cd1d74130",
+    "commit_sha_short": "88b6a14",
+    "build_timestamp": "2026-08-12T19:03:52Z",
+    "min_dispatcharr_version": "v0.29.0"
+  },
+  "versions": [
+    {
+      "version": "0.1.0",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-VOD-Newznab-Plugin/zipball/v0.1.0",
+      "commit_sha": "88b6a1474a2425be0e8869e7a6ed158cd1d74130",
+      "commit_sha_short": "88b6a14",
+      "build_timestamp": "2026-08-12T19:03:52Z",
+      "min_dispatcharr_version": "v0.29.0"
+    }
+  ]
+}

@@ -14,6 +14,18 @@
       "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/plugins/mustarrd-dvr-handoff/manifest.json",
       "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.6",
       "min_dispatcharr_version": "v0.29.0"
+    },
+    {
+      "slug": "dispatcharr-vod-newznab",
+      "name": "Dispatcharr VOD Newznab",
+      "description": "Exposes raw Dispatcharr Xtream VOD variants to Sonarr/Radarr as a Newznab indexer and SABnzbd-compatible download client backed by Mustarrd.",
+      "author": "matrix2669",
+      "license": "MIT",
+      "repo_url": "https://github.com/matrix2669/Dispatcharr-VOD-Newznab-Plugin",
+      "latest_version": "0.1.0",
+      "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/plugins/dispatcharr-vod-newznab/manifest.json",
+      "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-VOD-Newznab-Plugin/zipball/v0.1.0",
+      "min_dispatcharr_version": "v0.29.0"
     }
   ]
 }
