@@ -12,14 +12,18 @@
     "version": "0.1.0",
     "url": "https://api.github.com/repos/matrix2669/Dispatcharr-VOD-Newznab-Plugin/zipball/v0.1.0",
     "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-VOD-Newznab-Plugin/zipball/v0.1.0",
-    "build_timestamp": "2026-08-12T18:40:00Z",
+    "commit_sha": "88b6a1474a2425be0e8869e7a6ed158cd1d74130",
+    "commit_sha_short": "88b6a14",
+    "build_timestamp": "2026-08-12T19:03:52Z",
     "min_dispatcharr_version": "v0.29.0"
   },
   "versions": [
     {
       "version": "0.1.0",
       "url": "https://api.github.com/repos/matrix2669/Dispatcharr-VOD-Newznab-Plugin/zipball/v0.1.0",
-      "build_timestamp": "2026-08-12T18:40:00Z",
+      "commit_sha": "88b6a1474a2425be0e8869e7a6ed158cd1d74130",
+      "commit_sha_short": "88b6a14",
+      "build_timestamp": "2026-08-12T19:03:52Z",
       "min_dispatcharr_version": "v0.29.0"
     }
   ]
