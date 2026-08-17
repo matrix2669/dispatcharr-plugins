@@ -28,7 +28,7 @@
       "min_dispatcharr_version": "v0.29.0"
     },
     {
-      "slug": "dispatcharr-stream-sort",
+      "slug": "stream-sorter",
       "name": "Dispatcharr Stream Sort",
       "description": "Analyzes stream health and quality, scores candidate streams, and reorders streams already assigned to Dispatcharr channels.",
       "author": "matrix2669",
