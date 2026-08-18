@@ -30,11 +30,11 @@
     {
       "slug": "stream-sorter",
       "name": "Dispatcharr Stream Sort",
-      "description": "Incrementally analyzes stream health, quality, and delivery performance, reusing newer Dispatcharr playback metadata before scoring and reordering streams.",
+      "description": "Incrementally analyzes stream health, quality, delivery performance, playback metadata, and collection-only runtime reliability telemetry before scoring and reordering streams.",
       "author": "matrix2669",
       "license": "MIT",
       "repo_url": "https://github.com/matrix2669/DIspatcharr-Stream-Sort-Plugin",
-      "latest_version": "0.2.2",
+      "latest_version": "0.2.3",
       "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev-test/plugins/dispatcharr-stream-sort/manifest.json",
       "latest_url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/dev-test",
       "min_dispatcharr_version": "v0.29.0"
