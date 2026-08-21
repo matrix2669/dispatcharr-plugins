@@ -15,19 +15,6 @@
       "min_dispatcharr_version": "v0.29.0"
     },
     {
-      "slug": "mustarrd-dvr-handoff",
-      "name": "Mustarrd DVR Handoff",
-      "description": "Mirrors Dispatcharr DVR recordings on catch-up channels to Mustarrd up to 72 hours ahead, then performs a final verified handoff before airtime.",
-      "author": "matrix2669",
-      "license": "MIT",
-      "repo_url": "https://github.com/matrix2669/Dispatcharr-Mustarrd-Plugin",
-      "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Mustarrd-Plugin/main/mustarrd-dvr-handoff/logo.png",
-      "latest_version": "0.2.11",
-      "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/plugins/mustarrd-dvr-handoff/manifest.json",
-      "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.11",
-      "min_dispatcharr_version": "v0.29.0"
-    },
-    {
       "slug": "dispatcharr-vod-newznab",
       "name": "Dispatcharr VOD Newznab",
       "description": "Exposes raw Dispatcharr Xtream VOD variants to Sonarr/Radarr as a Newznab indexer and SABnzbd-compatible download client backed by Mustarrd.",
