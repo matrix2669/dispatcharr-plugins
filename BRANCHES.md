@@ -10,7 +10,6 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
-| `feature/mustarrd-dvr-beta-2` | publication | active | `dev` | `dev` | Publish Mustarrd DVR Handoff `0.2.13-beta.2` only to the tagged-build channel. |
 
 ## Branch Records
 
@@ -38,14 +37,3 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Validation: the development validator and all registry tests pass; the stable tag resolves to source commit `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`
 - Current Mustarrd DVR build: beta `0.2.13-beta.2` from source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
-
-### `feature/mustarrd-dvr-beta-2`
-
-- Type: short-lived tagged-build publication
-- Status: active
-- Base and target: `dev`
-- Purpose: advance only Mustarrd DVR Handoff from `0.2.13-beta.1` to immutable tag `v0.2.13-beta.2`
-- Source commit: `606d2c23775004581c22213b0b1c7ac59e00b4d6`
-- Scope: root and per-plugin development manifests, retained version history, changelog, and branch ledger
-- Exclusions: registry `main`, GitHub Releases, unrelated plugin entries, and rewriting prior tag metadata
-- Required validation: source tag/commit/archive, registry validator, registry tests, and Dispatcharr update detection
