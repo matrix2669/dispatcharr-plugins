@@ -16,6 +16,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 ### Changed
 
 - Advance FFmpeg Smart Profiles from `0.2.0-beta.1` to corrected candidate `0.2.0-beta.2` for the strict registry-update and live-runtime validation cycle.
+- Validate the FFmpeg Smart managed update from recorded `0.1.0` through `dev`, preserving external state across plugin-directory replacement before successful recache, restart, and 4K pipe-input testing.
 - Advance Mustarrd DVR Handoff to `0.2.13-beta.2` in `dev` for upstream dependency-audit testing; no GitHub Release or `main` publication is created.
 - Rename the active Mustarrd DVR source repository to `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin` without changing its plugin name, slug, or manifest directory; historical archive URLs remain valid through GitHub redirects and now resolve to exact replacement tags.
 - Advance Arr Stack Connector from `0.2.0-beta.1` to released stable version `0.2.0` in `dev`, reuse its matching `main` detail manifest, and retain the beta metadata in an unindexed archive directory.
