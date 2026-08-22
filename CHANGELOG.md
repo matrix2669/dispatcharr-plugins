@@ -6,12 +6,14 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Added
 
+- Add Arr Stack Connector `0.2.0-beta.1` to the development registry for installation testing under its new plugin identity.
 - Document the released and tagged-build registry contracts, branch ledger, decisions, and publication procedure.
 - Add automated validation for manifest structure, immutable archive references, version history, and channel-specific URLs.
 - Require a fresh official Dispatcharr repository review and compatibility validation whenever the supported or deployed Dispatcharr version changes.
 
 ### Changed
 
+- Replace the active development listing for Dispatcharr VOD Newznab with the renamed `arr-stack-connector` slug and repository; retain the legacy detail manifest unindexed as historical metadata.
 - Rename the tagged-build registry channel from `dev-test` to `dev` after controlled consumer migration.
 - Keep each plugin in `dev` on its newest approved tag: beta while testing is active, otherwise the latest completed stable version whether released or not.
 - Normalize the registry display names to `matrix2669 Plugins` and `matrix2669 Plugins (dev)`.
