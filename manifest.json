@@ -1,7 +1,19 @@
 {
-  "registry_name": "Matrix2669 Plugins (dev-test)",
-  "registry_url": "https://github.com/matrix2669/dispatcharr-plugins/tree/dev-test",
+  "registry_name": "matrix2669 Plugins (dev)",
+  "registry_url": "https://github.com/matrix2669/dispatcharr-plugins/tree/dev",
   "plugins": [
+    {
+      "slug": "ffmpeg-smart-profiles",
+      "name": "FFmpeg Smart Profiles",
+      "description": "Creates managed Dispatcharr stream/output profiles backed by a hardware-aware FFmpeg wrapper with multi-GPU selection and concurrent-capacity benchmarking.",
+      "author": "matrix2669",
+      "license": "MIT",
+      "repo_url": "https://github.com/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin",
+      "latest_version": "0.1.0",
+      "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/plugins/ffmpeg-smart-profiles/manifest.json",
+      "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.1.0",
+      "min_dispatcharr_version": "v0.29.0"
+    },
     {
       "slug": "mustarrd-dvr-handoff",
       "name": "Mustarrd DVR Handoff",
@@ -11,7 +23,7 @@
       "repo_url": "https://github.com/matrix2669/Dispatcharr-Mustarrd-Plugin",
       "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Mustarrd-Plugin/main/mustarrd-dvr-handoff/logo.png",
       "latest_version": "0.2.12",
-      "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev-test/plugins/mustarrd-dvr-handoff/manifest.json",
+      "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev/plugins/mustarrd-dvr-handoff/manifest.json",
       "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.12",
       "min_dispatcharr_version": "v0.29.0"
     },
@@ -35,7 +47,7 @@
       "license": "MIT",
       "repo_url": "https://github.com/matrix2669/DIspatcharr-Stream-Sort-Plugin",
       "latest_version": "0.3.6-beta.2",
-      "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev-test/plugins/dispatcharr-stream-sort/manifest.json",
+      "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev/plugins/dispatcharr-stream-sort/manifest.json",
       "latest_url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.6-beta.2",
       "min_dispatcharr_version": "v0.29.0"
     }

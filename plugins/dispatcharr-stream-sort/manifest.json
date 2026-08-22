@@ -5,8 +5,8 @@
   "author": "matrix2669",
   "license": "MIT",
   "repo_url": "https://github.com/matrix2669/DIspatcharr-Stream-Sort-Plugin",
-  "registry_name": "Matrix2669 Plugins (dev-test)",
-  "registry_url": "https://github.com/matrix2669/dispatcharr-plugins/tree/dev-test",
+  "registry_name": "matrix2669 Plugins (dev)",
+  "registry_url": "https://github.com/matrix2669/dispatcharr-plugins/tree/dev",
   "latest_version": "0.3.6-beta.2",
   "latest": {
     "version": "0.3.6-beta.2",
