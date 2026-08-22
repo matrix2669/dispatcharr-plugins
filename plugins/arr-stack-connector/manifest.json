@@ -1,0 +1,30 @@
+{
+  "slug": "arr-stack-connector",
+  "name": "Arr Stack Connector",
+  "description": "Exposes raw Dispatcharr Xtream VOD variants to Sonarr/Radarr as a Newznab indexer and SABnzbd-compatible download client backed by Mustarrd.",
+  "author": "matrix2669",
+  "license": "MIT",
+  "repo_url": "https://github.com/matrix2669/Dispatcharr-Arr-Stack-Plugin",
+  "registry_name": "matrix2669 Plugins",
+  "registry_url": "https://github.com/matrix2669/dispatcharr-plugins",
+  "latest_version": "0.2.0",
+  "latest": {
+    "version": "0.2.0",
+    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Arr-Stack-Plugin/zipball/v0.2.0",
+    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Arr-Stack-Plugin/zipball/v0.2.0",
+    "commit_sha": "2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46",
+    "commit_sha_short": "2c7441b",
+    "build_timestamp": "2026-08-22T18:28:05Z",
+    "min_dispatcharr_version": "v0.29.0"
+  },
+  "versions": [
+    {
+      "version": "0.2.0",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Arr-Stack-Plugin/zipball/v0.2.0",
+      "commit_sha": "2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46",
+      "commit_sha_short": "2c7441b",
+      "build_timestamp": "2026-08-22T18:28:05Z",
+      "min_dispatcharr_version": "v0.29.0"
+    }
+  ]
+}
