@@ -10,7 +10,6 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
-| `feature/mustarrd-dvr-v0.2.13-beta.1` | feature | active locally | `dev` | `dev` | Publish the renamed repository and crop-safe logo beta without changing the plugin identity. |
 
 ## Branch Records
 
@@ -36,13 +35,5 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Registry URL: `https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev/manifest.json`
 - Current Arr Stack build: released stable version `0.2.0`, reusing the matching `main` detail manifest; beta `0.2.0-beta.1` metadata remains unindexed for history
 - Validation: the development validator and all registry tests pass; the stable tag resolves to source commit `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`
-
-### `feature/mustarrd-dvr-v0.2.13-beta.1`
-
-- Type: feature
-- Status: active locally
-- Base and target: `dev`
-- Purpose: update Mustarrd DVR Handoff to source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin` and beta `0.2.13-beta.1`
-- Preserved identity: slug `mustarrd-dvr-handoff`, plugin display name, and manifest directory
-- Scope: active source/icon/archive URLs, immutable tag history, beta metadata, changelog, and branch ledger; no `main` publication
-- Validation required: development validator, registry tests, exact tag commit, historical archive resolution, and beta archive/logo layout
+- Current Mustarrd DVR build: beta `0.2.13-beta.1` from renamed source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
+- Mustarrd DVR validation: development validator and registry tests pass; source tag resolves to `31dc8bc923ab533d30e7e1d2012e9feceb49998c`; the tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL returns a 1254×1254 PNG
