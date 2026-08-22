@@ -10,7 +10,6 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
-| `feature/arr-stack-connector-beta` | feature | active locally | `dev` | `dev` | Replace the legacy VOD Newznab listing with the renamed Arr Stack Connector beta for installation testing. |
 
 ## Branch Records
 
@@ -34,14 +33,4 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Stable reuse: when the newest tagged version is identical to `main`, the root index reuses the unchanged `main` per-plugin manifest
 - Exclusions: moving source branches, untagged builds, and implicit promotion to `main`
 - Registry URL: `https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev/manifest.json`
-- Validation: GitHub manifest validation passed and Dispatcharr loaded all four expected entries after the channel migration
-
-### `feature/arr-stack-connector-beta`
-
-- Type: feature
-- Status: active locally
-- Base and target: `dev`
-- Purpose: advertise `matrix2669/Dispatcharr-Arr-Stack-Plugin` tag `v0.2.0-beta.1` as `arr-stack-connector` and retire the legacy slug from the active development index
-- Scope: development registry metadata and documentation only; preserve the legacy detail manifest unindexed for historical reference
-- Exclusions: `main`, GitHub Releases, and runtime source changes
-- Validation required: development-channel validator, registry tests, exact tag/commit verification, and archive-root inspection
+- Validation: the development validator and all registry tests pass; Arr Stack Connector `0.2.0-beta.1` resolves to the recorded source commit and its published archive contains the required plugin directory. Live Dispatcharr installation testing is pending.
