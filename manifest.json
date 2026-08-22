@@ -25,6 +25,18 @@
       "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/plugins/dispatcharr-vod-newznab/manifest.json",
       "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-VOD-Newznab-Plugin/zipball/v0.1.16",
       "min_dispatcharr_version": "v0.29.0"
+    },
+    {
+      "slug": "stream-sorter",
+      "name": "Dispatcharr Stream Sort",
+      "description": "Incrementally analyzes stream health, quality, delivery performance, playback metadata, and runtime reliability across all active M3U profiles while respecting viewer capacity before scoring and reordering streams.",
+      "author": "matrix2669",
+      "license": "MIT",
+      "repo_url": "https://github.com/matrix2669/DIspatcharr-Stream-Sort-Plugin",
+      "latest_version": "0.3.5",
+      "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/plugins/dispatcharr-stream-sort/manifest.json",
+      "latest_url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.5",
+      "min_dispatcharr_version": "v0.29.0"
     }
   ]
 }
