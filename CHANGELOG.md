@@ -6,6 +6,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Added
 
+- Advertise FFmpeg Smart Profiles `0.2.0-beta.1` in `dev` with persistent `/data/ffmpeg_smart_profiles` state and explicit required-cache errors.
 - Add Mustarrd DVR Handoff `0.2.13-beta.1` with a square crop-safe logo to the development channel.
 - Add Arr Stack Connector `0.2.0-beta.1` to the development registry for installation testing under its new plugin identity.
 - Document the released and tagged-build registry contracts, branch ledger, decisions, and publication procedure.
