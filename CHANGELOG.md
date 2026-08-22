@@ -6,6 +6,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Added
 
+- Add Mustarrd DVR Handoff `0.2.13-beta.1` with a square crop-safe logo to the development channel.
 - Add Arr Stack Connector `0.2.0-beta.1` to the development registry for installation testing under its new plugin identity.
 - Document the released and tagged-build registry contracts, branch ledger, decisions, and publication procedure.
 - Add automated validation for manifest structure, immutable archive references, version history, and channel-specific URLs.
@@ -13,6 +14,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Changed
 
+- Rename the active Mustarrd DVR source repository to `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin` without changing its plugin name, slug, or manifest directory; historical archive URLs remain valid through GitHub redirects and now resolve to exact replacement tags.
 - Advance Arr Stack Connector from `0.2.0-beta.1` to released stable version `0.2.0` in `dev`, reuse its matching `main` detail manifest, and retain the beta metadata in an unindexed archive directory.
 - Replace the active development listing for Dispatcharr VOD Newznab with the renamed `arr-stack-connector` slug and repository; retain the legacy detail manifest unindexed as historical metadata.
 - Rename the tagged-build registry channel from `dev-test` to `dev` after controlled consumer migration.

@@ -4,21 +4,29 @@
   "description": "Mirrors Dispatcharr DVR recordings on catch-up channels to Mustarrd up to 72 hours ahead, then performs a final verified handoff before airtime.",
   "author": "matrix2669",
   "license": "MIT",
-  "repo_url": "https://github.com/matrix2669/Dispatcharr-Mustarrd-Plugin",
-  "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Mustarrd-Plugin/main/mustarrd-dvr-handoff/logo.png",
+  "repo_url": "https://github.com/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin",
+  "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/v0.2.13-beta.1/mustarrd-dvr-handoff/logo.png",
   "registry_name": "matrix2669 Plugins (dev)",
   "registry_url": "https://github.com/matrix2669/dispatcharr-plugins/tree/dev",
-  "latest_version": "0.2.12",
+  "latest_version": "0.2.13-beta.1",
   "latest": {
-    "version": "0.2.12",
-    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.12",
-    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.12",
-    "commit_sha": "64e0290efa6ee88375fa5399a9c5a9a4f5ac603a",
-    "commit_sha_short": "64e0290",
-    "build_timestamp": "2026-08-17T20:14:37Z",
+    "version": "0.2.13-beta.1",
+    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/zipball/v0.2.13-beta.1",
+    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/zipball/v0.2.13-beta.1",
+    "commit_sha": "31dc8bc923ab533d30e7e1d2012e9feceb49998c",
+    "commit_sha_short": "31dc8bc",
+    "build_timestamp": "2026-08-22T18:46:01Z",
     "min_dispatcharr_version": "v0.29.0"
   },
   "versions": [
+    {
+      "version": "0.2.13-beta.1",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/zipball/v0.2.13-beta.1",
+      "commit_sha": "31dc8bc923ab533d30e7e1d2012e9feceb49998c",
+      "commit_sha_short": "31dc8bc",
+      "build_timestamp": "2026-08-22T18:46:01Z",
+      "min_dispatcharr_version": "v0.29.0"
+    },
     {
       "version": "0.2.12",
       "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-Plugin/zipball/v0.2.12",
