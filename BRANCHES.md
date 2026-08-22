@@ -10,6 +10,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
+| `feature/arr-stack-connector-v0.2.0-main` | feature | active locally | `main` | `main` | Publish the approved Arr Stack Connector `v0.2.0` GitHub Release in the stable channel. |
 
 ## Branch Records
 
@@ -34,3 +35,12 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: moving source branches, untagged builds, and implicit promotion to `main`
 - Registry URL: `https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev/manifest.json`
 - Validation: GitHub manifest validation passed and Dispatcharr loaded all four expected entries after the channel migration
+
+### `feature/arr-stack-connector-v0.2.0-main`
+
+- Type: feature
+- Status: active locally
+- Base and target: `main`
+- Purpose: replace the legacy stable VOD Newznab listing with released Arr Stack Connector `0.2.0`
+- Evidence: source tag and both source branches resolve to `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`; the normal GitHub Release and plugin-only ZIP were published on 2026-08-22
+- Scope: focused stable manifest metadata and documentation only; keep the legacy detail manifest unindexed
