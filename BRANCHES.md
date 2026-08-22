@@ -10,6 +10,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
+| `feature/arr-stack-connector-v0.2.0-dev` | feature | active locally | `dev` | `dev` | Advance the development channel from the tested beta to released stable version `0.2.0`. |
 
 ## Branch Records
 
@@ -34,3 +35,11 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: moving source branches, untagged builds, and implicit promotion to `main`
 - Registry URL: `https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev/manifest.json`
 - Validation: the development validator and all registry tests pass; Arr Stack Connector `0.2.0-beta.1` resolves to the recorded source commit and its published archive contains the required plugin directory. Live Dispatcharr installation testing is pending.
+
+### `feature/arr-stack-connector-v0.2.0-dev`
+
+- Type: feature
+- Status: active locally
+- Base and target: `dev`
+- Purpose: point the Arr Stack Connector development entry to stable tag `v0.2.0` and reuse its released `main` detail manifest
+- Scope: development root manifest, changelog, and branch ledger only; preserve the beta detail manifest unindexed
