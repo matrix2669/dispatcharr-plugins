@@ -15,6 +15,11 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 - Rename the tagged-build registry channel from `dev-test` to `dev` after controlled consumer migration.
 - Keep each plugin in `dev` on its newest approved tag: beta while testing is active, otherwise the latest completed stable version whether released or not.
 - Normalize the registry display names to `matrix2669 Plugins` and `matrix2669 Plugins (dev)`.
+- Reconcile `dev` with the stable FFmpeg Smart entry added to `main` after the legacy channel histories diverged.
+
+### Removed
+
+- Retire the legacy `dev-test` channel and completed `feature/registry-workflow` branch after GitHub validation and live Dispatcharr migration.
 
 ## 2026-08-22
 
