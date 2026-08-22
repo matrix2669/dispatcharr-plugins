@@ -1,0 +1,34 @@
+name: Validate manifests
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  pull_request:
+    branches:
+      - main
+      - dev
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Select registry channel
+        id: channel
+        shell: bash
+        run: |
+          target="${{ github.base_ref || github.ref_name }}"
+          if [[ "$target" == "dev" ]]; then
+            echo "name=dev" >> "$GITHUB_OUTPUT"
+          else
+            echo "name=main" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Validate registry manifests
+        run: python3 scripts/validate_registry.py --channel "${{ steps.channel.outputs.name }}"
+      - name: Run validator tests
+        run: python3 -m unittest discover -s tests -v
