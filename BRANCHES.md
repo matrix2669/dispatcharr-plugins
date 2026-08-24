@@ -1,6 +1,6 @@
 # Branches
 
-This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-22.
+This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-24.
 
 Before deleting a branch, record user-visible results in `CHANGELOG.md` and durable rationale in `DECISIONS.md` when applicable, then remove its index row and detailed record.
 
@@ -10,6 +10,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
+| `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 
 ## Branch Records
 
@@ -22,6 +23,14 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: beta tags, completed-but-unreleased versions, moving source branches, and unrelated `dev` entries
 - Promotion rule: make a focused change from `main`; never merge the complete `dev` catalog into this branch
 - Registry URL: `https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/manifest.json`
+
+### `fix/stream-sort-v0.3.6-beta.4`
+
+- Purpose: publish the reviewed Stream Sort scheduler, TTL, telemetry, and reporting corrections as immutable beta `0.3.6-beta.4`
+- Base and target: current `dev`
+- Scope: Stream Sort root/detail manifests, registry changelog, and this branch ledger only
+- Exclusions: stable `main`, unrelated plugin entries, and any moving source branch URL
+- Completion: validate the full development registry, merge into `dev`, publish `dev`, and remove this record only after the short-lived remote branch is deleted
 
 ### `dev`
 
