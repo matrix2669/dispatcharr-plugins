@@ -51,7 +51,7 @@ For every plugin retained in the channel, `dev` advertises its newest approved i
 
 If that newest tag is already the exact released version in `main`, the `dev` root index reuses the `main` per-plugin manifest. If `dev` advertises a different beta or completed-but-unreleased stable tag, it references a `dev` per-plugin manifest instead.
 
-This is a justified standalone-workflow exception: the branches are deployed registry channels, not plugin source integration branches. Short-lived work branches start from and return to only the channel they modify. Testing metadata is never promoted by merging the complete `dev` branch into `main`.
+This follows the workspace's supported standalone metadata-registry profile: the branches are deployed registry channels, not plugin source integration branches. Short-lived work branches start from and return to only the channel they modify. Testing metadata is never promoted by merging the complete `dev` branch into `main`.
 
 ## Reason
 

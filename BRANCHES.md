@@ -11,6 +11,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
+| `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 
 ## Branch Records
 
@@ -32,6 +33,15 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: stable `main`, unrelated plugin entries, and any moving source branch URL
 - Completion: validate the full development registry, merge into `dev`, publish `dev`, and remove this record only after the short-lived remote branch is deleted
 
+### `fix/stream-sort-v0.3.6-beta.6`
+
+- Purpose: publish the reviewed Stream Sort analyzer-serialization, safe-stop, checkpointing, and provisional-dead retry corrections as immutable beta `0.3.6-beta.6`
+- Base and target: current `dev`
+- Scope: Stream Sort root/detail manifests, registry changelog, branch ledger, and pending standards-reconciliation records
+- Exclusions: stable `main`, unrelated plugin entries, moving source branch URLs, and changes to viewer-aware provider capacity
+- Source evidence: immutable tag `v0.3.6-beta.6` resolves to `ab9dfd3c28afe61f757cfb6a40cd0217760f09f3`; the downloaded archive preserves `stream_sorter/plugin.json`, compiles, and passes all 107 source tests
+- Completion: validate the full development registry, merge into `dev`, publish `dev`, and remove this record only after the short-lived remote branch is deleted
+
 ### `dev`
 
 - Type: long-lived
@@ -47,3 +57,4 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Current Mustarrd DVR build: beta `0.2.13-beta.2` from source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
 - Current FFmpeg Smart build: corrected beta `0.2.0-beta.2` from source commit `75118a8855b4275f41bd886ec9919ddda81593be`; the immutable tag archive preserves executable `ffmpeg-smart-profiles/ffmpeg-smart-plugin.sh` and `ffmpeg-smart.sh`. The development validator and registry tests pass, and Dispatcharr's managed update from recorded `0.1.0` preserved external state across directory replacement before successful recache, restart, and 10-second 4K30 `pipe:0` validation.
+- Current Stream Sort build: beta `0.3.6-beta.6` from source commit `ab9dfd3c28afe61f757cfb6a40cd0217760f09f3`; the immutable tag archive preserves `stream_sorter/plugin.json`, compiles, and passes all 107 source tests. Runtime installation and the controlled live stop test remain pending.

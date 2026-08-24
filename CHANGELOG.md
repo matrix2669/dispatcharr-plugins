@@ -15,6 +15,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Changed
 
+- Advance Dispatcharr Stream Sort from `0.3.6-beta.5` to `0.3.6-beta.6` in `dev`, serializing analyzer entry points, adding safe stop control with completed-result checkpointing, and keeping unconfirmed dead results immediately retryable while preserving viewer-aware provider capacity.
 - Advance Dispatcharr Stream Sort from `0.3.6-beta.4` to `0.3.6-beta.5` in `dev`, adding confirmation retries for `0x0` dimensions and provisional content-health failures while preserving immutable version history.
 - Advance Dispatcharr Stream Sort from `0.3.6-beta.3` to reviewed correction `0.3.6-beta.4` in `dev`, preserving immutable version history and leaving the stable channel unchanged.
 - Advance FFmpeg Smart Profiles from `0.2.0-beta.1` to corrected candidate `0.2.0-beta.2` for the strict registry-update and live-runtime validation cycle.
