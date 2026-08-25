@@ -12,6 +12,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
+| `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
 
 ## Branch Records
 
@@ -42,6 +43,15 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Source evidence: immutable tag `v0.3.6-beta.6` resolves to `ab9dfd3c28afe61f757cfb6a40cd0217760f09f3`; the downloaded archive preserves `stream_sorter/plugin.json`, compiles, and passes all 107 source tests
 - Completion: validate the full development registry, merge into `dev`, publish `dev`, and remove this record only after the short-lived remote branch is deleted
 
+### `fix/stream-sort-v0.3.6-beta.9`
+
+- Purpose: publish the reviewed Stream Sort combined-capture retry, completion-accounting, and first-baseline reason corrections as immutable beta `0.3.6-beta.9`
+- Base and target: current `dev`
+- Scope: Stream Sort root/detail manifests, registry changelog, and this branch ledger only
+- Exclusions: stable `main`, unrelated plugin entries, moving source branches, provider-specific scheduling, and report compaction
+- Source evidence: immutable tag `v0.3.6-beta.9` resolves to `9eea52417c1f2f25307f9d52825bd41a22fb2bb7`; the downloaded archive preserves `stream_sorter/plugin.json`, reports the synchronized beta.9 version, compiles, and passes all 129 source tests
+- Completion: validate the full development registry, merge into `dev`, publish `dev`, confirm managed installation, and remove this record only after the short-lived remote branch is deleted
+
 ### `dev`
 
 - Type: long-lived
@@ -57,4 +67,4 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Current Mustarrd DVR build: beta `0.2.13-beta.2` from source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
 - Current FFmpeg Smart build: corrected beta `0.2.0-beta.2` from source commit `75118a8855b4275f41bd886ec9919ddda81593be`; the immutable tag archive preserves executable `ffmpeg-smart-profiles/ffmpeg-smart-plugin.sh` and `ffmpeg-smart.sh`. The development validator and registry tests pass, and Dispatcharr's managed update from recorded `0.1.0` preserved external state across directory replacement before successful recache, restart, and 10-second 4K30 `pipe:0` validation.
-- Current Stream Sort build: corrective beta `0.3.6-beta.8` from source commit `c9bb33f9e7b09d52527bfd6307f86a8d69f610a8`; the immutable tag archive preserves `stream_sorter/plugin.json`, reports the synchronized beta.8 version, compiles, and passes all 125 source tests. Combined capture storage is bounded to active workers and can use sufficiently sized `/dev/shm` with a safe system-temporary fallback.
+- Current Stream Sort build: corrective beta `0.3.6-beta.9` from source commit `9eea52417c1f2f25307f9d52825bd41a22fb2bb7`; the immutable tag archive preserves `stream_sorter/plugin.json`, reports the synchronized beta.9 version, compiles, and passes all 129 source tests. Combined capture failures retry content and throughput together, log per-stream errors, preserve accurate baseline reasons, and do not create completion TTL evidence without a valid sample.
