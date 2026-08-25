@@ -1,5 +1,16 @@
 # AGENT.md
 
+## Workspace Standards Reconciliation Gate
+
+Before any substantive work, locate the maintained local `matrix2669/workspace` checkout and run `<workspace>/scripts/reconcile-standards --check .` from this repository root. The workspace `AI-INSTRUCTIONS.md`, `AGENT-STANDARD.md`, and Git history must be available.
+
+If `WORKSPACE-STANDARDS.yaml` is missing, pending, or stale, stop project work and run `<workspace>/scripts/reconcile-standards --diff .`. Review the standards change against this complete `AGENT.md`, `DECISIONS.md`, code/configuration contracts, dependencies, `BRANCHES.md`, `RELEASE.md`, upstream requirements when applicable, and related projects.
+
+A contradiction blocks work. Ask focused follow-up questions to establish whether the changed standard, proposed work, new answer, or older accepted decision is authoritative; never choose silently. Record project-decision supersessions in `DECISIONS.md` and realign every affected artifact. Only after no contradiction remains, run `<workspace>/scripts/reconcile-standards --apply --confirm-reviewed-no-conflicts .`.
+
+Missing workspace standards or Git history is a hard block. Standards exceptions require explicit user authorization and must be stated in a dedicated section of this file with exact scope, rationale, authority, approval date, and review/removal trigger; `DECISIONS.md` cannot waive workspace standards.
+
+
 ## Purpose
 
 This repository is the matrix2669 Dispatcharr plugin registry. It maps two branch-backed distribution channels to immutable builds owned by separate plugin source repositories.
@@ -18,7 +29,7 @@ Plugin source repositories remain authoritative for code, tags, GitHub Releases,
 
 ## Branch and Channel Workflow
 
-This standalone metadata repository has a documented exception to the normal source-project branch model:
+This standalone metadata repository follows the workspace's supported metadata-registry profile:
 
 - `main` is the stable Dispatcharr registry.
 - `dev` is the continuous tagged-build registry. It advertises the newest approved tag for each plugin, whether that tag is a beta or a completed stable version.

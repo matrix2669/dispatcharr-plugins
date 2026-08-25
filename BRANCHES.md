@@ -1,6 +1,6 @@
 # Branches
 
-This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-22.
+This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-24.
 
 Before deleting a branch, record user-visible results in `CHANGELOG.md` and durable rationale in `DECISIONS.md` when applicable, then remove its index row and detailed record.
 
@@ -24,6 +24,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Registry URL: `https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/manifest.json`
 - Current Arr Stack build: released version `0.2.0` at source commit `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`
 - Validation: the stable validator and all registry tests pass; the source Release includes a verified plugin-only ZIP and SHA-256 checksum
+- Workspace governance: `main` and `dev` each contain the mandatory workspace standards reconciliation gate at revision `sha256:2717b7fb651e3541b6af68a4793b3c056ea3053bb177e629c97bf2d03a50878f`; this reconciliation changes no registry manifest or plugin publication metadata.
 
 ### `dev`
 
