@@ -15,6 +15,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Changed
 
+- Advance Dispatcharr Stream Sort from `0.3.6-beta.9` to corrective `0.3.6-beta.10` in `dev`, preserving scan-boundary health transitions and separating attempted throughput operations from retained numeric measurements.
 - Advance Dispatcharr Stream Sort from `0.3.6-beta.8` to corrective `0.3.6-beta.9` in `dev`, retrying complete combined captures, logging per-stream capture failures, preserving accurate first-baseline reasons, and preventing incomplete captures from creating content or throughput TTL evidence.
 - Advance Dispatcharr Stream Sort from `0.3.6-beta.7` to corrective `0.3.6-beta.8` in `dev`, bounding combined capture storage to active workers, using sufficiently sized shared memory with a safe fallback, deleting samples immediately after local analysis, and restoring persisted-token cancellation visibility.
 - Advance Dispatcharr Stream Sort from `0.3.6-beta.6` to `0.3.6-beta.7` in `dev`, separating ffprobe, content-health, and throughput TTL phases, reusing qualified Dispatcharr playback telemetry, adding per-stream retry logs and guarded statistics reset actions, and excluding locked internal M3U sources from user settings and scoring.
