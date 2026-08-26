@@ -14,7 +14,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/ffmpeg-smart-v0.2.0-beta.4` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.4` scoped-options test build. |
 | `feature/ffmpeg-smart-v0.2.0-beta.5` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.5` inherited-default guidance build. |
 | `feature/ffmpeg-smart-v0.2.0-beta.6` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.6` launcher and cache-maintenance correction. |
-| `feature/ffmpeg-smart-update-disclaimer` | feature | active | `dev` | `dev` | Show install-versus-update hardware-scan guidance in the FFmpeg Smart registry description. |
+| `feature/ffmpeg-smart-update-disclaimer` | feature | active | `dev` | `dev` | Advertise FFmpeg Smart Profiles `v0.2.0-beta.7` with degraded stream-copy fallback and install-versus-update scan guidance. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -28,12 +28,13 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Type: short-lived feature branch
 - Status: active
 - Base: `dev` at `eab2f93f7c9af0daf425ed17b324e7ddb7d75dc6`
-- Target: `dev` only after the matching immutable plugin build is approved for publication
-- Purpose: show that new FFmpeg Smart installations require a hardware capability scan and updates may require a recheck, with degraded stream-copy behavior until a required scan succeeds.
-- Scope: FFmpeg Smart root/detail descriptions, registry changelog, and this branch ledger only.
-- Exclusions: no version/archive mutation before an immutable plugin tag exists, no other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, or runtime code.
+- Target: `dev` only
+- Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.6` to approved immutable `v0.2.0-beta.7`, while showing that new installations require a hardware capability scan, updates may require a recheck, and managed profiles fall back to basic stream copy until a required scan succeeds.
+- Source evidence: `Dispatcharr-FFmpeg-Smart-Plugin` tag `v0.2.0-beta.7` resolves to commit `600ba14572ab48f4d920c2cfd7ad4ac9fffce787`; its reviewed archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files, and synchronized beta.7 plugin metadata.
+- Scope: FFmpeg Smart root/detail metadata and descriptions, preserved version history, registry changelog, and this branch ledger only.
+- Exclusions: no other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
 - Related work: `Dispatcharr-FFmpeg-Smart-Plugin` branch `feature/degraded-proxy-fallback`.
-- Validation: root/detail descriptions agree; the development registry validator, all five registry tests, JSON parsing, workspace validation, and `git diff --check` pass. Publication remains blocked until the matching immutable plugin tag is approved.
+- Validation: exact tag resolution and archive layout, synchronized beta.7 plugin metadata, 37 plugin tests, canonical-wrapper validation, remote immutable-source verification, root/detail description agreement, the development registry validator, all five registry tests, JSON parsing, prior-version retention, workspace validation, `git diff --check`, and complete-diff review pass.
 
 ### `main`
 
@@ -103,7 +104,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Validation: the development validator and all registry tests pass; the stable tag resolves to source commit `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`
 - Current Mustarrd DVR build: beta `0.2.13-beta.2` from source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
-- Current FFmpeg Smart build: beta `0.2.0-beta.6` from source commit `e9e7554f95196a35a55c96672863534d938f0fc4`; the immutable tag archive preserves the stable `ffmpeg-smart-profiles/` directory and all five runtime files. The plugin passed 34 source tests covering direct-launch mode repair, authoritative cache status, persistent notifications, profile-generation behavior, and restart semantics; canonical-wrapper validation, remote immutable-source verification, archive inspection, the development registry validator, and all registry tests pass.
+- Current FFmpeg Smart build: beta `0.2.0-beta.7` from source commit `600ba14572ab48f4d920c2cfd7ad4ac9fffce787`; the immutable tag archive preserves the stable `ffmpeg-smart-profiles/` directory and all five runtime files. The plugin passed 37 source tests covering degraded stream-copy fallback, notification re-display after every invocation, launcher behavior, cache status, profile generation, and restart semantics; canonical-wrapper validation, remote immutable-source verification, archive inspection, the development registry validator, and all registry tests pass.
 - Current Stream Sort build: beta `0.3.6-beta.12` from source commit `9bec63a1d72082e1efffa42bd0c758dcf3bf29dd`; the immutable tag archive preserves `stream_sorter/plugin.json`, reports the synchronized beta.12 version, compiles, and passes all 151 source tests. Known placeholder confirmations now avoid redundant retries and downstream probes, legacy per-run caps are ignored, automatic reliability collection is explicit, and completion logs include runtime plus the authoritative placeholder/other-dead breakdown.
 
 ### `feature/ffmpeg-smart-v0.2.0-beta.3`
@@ -147,7 +148,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/ffmpeg-smart-v0.2.0-beta.6`
 
 - Type: short-lived feature branch
-- Status: active
+- Status: merged into `dev` at `a3ae423` and published through `dev` at `eab2f93`; remote raw manifests and GitHub validation pass
 - Base: `dev` at `5abc48c`
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.5` to approved immutable `v0.2.0-beta.6`, repairing executable modes after registry extraction and adding authoritative cache health plus persistent maintenance notifications.
