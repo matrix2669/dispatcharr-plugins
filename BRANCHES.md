@@ -18,6 +18,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/ffmpeg-smart-v0.2.0-beta.8` | fix | merged | `dev` | `dev` | Replace beta.7 with the immutable corrective beta.8 canonical-wrapper repin. |
 | `fix/ffmpeg-smart-v0.2.0-beta.9` | fix | merged | `dev` | `dev` | Restore persistent degraded notification-center reactivation after dismissal. |
 | `fix/ffmpeg-smart-v0.2.0-beta.10` | fix | merged | `dev` | `dev` | Refresh persistent degraded notifications from Dispatcharr's authoritative API. |
+| `fix/ffmpeg-smart-v0.2.0-beta.11` | fix | active | `dev` | `dev` | Publish canonical Map All and benchmark-lock corrections for installed validation. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -78,6 +79,19 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: no description change, other plugin metadata, stable `main`, minimum Dispatcharr version, canonical wrapper, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
 - Validation: source feature/dev/tag workflows, exact tag/archive inspection, synchronized beta.10 metadata, preserved beta.9-through-v0.1.0 history, development-registry validation, all five registry tests, JSON parsing, workspace validation, complete-diff review, `git diff --check`, public raw-manifest agreement, and registry workflow run `33018930141` pass.
 - Completion: `dev` advertises immutable beta.10 from exact source commit `2ceb64a`; beta.9 through v0.1.0 remain indexed, the install/update scan disclaimer is unchanged, and no `main` or unrelated plugin metadata changed. Installed beta.10 validation remains pending.
+
+### `fix/ffmpeg-smart-v0.2.0-beta.11`
+
+- Type: short-lived corrective branch
+- Status: active
+- Base: `dev` at `065aff5e96e7ca34eb02137656f97decc4db2a51` after refreshing the registry and confirming workspace standards revision `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`.
+- Target: `dev` only
+- Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.10` to corrective immutable `v0.2.0-beta.11`, preserving MPEG-TS-compatible auxiliary mappings and keeping degraded stream-copy routing authoritative for the full hardware recheck.
+- Source evidence: `Dispatcharr-FFmpeg-Smart-Plugin v0.2.0-beta.11` resolves to `80c40ea164e5711dfbc37e8c465e943b9e1ee9ea`; source branch workflow `33024879688`, dev workflow `33024916207`, and tag workflow `33024939375` pass. The reviewed tag archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files, executable launcher/wrapper modes, synchronized beta.11 metadata, and canonical `ffmpeg-asr v1.1.0-beta.7` pin.
+- Scope: FFmpeg Smart root/detail version metadata, preserved version history, registry changelog, and this branch ledger only.
+- Exclusions: no description change, other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
+- Validation: exact tag/archive/source-pin inspection, 39 source tests, canonical and plugin GitHub workflows, the development registry validator, all registry tests, JSON parsing, prior-version retention, workspace validation, complete-diff review, and `git diff --check`; registry workflow, public raw-manifest agreement, and installed beta.11 validation remain pending.
+- Started: `2026-08-26`.
 
 ### `main`
 
