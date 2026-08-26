@@ -41,14 +41,15 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `fix/ffmpeg-smart-v0.2.0-beta.8`
 
 - Type: short-lived corrective branch
-- Status: merged into `dev` at `be35192`; remote publication validation pending
+- Status: merged into `dev` at `be35192` and published through `dev` at `2f35359`; remote raw manifests and GitHub validation pass
 - Base: `dev` at `e92fc6c` after beta.7 registry publication and evidence recording.
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.7` to corrective immutable `v0.2.0-beta.8`, preserving fallback behavior while repinning to green canonical `ffmpeg-asr v1.1.0-beta.6`.
 - Source evidence: `Dispatcharr-FFmpeg-Smart-Plugin` tag `v0.2.0-beta.8` resolves to commit `5309b16ae2440f36238fa5a5426cf2e2ecc9f918`; its reviewed archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files, synchronized beta.8 metadata, and canonical source commit `aeff09204000f58aa6fdd3a14781935f77a0823a`.
 - Scope: FFmpeg Smart root/detail version metadata, preserved version history, registry changelog, and this branch ledger only.
 - Exclusions: no description change, other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
-- Validation: exact tag/archive/source-pin inspection, 37 plugin tests, plugin and canonical GitHub workflows, the development registry validator, all five registry tests, JSON parsing, prior-version retention, workspace validation, `git diff --check`, and complete-diff review pass.
+- Validation: exact tag/archive/source-pin inspection, 37 plugin tests, plugin and canonical GitHub workflows, the development registry validator, all five registry tests, JSON parsing, prior-version retention, workspace validation, `git diff --check`, complete-diff review, published raw-manifest agreement, and registry workflow run `33016050222` pass.
+- Completion: `dev` advertises immutable beta.8 from exact source commit `5309b16`; beta.7 through v0.1.0 remain indexed, the install/update scan disclaimer is unchanged, and no `main` or unrelated plugin metadata changed. Installed-update validation remains pending.
 
 ### `main`
 
