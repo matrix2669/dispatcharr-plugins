@@ -19,6 +19,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Changed
 
+- Advance FFmpeg Smart Profiles from `0.2.0-beta.10` to corrective `0.2.0-beta.11` in `dev`, preserving compatible mapped subtitle/data/attachment streams and retaining degraded stream-copy routing for the complete hardware recheck.
 - Advance FFmpeg Smart Profiles from `0.2.0-beta.9` to corrective `0.2.0-beta.10` in `dev`, forcing the browser to refresh persistent warning state from Dispatcharr's authoritative notification API after install/load, a manual status check, and every new degraded fallback invocation.
 - Advance FFmpeg Smart Profiles from `0.2.0-beta.8` to corrective `0.2.0-beta.9` in `dev`, restoring a dismissed degraded-mode warning in Dispatcharr's persistent notification center after each new fallback invocation instead of showing only a toast.
 - Advance FFmpeg Smart Profiles from `0.2.0-beta.7` to corrective `0.2.0-beta.8` in `dev`, repinning unchanged degraded-fallback behavior to canonical `ffmpeg-asr v1.1.0-beta.6` after its Linux validation correction.
