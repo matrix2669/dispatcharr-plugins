@@ -1,6 +1,6 @@
 # Branches
 
-This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-24.
+This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-25.
 
 Before deleting a branch, record user-visible results in `CHANGELOG.md` and durable rationale in `DECISIONS.md` when applicable, then remove its index row and detailed record.
 
@@ -12,6 +12,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
 | `feature/ffmpeg-smart-v0.2.0-beta.3` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.3` test build. |
 | `feature/ffmpeg-smart-v0.2.0-beta.4` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.4` scoped-options test build. |
+| `feature/ffmpeg-smart-v0.2.0-beta.5` | feature | active | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.5` inherited-default guidance build. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -23,7 +24,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `main`
 
 - Type: long-lived
-- Status: merged into `dev` at `1d36df9` and published through `dev` at `877ef8b`; remote raw manifests and GitHub validation pass
+- Status: active
 - Purpose: released Dispatcharr registry for plugins with explicitly approved GitHub Releases
 - Required publication evidence: user approval, stable source tag, normal GitHub Release, exact source commit, validated install archive, and successful Dispatcharr installation
 - Exclusions: beta tags, completed-but-unreleased versions, moving source branches, and unrelated `dev` entries
@@ -106,7 +107,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/ffmpeg-smart-v0.2.0-beta.4`
 
 - Type: short-lived feature branch
-- Status: active
+- Status: merged into `dev` at `1d36df9` and published through `dev` at `877ef8b`; remote raw manifests and GitHub validation pass
 - Base: `dev` at `942144b`
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.3` to the approved immutable `v0.2.0-beta.4` scoped-options tag.
@@ -115,3 +116,15 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: no other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Releases, distributable ZIPs, or runtime code.
 - Validation: exact plugin tag resolution and archive layout, development registry validator, all five registry unit tests, JSON parsing, prior-version retention, `git diff --check`, and complete-diff review pass; only FFmpeg Smart metadata, history, changelog, and this ledger changed.
 - Completion: `dev` advertises immutable beta.4 from exact source commit `08ce3c5`; the raw root/detail manifests agree, prior immutable versions remain indexed, and the published manifest workflow completed successfully.
+
+### `feature/ffmpeg-smart-v0.2.0-beta.5`
+
+- Type: short-lived feature branch
+- Status: active
+- Base: `dev` at `442a2de`
+- Target: `dev` only
+- Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.4` to the approved immutable `v0.2.0-beta.5` inherited-default guidance tag.
+- Source evidence: `Dispatcharr-FFmpeg-Smart-Plugin` tag `v0.2.0-beta.5` resolves to commit `6fb786ddc01105d3328a49be4224b2e4d759e485`; the reviewed tag archive preserves the stable `ffmpeg-smart-profiles/` directory and all five runtime files.
+- Scope: FFmpeg Smart root/detail manifest metadata, preserved version history, registry changelog, and branch-ledger corrections only.
+- Exclusions: no other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Releases, distributable ZIPs, or runtime code.
+- Validation plan: exact plugin tag resolution and archive layout, development registry validator, all registry unit tests, JSON parsing, prior-version retention, `git diff --check`, and complete-diff review.
