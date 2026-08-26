@@ -55,14 +55,15 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `fix/ffmpeg-smart-v0.2.0-beta.9`
 
 - Type: short-lived corrective branch
-- Status: merged into `dev` at `5fe0171`; remote publication validation pending
+- Status: merged into `dev` at `5fe0171` and published through `dev` at `1ddda06`; remote raw manifests and GitHub validation pass
 - Base: `dev` at `d3c1271` after beta.8 registry publication and evidence recording.
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.8` to corrective immutable `v0.2.0-beta.9`, making every new fallback invocation restore a dismissed notification-center entry immediately instead of producing only a toast.
 - Source evidence: `Dispatcharr-FFmpeg-Smart-Plugin` tag `v0.2.0-beta.9` resolves to commit `d25b44b8999dba3aaeb82e264fb75335bbcacc88`; its reviewed archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files, synchronized beta.9 metadata, and the explicit `is_dismissed: false` WebSocket payload.
 - Scope: FFmpeg Smart root/detail version metadata, preserved version history, registry changelog, and this branch ledger only.
 - Exclusions: no description change, other plugin metadata, stable `main`, minimum Dispatcharr version, canonical wrapper, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
-- Validation: official Dispatcharr v0.29.0 notification-contract review, exact tag/archive inspection, 37 plugin tests, source workflow runs, the development registry validator, all five registry tests, JSON parsing, prior-version retention, workspace validation, `git diff --check`, and complete-diff review pass. Published raw manifests, registry workflow, and installed beta.9 reactivation remain pending.
+- Validation: official Dispatcharr v0.29.0 notification-contract review, exact tag/archive inspection, 37 plugin tests, source workflow runs, the development registry validator, all five registry tests, JSON parsing, prior-version retention, workspace validation, `git diff --check`, complete-diff review, published raw-manifest agreement, and registry workflow run `33017533957` pass. Installed beta.9 reactivation remains pending.
+- Completion: `dev` advertises immutable beta.9 from exact source commit `d25b44b`; beta.8 through v0.1.0 remain indexed, the install/update scan disclaimer is unchanged, and no `main` or unrelated plugin metadata changed.
 
 ### `main`
 
