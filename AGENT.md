@@ -39,6 +39,12 @@ Do not merge `dev` wholesale into `main`. Promote one explicitly approved plugin
 
 Track every current branch in `BRANCHES.md`. Before deleting a branch, preserve user-visible results in `CHANGELOG.md` and significant rationale in `DECISIONS.md`, then remove its ledger entry.
 
+## Session Completion and Remote Continuity
+
+GitHub is the authoritative continuation source. Start by fetching `origin` and resume from the exact remote head of the branch that owns the metadata change. A repository-change request authorizes checkpoint commits and pushes to an isolated branch based on the one channel it may eventually modify. Before ending or handing off a session, preserve unrelated entries, update branch and validation records, run the applicable gates, commit every in-scope committable change, push every local commit, and verify through a fresh remote query that the exact GitHub head matches the intended local checkpoint. Incomplete work is pushed as explicit WIP with failures or unavailable validation recorded; never commit credentials, generated archives, runtime code, machine state, or unrelated metadata merely to clean the worktree.
+
+The checkpoint branch is not a registry channel and does not change what Dispatcharr installs. The checkpoint does not authorize merging into `dev` or `main`, publishing a plugin tag or Release, changing a registry channel, deploying, force-pushing, or deleting a branch. Report the work branch, target channel, source tag, source Release, registry merge, and installed state separately.
+
 ## Distribution Rules
 
 - Every plugin retained in the tagged-build channel stays in `dev` and points to its newest approved immutable tag.
