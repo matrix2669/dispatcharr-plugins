@@ -121,7 +121,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/ffmpeg-smart-v0.2.0-beta.5`
 
 - Type: short-lived feature branch
-- Status: merged into `dev` at `a3ae423`; publication and installed-update validation remain pending
+- Status: merged into `dev` at `a3ae423` and published through `dev` at `73d4fbd`; installed-update validation remains pending
 - Base: `dev` at `442a2de`
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.4` to the approved immutable `v0.2.0-beta.5` inherited-default guidance tag.
@@ -141,4 +141,5 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Source evidence: `Dispatcharr-FFmpeg-Smart-Plugin` tag `v0.2.0-beta.6` resolves to commit `e9e7554f95196a35a55c96672863534d938f0fc4`; its reviewed archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files, and executable Git modes for both scripts.
 - Scope: FFmpeg Smart root/detail manifest metadata, preserved version history, registry changelog, and this branch ledger only.
 - Exclusions: no other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Releases, distributable ZIPs, runtime code, or Dispatcharr core behavior.
-- Validation: the exact remote tag resolves to `e9e7554`; the downloaded GitHub archive identifies that commit and contains beta.6 under the stable directory with the beta.4 canonical wrapper pin. Development registry validation, unit tests, JSON parsing, prior-version retention, complete-diff review, published raw-manifest checks, and installed Dispatcharr update validation remain required.
+- Validation: the exact remote tag resolves to `e9e7554`; the downloaded GitHub archive identifies that commit and contains beta.6 under the stable directory with the beta.4 canonical wrapper pin. Development registry validation, all five unit tests, JSON parsing, prior-version retention, complete-diff review, published raw root/detail manifest agreement, and the GitHub manifest workflow pass. The live instance still has beta.5 installed and its last cached registry refresh predates publication, so installed beta.6 validation remains pending.
+- Completion: `dev` advertises immutable beta.6 from exact source commit `e9e7554`; beta.5 through v0.1.0 remain indexed, and no `main` or unrelated plugin metadata changed.
