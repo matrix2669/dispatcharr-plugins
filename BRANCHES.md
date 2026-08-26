@@ -76,7 +76,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Source evidence: `Dispatcharr-FFmpeg-Smart-Plugin` tag `v0.2.0-beta.10` resolves to commit `2ceb64a178ee626c833c5d5b786f35e8ed86c99f`; its reviewed archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files, synchronized beta.10 metadata, and Dispatcharr's built-in `notifications_cleared` refresh event.
 - Scope: FFmpeg Smart root/detail version metadata, preserved version history, registry changelog, and this branch ledger only.
 - Exclusions: no description change, other plugin metadata, stable `main`, minimum Dispatcharr version, canonical wrapper, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
-- Validation: source/tag workflows, exact tag/archive inspection, and workspace standards reconciliation pass. Registry validation and publication remain pending.
+- Validation: source feature/dev/tag workflows, exact tag/archive inspection, synchronized beta.10 metadata, preserved beta.9-through-v0.1.0 history, development-registry validation, all five registry tests, JSON parsing, workspace validation, complete-diff review, and `git diff --check` pass. Registry feature workflow and publication remain pending.
 - Completion: pending.
 
 ### `main`
