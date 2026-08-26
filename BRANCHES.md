@@ -16,6 +16,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/ffmpeg-smart-v0.2.0-beta.6` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.6` launcher and cache-maintenance correction. |
 | `feature/ffmpeg-smart-update-disclaimer` | feature | merged | `dev` | `dev` | Advertise FFmpeg Smart Profiles `v0.2.0-beta.7` with degraded stream-copy fallback and install-versus-update scan guidance. |
 | `fix/ffmpeg-smart-v0.2.0-beta.8` | fix | merged | `dev` | `dev` | Replace beta.7 with the immutable corrective beta.8 canonical-wrapper repin. |
+| `fix/ffmpeg-smart-v0.2.0-beta.9` | fix | active | `dev` | `dev` | Restore persistent degraded notification-center reactivation after dismissal. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -50,6 +51,18 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: no description change, other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
 - Validation: exact tag/archive/source-pin inspection, 37 plugin tests, plugin and canonical GitHub workflows, the development registry validator, all five registry tests, JSON parsing, prior-version retention, workspace validation, `git diff --check`, complete-diff review, published raw-manifest agreement, and registry workflow run `33016050222` pass.
 - Completion: `dev` advertises immutable beta.8 from exact source commit `5309b16`; beta.7 through v0.1.0 remain indexed, the install/update scan disclaimer is unchanged, and no `main` or unrelated plugin metadata changed. Installed-update validation remains pending.
+
+### `fix/ffmpeg-smart-v0.2.0-beta.9`
+
+- Type: short-lived corrective branch
+- Status: active
+- Base: `dev` at `d3c1271` after beta.8 registry publication and evidence recording.
+- Target: `dev` only
+- Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.8` to corrective immutable `v0.2.0-beta.9`, making every new fallback invocation restore a dismissed notification-center entry immediately instead of producing only a toast.
+- Source evidence: `Dispatcharr-FFmpeg-Smart-Plugin` tag `v0.2.0-beta.9` resolves to commit `d25b44b8999dba3aaeb82e264fb75335bbcacc88`; its reviewed archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files, synchronized beta.9 metadata, and the explicit `is_dismissed: false` WebSocket payload.
+- Scope: FFmpeg Smart root/detail version metadata, preserved version history, registry changelog, and this branch ledger only.
+- Exclusions: no description change, other plugin metadata, stable `main`, minimum Dispatcharr version, canonical wrapper, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
+- Validation: official Dispatcharr v0.29.0 notification-contract review, exact tag/archive inspection, 37 plugin tests, source workflow runs, the development registry validator, all five registry tests, JSON parsing, prior-version retention, workspace validation, `git diff --check`, and complete-diff review pass. Published raw manifests, registry workflow, and installed beta.9 reactivation remain pending.
 
 ### `main`
 
