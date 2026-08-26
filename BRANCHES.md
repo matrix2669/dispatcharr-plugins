@@ -21,7 +21,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `main`
 
 - Type: long-lived
-- Status: merged into `dev` at `660297e`; publication validation pending the remote `dev` update
+- Status: active
 - Purpose: released Dispatcharr registry for plugins with explicitly approved GitHub Releases
 - Required publication evidence: user approval, stable source tag, normal GitHub Release, exact source commit, validated install archive, and successful Dispatcharr installation
 - Exclusions: beta tags, completed-but-unreleased versions, moving source branches, and unrelated `dev` entries
@@ -83,7 +83,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/ffmpeg-smart-v0.2.0-beta.3`
 
 - Type: short-lived feature branch
-- Status: active
+- Status: merged into `dev` at `660297e` and published through `dev` at `b005781`; remote raw-manifest and GitHub validation checks pass
 - Base: `dev` at `739937b`
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.2` to the approved immutable `0.2.0-beta.3` tag.
