@@ -1,6 +1,6 @@
 # Branches
 
-This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-25.
+This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-26.
 
 Before deleting a branch, record user-visible results in `CHANGELOG.md` and durable rationale in `DECISIONS.md` when applicable, then remove its index row and detailed record.
 
@@ -18,7 +18,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.10` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.10` telemetry-integrity correction only to the tagged-build channel. |
 | `feature/stream-sort-v0.3.6-beta.11` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.11` adaptive analysis policies only to the tagged-build channel. |
-| `feature/stream-sort-v0.3.6-beta.12` | short-lived | active | `dev` | `dev` | Publish the validated Stream Sort `0.3.6-beta.12` placeholder-efficiency and completion-reporting corrections only to the tagged-build channel. |
+| `feature/stream-sort-v0.3.6-beta.12` | short-lived | published; cleanup pending | `dev` | `dev` | Publish the validated Stream Sort `0.3.6-beta.12` placeholder-efficiency and completion-reporting corrections only to the tagged-build channel. |
 
 ## Branch Records
 
@@ -79,11 +79,13 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/stream-sort-v0.3.6-beta.12`
 
 - Purpose: publish the validated Stream Sort known-placeholder short circuit, obsolete analysis-cap removal, automatic reliability-action clarification, and runtime/dead-breakdown logging as immutable beta `0.3.6-beta.12`
+- Status: merged into and published through `dev` at `c4bd327791428202e8bc7df3f4551272c2876cec`
 - Base and target: current `dev`
 - Scope: Stream Sort root/detail manifests, registry changelog, branch ledger, and required workspace-standards reconciliation only
 - Exclusions: stable `main`, unrelated plugin entries, moving source branch URLs, Dispatcharr compatibility metadata, source behavior, and mutable runtime data
 - Source evidence: immutable tag `v0.3.6-beta.12` resolves to `9bec63a1d72082e1efffa42bd0c758dcf3bf29dd`; GitHub's archive preserves `stream_sorter/plugin.json`, reports synchronized beta.12, compiles, hashes to `c19f242e2e3b5c12f8a252c8e294270c40abd816acb539079abdb08845716c74`, and the source passes 151 tests, Python compilation, diff checks, workspace standards reconciliation, and governed-project validation
-- Completion: validate the full development registry, merge into `dev`, publish `dev`, confirm Dispatcharr installs beta.12, and remove this record only after the short-lived remote branch is deleted
+- Validation: the full development registry and all five registry tests pass; GitHub's `Validate manifests` check passed for `c4bd327`; the published raw manifests resolve beta.12 to source commit `9bec63a`; Dispatcharr's managed update reports `0.3.6-beta.12`, `loaded=true`, and `update_available=false`; the first scheduled beta.12 scan completed successfully in 5m 24s
+- Completion: publication and managed installation are complete. The remote branch and this record remain until separate branch-deletion approval is given.
 
 ### `dev`
 
