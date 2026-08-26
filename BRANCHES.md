@@ -18,7 +18,6 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.10` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.10` telemetry-integrity correction only to the tagged-build channel. |
 | `feature/stream-sort-v0.3.6-beta.11` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.11` adaptive analysis policies only to the tagged-build channel. |
-| `feature/session-completion-remote-checkpoint` | governance | integrated; retained | `dev` at `8bc250b` | `dev` | Reconcile the mandatory session-end GitHub checkpoint rule without changing either registry channel. |
 
 ## Branch Records
 
@@ -130,14 +129,3 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: no other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Releases, distributable ZIPs, or runtime code.
 - Validation: exact remote tag resolution to `6fb786d`, downloaded archive layout and beta.5 plugin metadata, development registry validator, all five registry unit tests, JSON parsing, prior-version retention, `git diff --check`, and complete-diff review pass; unrelated plugin entries remain unchanged.
 - Completion: `dev` advertises immutable beta.5 from exact source commit `6fb786d`; the raw root/detail manifests agree, beta.4 through v0.1.0 remain indexed, and the published manifest workflow completed successfully.
-
-### `feature/session-completion-remote-checkpoint`
-
-- Purpose: inherit the workspace rule that every session checkpoints all in-scope work on its owning GitHub branch while keeping registry publication separate.
-- Base: `dev` at `8bc250b701cbaddf109f1e482b02c372340bfd8a`.
-- Intended target: `dev`; integration was explicitly approved on `2026-08-26` after review.
-- Scope: `AGENT.md`, `WORKSPACE-STANDARDS.yaml`, and this branch record.
-- Exclusions: `manifest.json`, all plugin manifests, versions, source tags, Releases, archive URLs, `main`, installed registry state, or deployment.
-- Validation: workspace standards validation, the `dev` registry validator, all five registry tests, `git diff --check`, and complete-diff review pass; no manifest or channel entry changed.
-- Current state: integrated into `dev`; the feature ref is retained pending separate branch-cleanup authority.
-- Started: `2026-08-26`.
