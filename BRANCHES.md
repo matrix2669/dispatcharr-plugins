@@ -12,7 +12,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
 | `feature/ffmpeg-smart-v0.2.0-beta.3` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.3` test build. |
 | `feature/ffmpeg-smart-v0.2.0-beta.4` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.4` scoped-options test build. |
-| `feature/ffmpeg-smart-v0.2.0-beta.5` | feature | active | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.5` inherited-default guidance build. |
+| `feature/ffmpeg-smart-v0.2.0-beta.5` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.5` inherited-default guidance build. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -24,7 +24,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `main`
 
 - Type: long-lived
-- Status: active
+- Status: merged into `dev` at `af9af1f`; `dev` publication and remote validation pending
 - Purpose: released Dispatcharr registry for plugins with explicitly approved GitHub Releases
 - Required publication evidence: user approval, stable source tag, normal GitHub Release, exact source commit, validated install archive, and successful Dispatcharr installation
 - Exclusions: beta tags, completed-but-unreleased versions, moving source branches, and unrelated `dev` entries
@@ -128,3 +128,4 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Scope: FFmpeg Smart root/detail manifest metadata, preserved version history, registry changelog, and branch-ledger corrections only.
 - Exclusions: no other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Releases, distributable ZIPs, or runtime code.
 - Validation: exact remote tag resolution to `6fb786d`, downloaded archive layout and beta.5 plugin metadata, development registry validator, all five registry unit tests, JSON parsing, prior-version retention, `git diff --check`, and complete-diff review pass; unrelated plugin entries remain unchanged.
+- Completion: local `dev` advertises immutable beta.5 from exact source commit `6fb786d`; publication, raw-manifest agreement, and GitHub workflow checks remain pending.
