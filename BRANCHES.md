@@ -22,7 +22,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `main`
 
 - Type: long-lived
-- Status: merged into `dev` at `1d36df9`; publication pending
+- Status: merged into `dev` at `1d36df9` and published through `dev` at `877ef8b`; remote raw manifests and GitHub validation pass
 - Purpose: released Dispatcharr registry for plugins with explicitly approved GitHub Releases
 - Required publication evidence: user approval, stable source tag, normal GitHub Release, exact source commit, validated install archive, and successful Dispatcharr installation
 - Exclusions: beta tags, completed-but-unreleased versions, moving source branches, and unrelated `dev` entries
@@ -104,4 +104,4 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Scope: FFmpeg Smart root/detail manifest metadata, preserved version history, registry changelog, and this branch ledger only.
 - Exclusions: no other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Releases, distributable ZIPs, or runtime code.
 - Validation: exact plugin tag resolution and archive layout, development registry validator, all five registry unit tests, JSON parsing, prior-version retention, `git diff --check`, and complete-diff review pass; only FFmpeg Smart metadata, history, changelog, and this ledger changed.
-- Completion: publish `dev`, verify the remote manifests and GitHub checks, and retain prior immutable version entries.
+- Completion: `dev` advertises immutable beta.4 from exact source commit `08ce3c5`; the raw root/detail manifests agree, prior immutable versions remain indexed, and the published manifest workflow completed successfully.
