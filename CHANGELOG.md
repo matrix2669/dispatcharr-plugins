@@ -15,6 +15,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Changed
 
+- Advance Dispatcharr Stream Sort from `0.3.6-beta.10` to `0.3.6-beta.11` in `dev`, adding rolling media-change confirmation, a retryable minimum-bitrate floor, placeholder-specific evidence, adaptive dead TTLs, longer throughput TTLs, and shared analysis/sorting freshness rules.
 - Advance FFmpeg Smart Profiles from `0.2.0-beta.3` to `0.2.0-beta.4` in `dev`, adding scoped Inherit/Add/Replace controls for input, mapping, video tuning, audio, and MPEG-TS/output options while retaining Smart-owned hardware encoding.
 - Advance FFmpeg Smart Profiles from `0.2.0-beta.2` to `0.2.0-beta.3` in `dev`, adding conditional profile-apply restart feedback and separate advanced FFmpeg options.
 - Advance Dispatcharr Stream Sort from `0.3.6-beta.9` to corrective `0.3.6-beta.10` in `dev`, preserving scan-boundary health transitions and separating attempted throughput operations from retained numeric measurements.

@@ -16,6 +16,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.10` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.10` telemetry-integrity correction only to the tagged-build channel. |
+| `feature/stream-sort-v0.3.6-beta.11` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.11` adaptive analysis policies only to the tagged-build channel. |
 
 ## Branch Records
 
@@ -64,6 +65,15 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Source evidence: immutable tag `v0.3.6-beta.10` resolves to `3f62cdeb50bb41ad1d02eec3f05d5fffaad55c44`; the source passed 131 tests, Python compilation, version consistency, diff checks, and workspace standards reconciliation
 - Completion: validate the full development registry, merge into `dev`, publish `dev`, confirm Dispatcharr installs beta.10, and remove this record only after the short-lived remote branch is deleted
 
+### `feature/stream-sort-v0.3.6-beta.11`
+
+- Purpose: publish the reviewed Stream Sort rolling media history, minimum-bitrate retry floor, placeholder segmentation, adaptive dead TTL, and shared freshness policies as immutable beta `0.3.6-beta.11`
+- Base and target: current `dev`
+- Scope: Stream Sort root/detail manifests, registry changelog, deployment decision, and this branch ledger only
+- Exclusions: stable `main`, unrelated plugin entries, moving source branch URLs, and changes to Dispatcharr compatibility metadata
+- Source evidence: immutable tag `v0.3.6-beta.11` resolves to `3097708e9db5621db76ef8f6238e20a2e0498234`; the archive preserves `stream_sorter/plugin.json`, reports synchronized beta.11, and the source passes 138 tests, Python compilation, manifest parsing, diff checks, and workspace standards reconciliation
+- Completion: validate the full development registry, merge into `dev`, publish `dev`, confirm Dispatcharr installs beta.11, and remove this record only after the short-lived remote branch is deleted
+
 ### `dev`
 
 - Type: long-lived
@@ -79,7 +89,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Current Mustarrd DVR build: beta `0.2.13-beta.2` from source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
 - Current FFmpeg Smart build: beta `0.2.0-beta.4` from source commit `08ce3c5ab13f36a22b03826b4d3a847d39a339b3`; the immutable tag archive preserves the stable `ffmpeg-smart-profiles/` directory and all five runtime files. The plugin passed 25 source tests, canonical wrapper validation, remote immutable-source verification, repeated synchronization, and archive inspection; the development registry validator and all registry tests pass. Prior beta.2 live state-persistence, recache, restart, and `pipe:0` evidence remains the latest installed-runtime baseline until beta.4 deployment validation.
-- Current Stream Sort build: corrective beta `0.3.6-beta.10` from source commit `3f62cdeb50bb41ad1d02eec3f05d5fffaad55c44`; the immutable tag archive preserves `stream_sorter/plugin.json`, reports the synchronized beta.10 version, compiles, and passes all 131 source tests. Terminal history compares against scan-start health, and throughput status distinguishes attempted provider work from retained numeric measurements.
+- Current Stream Sort build: beta `0.3.6-beta.11` from source commit `3097708e9db5621db76ef8f6238e20a2e0498234`; the immutable tag archive preserves `stream_sorter/plugin.json`, reports the synchronized beta.11 version, compiles, and passes all 138 source tests. Rolling direct-probe media history suppresses one-scan noise, low-bitrate and placeholder outcomes receive explicit retry/report treatment, dead checks use adaptive exact TTLs, and sorting shares analysis freshness settings.
 
 ### `feature/ffmpeg-smart-v0.2.0-beta.3`
 
