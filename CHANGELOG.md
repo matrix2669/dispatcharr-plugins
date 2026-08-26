@@ -4,6 +4,10 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+### Documentation
+
+- Clarify in the FFmpeg Smart registry description that new installations require a hardware capability scan, updates may require a recheck, and managed profiles use basic stream copy without FFmpeg Smart or hardware acceleration until a required scan succeeds.
+
 ### Added
 
 - Advertise FFmpeg Smart Profiles `0.2.0-beta.1` in `dev` with persistent `/data/ffmpeg_smart_profiles` state and explicit required-cache errors.
@@ -15,6 +19,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Changed
 
+- Advance FFmpeg Smart Profiles from `0.2.0-beta.6` to `0.2.0-beta.7` in `dev`, preserving basic stream-copy service while capabilities are unavailable and re-displaying the persistent bypass notification after every new fallback invocation.
 - Advance FFmpeg Smart Profiles from `0.2.0-beta.5` to `0.2.0-beta.6` in `dev`, repairing executable modes after registry extraction, validating cache health against current hardware, and adding persistent hardware-scan notifications.
 - Advance Dispatcharr Stream Sort from `0.3.6-beta.11` to `0.3.6-beta.12` in `dev`, eliminating redundant known-placeholder retries and downstream probes, removing the obsolete per-run cap, clarifying automatic reliability collection, and adding runtime plus placeholder/dead completion logging.
 - Advance FFmpeg Smart Profiles from `0.2.0-beta.4` to `0.2.0-beta.5` in `dev`, showing the exact inherited defaults or runtime formulas beside every advanced mode selector while preserving user-owned custom option fields.

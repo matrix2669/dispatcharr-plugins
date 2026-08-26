@@ -200,3 +200,32 @@ An installed-directory backup duplicates files already recoverable through immut
 ## Consequences
 
 Stream Sort deployment procedures must use the registry's immutable versions for package rollback. Any future change that stores mutable state inside the plugin directory contradicts this decision and requires review before publication.
+
+---
+
+# ADR-008: Put FFmpeg Smart scan guidance in the registry description
+
+## Status
+
+Accepted
+
+## Date
+
+2026-08-26
+
+## Decision
+
+Use the FFmpeg Smart root and detail manifest `description` fields to state that new installations require a hardware capability scan, updates may require a capability recheck, and a required scan temporarily causes managed profiles to bypass FFmpeg Smart and hardware acceleration in favor of basic FFmpeg stream copy.
+
+## Reason
+
+Dispatcharr v0.29.0 displays the registry description in the managed plugin Details page before the Update action. Its manifest contract has no plugin-specific update-warning or release-note field, and its final install/update confirmation is generic core UI. The operator requested description placement rather than a Dispatcharr core change.
+
+## Consequences
+
+Root and detail descriptions must remain identical. The notice appears on the Details page and registry card surfaces that render the description; it does not appear as a custom block inside Dispatcharr's final confirmation modal. Future native warning-field support can supersede this placement after an official compatibility review.
+
+## Provenance
+
+- Dispatcharr v0.29.0 `PluginDetailPanel.jsx` and `PluginCard.jsx` review, 2026-08-26
+- Operator wording correction: new installs require a scan; updates may require one
