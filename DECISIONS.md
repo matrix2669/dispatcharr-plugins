@@ -174,3 +174,29 @@ Dispatcharr owns the consumer-side plugin contract. Registry validation can beco
 ## Consequences
 
 Agents must update repository validation and documentation when the Dispatcharr contract changes and perform an installation or update check on the new version. Publication is blocked when the matching current Dispatcharr requirements cannot be verified; cached requirements are not sufficient evidence.
+
+---
+
+# ADR-007: Roll back Stream Sort through immutable versions instead of package backups
+
+## Status
+
+Accepted
+
+## Date
+
+2026-08-25
+
+## Decision
+
+Live Dispatcharr Stream Sort updates do not create a backup copy of the installed plugin directory. The directory contains reproducible package files and no changing plugin state; mutable Stream Sort data remains under `/data` outside the package directory.
+
+Deployments still stage and validate the replacement package, preserve installed ownership, copy the package files, restart Dispatcharr, and inspect startup behavior. If rollback is needed, install a previously advertised immutable plugin version, which restores the package files from that version.
+
+## Reason
+
+An installed-directory backup duplicates files already recoverable through immutable registry version history. Version rollback is the simpler authoritative restoration path.
+
+## Consequences
+
+Stream Sort deployment procedures must use the registry's immutable versions for package rollback. Any future change that stores mutable state inside the plugin directory contradicts this decision and requires review before publication.
