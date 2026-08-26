@@ -4,6 +4,10 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+### Documentation
+
+- Clarify in the FFmpeg Smart registry description that new installations require a hardware capability scan, updates may require a recheck, and managed profiles use basic stream copy without FFmpeg Smart or hardware acceleration until a required scan succeeds.
+
 ### Added
 
 - Advertise FFmpeg Smart Profiles `0.2.0-beta.1` in `dev` with persistent `/data/ffmpeg_smart_profiles` state and explicit required-cache errors.

@@ -14,6 +14,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/ffmpeg-smart-v0.2.0-beta.4` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.4` scoped-options test build. |
 | `feature/ffmpeg-smart-v0.2.0-beta.5` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.5` inherited-default guidance build. |
 | `feature/ffmpeg-smart-v0.2.0-beta.6` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.6` launcher and cache-maintenance correction. |
+| `feature/ffmpeg-smart-update-disclaimer` | feature | active | `dev` | `dev` | Show install-versus-update hardware-scan guidance in the FFmpeg Smart registry description. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -21,6 +22,18 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/stream-sort-v0.3.6-beta.11` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.11` adaptive analysis policies only to the tagged-build channel. |
 
 ## Branch Records
+
+### `feature/ffmpeg-smart-update-disclaimer`
+
+- Type: short-lived feature branch
+- Status: active
+- Base: `dev` at `eab2f93f7c9af0daf425ed17b324e7ddb7d75dc6`
+- Target: `dev` only after the matching immutable plugin build is approved for publication
+- Purpose: show that new FFmpeg Smart installations require a hardware capability scan and updates may require a recheck, with degraded stream-copy behavior until a required scan succeeds.
+- Scope: FFmpeg Smart root/detail descriptions, registry changelog, and this branch ledger only.
+- Exclusions: no version/archive mutation before an immutable plugin tag exists, no other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, or runtime code.
+- Related work: `Dispatcharr-FFmpeg-Smart-Plugin` branch `feature/degraded-proxy-fallback`.
+- Validation: root/detail descriptions agree; the development registry validator, all five registry tests, JSON parsing, workspace validation, and `git diff --check` pass. Publication remains blocked until the matching immutable plugin tag is approved.
 
 ### `main`
 

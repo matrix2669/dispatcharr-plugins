@@ -1,7 +1,7 @@
 {
   "slug": "ffmpeg-smart-profiles",
   "name": "FFmpeg Smart Profiles",
-  "description": "Creates managed Dispatcharr stream/output profiles backed by a hardware-aware FFmpeg wrapper with multi-GPU selection and concurrent-capacity benchmarking.",
+  "description": "Creates managed Dispatcharr stream/output profiles backed by a hardware-aware FFmpeg wrapper. New installations require a hardware capability scan; updates may require a capability recheck. Until a required scan completes successfully, FFmpeg Smart and hardware acceleration are bypassed and managed profiles use basic FFmpeg stream copy.",
   "author": "matrix2669",
   "license": "MIT",
   "repo_url": "https://github.com/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin",
