@@ -26,7 +26,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/ffmpeg-smart-update-disclaimer`
 
 - Type: short-lived feature branch
-- Status: merged into `dev` at `4b9d4a5`; remote publication validation pending
+- Status: merged into `dev` at `4b9d4a5` and published through `dev` at `f885da0`; remote raw manifests and GitHub validation pass
 - Base: `dev` at `eab2f93f7c9af0daf425ed17b324e7ddb7d75dc6`
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.6` to approved immutable `v0.2.0-beta.7`, while showing that new installations require a hardware capability scan, updates may require a recheck, and managed profiles fall back to basic stream copy until a required scan succeeds.
@@ -34,7 +34,8 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Scope: FFmpeg Smart root/detail metadata and descriptions, preserved version history, registry changelog, and this branch ledger only.
 - Exclusions: no other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
 - Related work: `Dispatcharr-FFmpeg-Smart-Plugin` branch `feature/degraded-proxy-fallback`.
-- Validation: exact tag resolution and archive layout, synchronized beta.7 plugin metadata, 37 plugin tests, canonical-wrapper validation, remote immutable-source verification, root/detail description agreement, the development registry validator, all five registry tests, JSON parsing, prior-version retention, workspace validation, `git diff --check`, and complete-diff review pass.
+- Validation: exact tag resolution and archive layout, synchronized beta.7 plugin metadata, 37 plugin tests, canonical-wrapper validation, remote immutable-source verification, root/detail description agreement, the development registry validator, all five registry tests, JSON parsing, prior-version retention, workspace validation, `git diff --check`, complete-diff review, published raw-manifest agreement, and GitHub workflow run `33014922697` pass.
+- Completion: `dev` advertises immutable beta.7 from exact source commit `600ba14`; beta.6 through v0.1.0 remain indexed, and no `main` or unrelated plugin metadata changed. Installed-update validation remains pending.
 
 ### `main`
 
