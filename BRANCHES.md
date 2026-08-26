@@ -16,7 +16,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/ffmpeg-smart-v0.2.0-beta.6` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.6` launcher and cache-maintenance correction. |
 | `feature/ffmpeg-smart-update-disclaimer` | feature | merged | `dev` | `dev` | Advertise FFmpeg Smart Profiles `v0.2.0-beta.7` with degraded stream-copy fallback and install-versus-update scan guidance. |
 | `fix/ffmpeg-smart-v0.2.0-beta.8` | fix | merged | `dev` | `dev` | Replace beta.7 with the immutable corrective beta.8 canonical-wrapper repin. |
-| `fix/ffmpeg-smart-v0.2.0-beta.9` | fix | active | `dev` | `dev` | Restore persistent degraded notification-center reactivation after dismissal. |
+| `fix/ffmpeg-smart-v0.2.0-beta.9` | fix | merged | `dev` | `dev` | Restore persistent degraded notification-center reactivation after dismissal. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -55,7 +55,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `fix/ffmpeg-smart-v0.2.0-beta.9`
 
 - Type: short-lived corrective branch
-- Status: active
+- Status: merged into `dev` at `5fe0171`; remote publication validation pending
 - Base: `dev` at `d3c1271` after beta.8 registry publication and evidence recording.
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.8` to corrective immutable `v0.2.0-beta.9`, making every new fallback invocation restore a dismissed notification-center entry immediately instead of producing only a toast.
@@ -132,7 +132,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Validation: the development validator and all registry tests pass; the stable tag resolves to source commit `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`
 - Current Mustarrd DVR build: beta `0.2.13-beta.2` from source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
-- Current FFmpeg Smart build: corrective beta `0.2.0-beta.8` from source commit `5309b16ae2440f36238fa5a5426cf2e2ecc9f918`; the immutable tag archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files, and canonical `ffmpeg-asr v1.1.0-beta.6` pin. The plugin passed 37 source tests covering degraded stream-copy fallback, notification re-display after every invocation, launcher behavior, cache status, profile generation, and restart semantics; canonical-wrapper validation, source and tag GitHub workflows, archive inspection, the development registry validator, and all registry tests pass.
+- Current FFmpeg Smart build: corrective beta `0.2.0-beta.9` from source commit `d25b44b8999dba3aaeb82e264fb75335bbcacc88`; the immutable tag archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files, explicit notification reactivation payload, and canonical `ffmpeg-asr v1.1.0-beta.6` pin. The plugin passed 37 source tests covering degraded stream-copy fallback, persistent notification restoration, launcher behavior, cache status, profile generation, and restart semantics; official Dispatcharr v0.29.0 contract review, canonical-wrapper validation, source and tag GitHub workflows, archive inspection, the development registry validator, and all registry tests pass.
 - Current Stream Sort build: beta `0.3.6-beta.12` from source commit `9bec63a1d72082e1efffa42bd0c758dcf3bf29dd`; the immutable tag archive preserves `stream_sorter/plugin.json`, reports the synchronized beta.12 version, compiles, and passes all 151 source tests. Known placeholder confirmations now avoid redundant retries and downstream probes, legacy per-run caps are ignored, automatic reliability collection is explicit, and completion logs include runtime plus the authoritative placeholder/other-dead breakdown.
 
 ### `feature/ffmpeg-smart-v0.2.0-beta.3`
