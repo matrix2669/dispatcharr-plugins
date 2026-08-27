@@ -241,3 +241,14 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: no other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Releases, distributable ZIPs, runtime code, or Dispatcharr core behavior.
 - Validation: the exact remote tag resolves to `e9e7554`; the downloaded GitHub archive identifies that commit and contains beta.6 under the stable directory with the beta.4 canonical wrapper pin. Development registry validation, all five unit tests, JSON parsing, prior-version retention, complete-diff review, published raw root/detail manifest agreement, and the GitHub manifest workflow pass. The live instance still has beta.5 installed and its last cached registry refresh predates publication, so installed beta.6 validation remains pending.
 - Completion: `dev` advertises immutable beta.6 from exact source commit `e9e7554`; beta.5 through v0.1.0 remain indexed, and no `main` or unrelated plugin metadata changed.
+
+## FFmpeg Smart v0.2.1-beta.1 live validation (2026-08-27)
+
+- Registry deployment: dev at `503c7c233bb75d7d36883de11925097d7fd95385`.
+- Plugin artifact: `v0.2.1-beta.1` at `d95aaf649b02e23dab76f19d274cb765b75bbca6`.
+- Canonical wrapper: `v1.1.1-beta.1` at `ecc64244dae2c0e80761da6f16be92d95b91d29a`; installed SHA-256 `785a2ffe283452006ffa50d36e12fd2a013f54e0bd233f6d3c8d87f8a46f0f71`.
+- Managed Install/Update action completed with both profiles unchanged and no conflicts; saved non-probe settings were preserved.
+- Hardware cache rebuilt successfully; verified capacities were 15 streams on renderD128 and 18 streams on renderD129.
+- HDHomeRun stream 185235 selected the fast 1s/1MB tier and produced 7,333,880 bytes during the bounded live check.
+- TVEverywhere CSPAN3 stream 193352 detected incomplete fast-tier audio metadata, selected the expanded 2s/2MB tier, and produced 7,702,924 bytes during the bounded live check.
+- Both live processes accepted normal termination with no orphan FFmpeg processes. Stable release publication remains excluded pending the documented licensing resolution.
