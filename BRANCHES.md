@@ -19,7 +19,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/ffmpeg-smart-v0.2.0-beta.9` | fix | merged | `dev` | `dev` | Restore persistent degraded notification-center reactivation after dismissal. |
 | `fix/ffmpeg-smart-v0.2.0-beta.10` | fix | merged | `dev` | `dev` | Refresh persistent degraded notifications from Dispatcharr's authoritative API. |
 | `fix/ffmpeg-smart-v0.2.0-beta.11` | fix | merged | `dev` | `dev` | Publish canonical Map All and benchmark-lock corrections for installed validation. |
-| `release/ffmpeg-smart-v0.2.0-dev` | release | active | `dev` | `dev` | Align the tagged-build channel with the completed stable FFmpeg Smart `v0.2.0` build. |
+| `release/ffmpeg-smart-v0.2.0-dev` | release | merged | `dev` | `dev` | Align the tagged-build channel with the completed stable FFmpeg Smart `v0.2.0` build. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -31,13 +31,13 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `release/ffmpeg-smart-v0.2.0-dev`
 
 - Type: short-lived release-alignment branch
-- Status: active
+- Status: merged into and published through `dev` at `08ae191641105337144edd6f7d64bec488afe9f7`; public raw metadata and workflow `33027886842` pass
 - Base and target: `dev`
 - Purpose: replace the completed FFmpeg Smart beta.11 entry with stable `v0.2.0`, reusing the exact `main` detail manifest because both channels advertise the identical immutable build.
 - Scope: the `dev` root FFmpeg Smart entry, registry changelog, and this branch ledger only.
 - Exclusions: no unrelated plugin metadata, no duplicate stable detail manifest, no source code, no GitHub Release, and no distributable ZIP.
 - Source evidence: plugin tag `v0.2.0` resolves to `6eb5c8c8f437dcca6802967ceb193e37f984a7c1`, with canonical `ffmpeg-asr v1.1.0` at `448837f4f6267de1c6705cb670bcdb0c6991614f`.
-- Completion: validate the development registry, merge into `dev`, publish the raw manifest, and preserve the beta.11 detail history unindexed.
+- Completion: `dev` advertises stable `0.2.0`, reuses the exact `main` detail manifest, preserves beta.11 detail metadata as unindexed history, and passes the seven-test validator suite plus public raw-manifest verification.
 
 ### `feature/ffmpeg-smart-update-disclaimer`
 
