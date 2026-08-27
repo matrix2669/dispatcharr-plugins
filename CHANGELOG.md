@@ -4,6 +4,8 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+- Align the development channel with completed stable FFmpeg Smart Profiles `0.2.0`, reusing the identical stable detail manifest while retaining beta.11 metadata as unindexed history.
+
 ### Documentation
 
 - Clarify in the FFmpeg Smart registry description that new installations require a hardware capability scan, updates may require a recheck, and managed profiles use basic stream copy without FFmpeg Smart or hardware acceleration until a required scan succeeds.

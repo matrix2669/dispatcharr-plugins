@@ -66,6 +66,11 @@ def validate_version(version: str, channel: str, context: str) -> None:
         raise ValidationError(f"{context}: stable channel cannot advertise beta version {version!r}")
 
 
+def requires_local_detail_validation(channel: str, detail_channel: str) -> bool:
+    """Return whether the referenced detail manifest belongs to this checkout."""
+    return not (channel == "dev" and detail_channel == "main")
+
+
 def validate_channel(root: Path, channel: str) -> None:
     expected_name = "matrix2669 Plugins" if channel == "main" else "matrix2669 Plugins (dev)"
     expected_registry_url = (
@@ -113,6 +118,13 @@ def validate_channel(root: Path, channel: str) -> None:
         path_match = re.search(r"/plugins/([^/]+)/manifest\.json$", urlparse(manifest_url).path)
         if not path_match:
             raise ValidationError(f"{context}: manifest_url must end with /plugins/<directory>/manifest.json")
+
+        # A dev entry may deliberately reuse an unchanged main detail manifest.
+        # The main channel validates that file; the historical local dev copy is
+        # unindexed and must not be mistaken for the referenced main document.
+        if not requires_local_detail_validation(channel, detail_channel):
+            continue
+
         detail_path = root / "plugins" / path_match.group(1) / "manifest.json"
         if not detail_path.is_file():
             raise ValidationError(f"{context}: missing {detail_path.relative_to(root)}")

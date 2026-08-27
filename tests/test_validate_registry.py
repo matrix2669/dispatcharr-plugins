@@ -1,6 +1,11 @@
 import unittest
 
-from scripts.validate_registry import ValidationError, archive_ref, validate_version
+from scripts.validate_registry import (
+    ValidationError,
+    archive_ref,
+    requires_local_detail_validation,
+    validate_version,
+)
 
 
 class VersionValidationTests(unittest.TestCase):
@@ -31,6 +36,15 @@ class ArchiveValidationTests(unittest.TestCase):
     def test_rejects_moving_branch(self):
         with self.assertRaises(ValidationError):
             archive_ref("https://api.github.com/repos/example/plugin/zipball/dev", "test")
+
+
+class DetailManifestValidationTests(unittest.TestCase):
+    def test_dev_reusing_main_does_not_validate_stale_local_detail(self):
+        self.assertFalse(requires_local_detail_validation("dev", "main"))
+
+    def test_same_channel_detail_is_validated_locally(self):
+        self.assertTrue(requires_local_detail_validation("dev", "dev"))
+        self.assertTrue(requires_local_detail_validation("main", "main"))
 
 
 if __name__ == "__main__":
