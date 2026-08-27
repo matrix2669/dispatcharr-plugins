@@ -229,3 +229,35 @@ Root and detail descriptions must remain identical. The notice appears on the De
 
 - Dispatcharr v0.29.0 `PluginDetailPanel.jsx` and `PluginCard.jsx` review, 2026-08-26
 - Operator wording correction: new installs require a scan; updates may require one
+
+---
+
+# ADR-009: Publish FFmpeg Smart adaptive probing only to the development channel
+
+## Status
+
+Accepted
+
+## Date
+
+2026-08-27
+
+## Decision
+
+Advance only the `dev` channel's FFmpeg Smart Profiles entry from completed stable `0.2.0` to immutable beta `0.2.1-beta.1` at source commit `d95aaf649b02e23dab76f19d274cb765b75bbca6`. Point the root entry back to the `dev` detail manifest, prepend beta.1, import the previously advertised stable `0.2.0` record from `main`, preserve older beta history, and leave the stable `main` channel unchanged.
+
+Publish the tagged build for live Dispatcharr testing of canonical adaptive probing, manual probe-window migration, and profile-update browser-refresh guidance. Deployment authorization covers the development registry and live test instance only. It does not authorize a GitHub Release, distributable ZIP, stable registry update, or source-branch promotion.
+
+## Reason
+
+The wrapper and plugin beta tags are immutable, locally validated, and archive-verified. The user explicitly approved beta tagging and deployment so representative HDHomeRun sources and the deterministic CSPAN3 HE-AACv2 delayed-metadata edge can be validated through the actual managed profile path before broader publication.
+
+## Consequences
+
+Dispatcharr instances configured with the `dev` registry can discover and install `0.2.1-beta.1`. The root and detail manifests must agree on the exact tag, commit, URL, and minimum version while preserving stable `0.2.0`, beta.11, and older immutable history. Publication is complete only after registry validation, exact remote-head verification, repository refresh, installed-version verification, profile reconciliation, and live HDHomeRun/CSPAN3 checks.
+
+## Provenance
+
+- Operator decision Q&A and beta deployment approval, 2026-08-27
+- Plugin tag: `v0.2.1-beta.1` at `d95aaf649b02e23dab76f19d274cb765b75bbca6`
+- Canonical wrapper tag: `v1.1.1-beta.1` at `ecc64244dae2c0e80761da6f16be92d95b91d29a`

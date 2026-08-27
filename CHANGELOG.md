@@ -4,6 +4,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+- Advance FFmpeg Smart Profiles from completed stable `0.2.0` to `0.2.1-beta.1` in `dev`, adding metadata-validated adaptive input probing, safe migration of manual probe-window settings, and browser-refresh guidance in the profile update confirmation.
 - Align the development channel with completed stable FFmpeg Smart Profiles `0.2.0`, reusing the identical stable detail manifest while retaining beta.11 metadata as unindexed history.
 
 ### Documentation
