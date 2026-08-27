@@ -18,7 +18,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/ffmpeg-smart-v0.2.0-beta.8` | fix | merged | `dev` | `dev` | Replace beta.7 with the immutable corrective beta.8 canonical-wrapper repin. |
 | `fix/ffmpeg-smart-v0.2.0-beta.9` | fix | merged | `dev` | `dev` | Restore persistent degraded notification-center reactivation after dismissal. |
 | `fix/ffmpeg-smart-v0.2.0-beta.10` | fix | merged | `dev` | `dev` | Refresh persistent degraded notifications from Dispatcharr's authoritative API. |
-| `fix/ffmpeg-smart-v0.2.0-beta.11` | fix | active | `dev` | `dev` | Publish canonical Map All and benchmark-lock corrections for installed validation. |
+| `fix/ffmpeg-smart-v0.2.0-beta.11` | fix | merged | `dev` | `dev` | Publish canonical Map All and benchmark-lock corrections for installed validation. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -83,14 +83,15 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `fix/ffmpeg-smart-v0.2.0-beta.11`
 
 - Type: short-lived corrective branch
-- Status: active
+- Status: merged into `dev` at `34e2c61a6611b525d10a5eb89180b9915311a95e9`; remote raw manifests and GitHub validation pass
 - Base: `dev` at `065aff5e96e7ca34eb02137656f97decc4db2a51` after refreshing the registry and confirming workspace standards revision `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`.
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from `0.2.0-beta.10` to corrective immutable `v0.2.0-beta.11`, preserving MPEG-TS-compatible auxiliary mappings and keeping degraded stream-copy routing authoritative for the full hardware recheck.
 - Source evidence: `Dispatcharr-FFmpeg-Smart-Plugin v0.2.0-beta.11` resolves to `80c40ea164e5711dfbc37e8c465e943b9e1ee9ea`; source branch workflow `33024879688`, dev workflow `33024916207`, and tag workflow `33024939375` pass. The reviewed tag archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files, executable launcher/wrapper modes, synchronized beta.11 metadata, and canonical `ffmpeg-asr v1.1.0-beta.7` pin.
 - Scope: FFmpeg Smart root/detail version metadata, preserved version history, registry changelog, and this branch ledger only.
 - Exclusions: no description change, other plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
-- Validation: exact tag/archive/source-pin inspection, 39 source tests, canonical and plugin GitHub workflows, the development registry validator, all registry tests, JSON parsing, prior-version retention, workspace validation, complete-diff review, and `git diff --check`; registry workflow, public raw-manifest agreement, and installed beta.11 validation remain pending.
+- Validation: exact tag/archive/source-pin inspection, 39 source tests, canonical and plugin GitHub workflows, the development registry validator, all registry tests, JSON parsing, prior-version retention, workspace validation, complete-diff review, `git diff --check`, registry workflow `33025150782`, public raw-manifest agreement, installed executable modes and wrapper checksum, live service-user fallback/notification behavior, completed 18/15 capacity scan, and four-stream Map All with a copied DVB subtitle all pass.
+- Completion: `dev` advertises immutable beta.11 from exact source commit `80c40ea`; beta.10 through v0.1.0 remain indexed, the install/update scan disclaimer is unchanged, and no `main` or unrelated plugin metadata changed. Installed settings and managed profiles were restored after validation.
 - Started: `2026-08-26`.
 
 ### `main`
@@ -161,7 +162,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Validation: the development validator and all registry tests pass; the stable tag resolves to source commit `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`
 - Current Mustarrd DVR build: beta `0.2.13-beta.2` from source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
-- Current FFmpeg Smart build: corrective beta `0.2.0-beta.10` from source commit `2ceb64a178ee626c833c5d5b786f35e8ed86c99f`; the immutable tag archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files, authoritative notification-list refresh behavior, and canonical `ffmpeg-asr v1.1.0-beta.6` pin. The plugin passed 37 source tests covering degraded stream-copy fallback, persistent notification restoration, launcher behavior, cache status, profile generation, and restart semantics; official Dispatcharr v0.29.0 contract review, canonical-wrapper validation, source and tag GitHub workflows, archive inspection, the development registry validator, all registry tests, registry workflow run `33018930141`, and public raw-manifest verification pass. Installed beta.10 validation remains pending.
+- Current FFmpeg Smart build: corrective beta `0.2.0-beta.11` from source commit `80c40ea164e5711dfbc37e8c465e943b9e1ee9ea`; the immutable tag archive preserves the stable `ffmpeg-smart-profiles/` directory, all five runtime files with executable launcher/wrapper modes, authoritative notification-list refresh behavior, and canonical `ffmpeg-asr v1.1.0-beta.7` pin. The plugin passed 39 source tests, canonical/plugin/registry GitHub workflows, archive and public raw-manifest verification, installed checksum/mode checks, live persistent fallback during a full service-user recheck, restored 18/15 hardware capacities, and four-stream Map All with copied secondary audio and DVB subtitle. Installed settings and profiles were restored after validation.
 - Current Stream Sort build: beta `0.3.6-beta.12` from source commit `9bec63a1d72082e1efffa42bd0c758dcf3bf29dd`; the immutable tag archive preserves `stream_sorter/plugin.json`, reports the synchronized beta.12 version, compiles, and passes all 151 source tests. Known placeholder confirmations now avoid redundant retries and downstream probes, legacy per-run caps are ignored, automatic reliability collection is explicit, and completion logs include runtime plus the authoritative placeholder/other-dead breakdown.
 
 ### `feature/ffmpeg-smart-v0.2.0-beta.3`
