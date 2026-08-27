@@ -20,6 +20,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/ffmpeg-smart-v0.2.0-beta.10` | fix | merged | `dev` | `dev` | Refresh persistent degraded notifications from Dispatcharr's authoritative API. |
 | `fix/ffmpeg-smart-v0.2.0-beta.11` | fix | merged | `dev` | `dev` | Publish canonical Map All and benchmark-lock corrections for installed validation. |
 | `release/ffmpeg-smart-v0.2.0-dev` | release | merged | `dev` | `dev` | Align the tagged-build channel with the completed stable FFmpeg Smart `v0.2.0` build. |
+| `feature/ffmpeg-smart-v0.2.1-beta.1` | feature | active | `dev` | `dev` | Advertise the immutable adaptive-probing FFmpeg Smart Profiles `v0.2.1-beta.1` test build. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -27,6 +28,19 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/stream-sort-v0.3.6-beta.11` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.11` adaptive analysis policies only to the tagged-build channel. |
 
 ## Branch Records
+
+### `feature/ffmpeg-smart-v0.2.1-beta.1`
+
+- Type: short-lived feature publication branch
+- Status: active
+- Base: `dev` at `1a954542bcfdeee6d3496ab486314ddadfdc2a7a` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`.
+- Target: `dev` only
+- Purpose: advance FFmpeg Smart Profiles from completed stable `0.2.0` to approved immutable `v0.2.1-beta.1` for adaptive input-probing validation.
+- Source evidence: plugin tag `v0.2.1-beta.1` resolves to `d95aaf649b02e23dab76f19d274cb765b75bbca6`; its verified archive reports beta.1, preserves executable launcher/wrapper modes, and pins canonical `ffmpeg-asr v1.1.1-beta.1` commit `ecc64244dae2c0e80761da6f16be92d95b91d29a` at SHA-256 `785a2ffe283452006ffa50d36e12fd2a013f54e0bd233f6d3c8d87f8a46f0f71`.
+- Scope: FFmpeg Smart root/detail metadata, imported stable `0.2.0` plus preserved beta history, registry changelog, decision record, and this branch ledger only.
+- Exclusions: no unrelated plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
+- Validation: source and plugin local gates, immutable tag/archive inspection, development registry validation, and complete diff review pass; publication, live update, HDHomeRun, and CSPAN3 checks remain pending.
+
 
 ### `release/ffmpeg-smart-v0.2.0-dev`
 
