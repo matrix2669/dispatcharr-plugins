@@ -174,3 +174,65 @@ Dispatcharr owns the consumer-side plugin contract. Registry validation can beco
 ## Consequences
 
 Agents must update repository validation and documentation when the Dispatcharr contract changes and perform an installation or update check on the new version. Publication is blocked when the matching current Dispatcharr requirements cannot be verified; cached requirements are not sufficient evidence.
+
+---
+
+# ADR-008: Put FFmpeg Smart scan guidance in the registry description
+
+## Status
+
+Accepted
+
+## Date
+
+2026-08-26
+
+## Decision
+
+Use the FFmpeg Smart root and detail manifest `description` fields to state that new installations require a hardware capability scan, updates may require a capability recheck, and a required scan temporarily causes managed profiles to bypass FFmpeg Smart and hardware acceleration in favor of basic FFmpeg stream copy.
+
+## Reason
+
+Dispatcharr v0.29.0 displays the registry description in the managed plugin Details page before the Update action. Its manifest contract has no plugin-specific update-warning or release-note field, and its final install/update confirmation is generic core UI.
+
+## Consequences
+
+Root and detail descriptions must remain identical. The notice appears on the Details page and registry card surfaces that render the description; it does not appear as a custom block inside Dispatcharr's final confirmation modal.
+
+---
+
+# ADR-009: Allow FFmpeg Smart v0.2.0 in main without a GitHub Release
+
+## Status
+
+Accepted as an explicitly user-approved workspace-standards exception; supersedes ADR-003 only for FFmpeg Smart Profiles `v0.2.0`
+
+## Date
+
+2026-08-26
+
+## Decision
+
+Advertise the exact completed FFmpeg Smart Profiles tag `v0.2.0` in `dispatcharr-plugins:main` using its immutable GitHub tag archive and source commit `6eb5c8c8f437dcca6802967ceb193e37f984a7c1`. Preserve the prior stable `0.1.0` entry in version history and every unrelated stable plugin entry.
+
+Do not create or imply a GitHub Release, manual ZIP, checksum asset, or resolved license. Keep the normal Release requirement for every other plugin/version. Review and remove this exception when inherited-wrapper licensing is resolved and before any later FFmpeg Smart version is considered for `main`.
+
+## Reason
+
+The beta.11 and stable source trees passed complete automated, archive, installed-update, hardware-cache, fallback, notification, advanced-option, `pipe:0`, and Map All validation. The operator explicitly approved stable-channel deployment of that exact completed tag while directing that Release publication remain blocked until licensing is resolved.
+
+## Alternatives considered
+
+- Keep `v0.2.0` only in `dev`. Rejected by explicit operator direction after all promotion gates passed.
+- Publish a GitHub Release without a manual ZIP. Rejected because licensing remains unresolved and the operator explicitly prohibited a Release.
+- Generalize the policy to any completed tag. Rejected because the authorization is exact and version-specific.
+
+## Consequences
+
+For this one entry, `main` communicates operator-approved deployment maturity rather than GitHub Release existence. The stable manifest and README disclose the exception. A correction requires a new version and new explicit authorization; this exception cannot be inherited.
+
+## Provenance
+
+- Operator direction in Codex on `2026-08-26`
+- Plugin stable tag: `v0.2.0` at `6eb5c8c8f437dcca6802967ceb193e37f984a7c1`
+- Canonical stable tag: `ffmpeg-asr v1.1.0` at `448837f4f6267de1c6705cb670bcdb0c6991614f`

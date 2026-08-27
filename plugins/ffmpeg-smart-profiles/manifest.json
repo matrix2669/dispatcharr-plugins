@@ -1,23 +1,31 @@
 {
   "slug": "ffmpeg-smart-profiles",
   "name": "FFmpeg Smart Profiles",
-  "description": "Creates managed Dispatcharr stream/output profiles backed by a hardware-aware FFmpeg wrapper with multi-GPU selection and concurrent-capacity benchmarking.",
+  "description": "Creates managed Dispatcharr stream/output profiles backed by a hardware-aware FFmpeg wrapper. New installations require a hardware capability scan; updates may require a capability recheck. Until a required scan completes successfully, FFmpeg Smart and hardware acceleration are bypassed and managed profiles use basic FFmpeg stream copy.",
   "author": "matrix2669",
   "license": "MIT",
   "repo_url": "https://github.com/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin",
   "registry_name": "matrix2669 Plugins",
   "registry_url": "https://github.com/matrix2669/dispatcharr-plugins",
-  "latest_version": "0.1.0",
+  "latest_version": "0.2.0",
   "latest": {
-    "version": "0.1.0",
-    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.1.0",
-    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.1.0",
-    "commit_sha": "1581f3ffb78c5a77ce642759ee166c8902b16a6e",
-    "commit_sha_short": "1581f3f",
-    "build_timestamp": "2026-08-19T18:44:04Z",
+    "version": "0.2.0",
+    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.2.0",
+    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.2.0",
+    "commit_sha": "6eb5c8c8f437dcca6802967ceb193e37f984a7c1",
+    "commit_sha_short": "6eb5c8c",
+    "build_timestamp": "2026-08-27T00:35:46Z",
     "min_dispatcharr_version": "v0.29.0"
   },
   "versions": [
+    {
+      "version": "0.2.0",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.2.0",
+      "commit_sha": "6eb5c8c8f437dcca6802967ceb193e37f984a7c1",
+      "commit_sha_short": "6eb5c8c",
+      "build_timestamp": "2026-08-27T00:35:46Z",
+      "min_dispatcharr_version": "v0.29.0"
+    },
     {
       "version": "0.1.0",
       "url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.1.0",

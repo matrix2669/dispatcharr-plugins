@@ -18,12 +18,13 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 
 - Type: long-lived
 - Status: active
-- Purpose: released Dispatcharr registry for plugins with explicitly approved GitHub Releases
-- Required publication evidence: user approval, stable source tag, normal GitHub Release, exact source commit, validated install archive, and successful Dispatcharr installation
+- Purpose: stable Dispatcharr registry for plugins with explicitly approved GitHub Releases plus the exact FFmpeg Smart `v0.2.0` exception
+- Required publication evidence: normally user approval, stable source tag, normal GitHub Release, exact source commit, validated install archive, and successful Dispatcharr installation; FFmpeg Smart `v0.2.0` instead requires its dedicated exception, exact tag/commit/archive, complete beta/stable validation, and explicit no-Release instruction
 - Exclusions: beta tags, completed-but-unreleased versions, moving source branches, and unrelated `dev` entries
 - Promotion rule: make a focused change from `main`; never merge the complete `dev` catalog into this branch
 - Registry URL: `https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/manifest.json`
 - Current Arr Stack build: released version `0.2.0` at source commit `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`
+- Current FFmpeg Smart build: pending focused promotion to completed stable tag `v0.2.0` at source commit `6eb5c8c8f437dcca6802967ceb193e37f984a7c1`; no GitHub Release or manual ZIP is authorized.
 - Validation: the stable validator and all registry tests pass; the source Release includes a verified plugin-only ZIP and SHA-256 checksum
 - Workspace governance: `main` and `dev` each contain the mandatory workspace standards reconciliation gate at revision `sha256:2717b7fb651e3541b6af68a4793b3c056ea3053bb177e629c97bf2d03a50878f`; this reconciliation changes no registry manifest or plugin publication metadata.
 

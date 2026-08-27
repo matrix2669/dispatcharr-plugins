@@ -10,6 +10,14 @@ A contradiction blocks work. Ask focused follow-up questions to establish whethe
 
 Missing workspace standards or Git history is a hard block. Standards exceptions require explicit user authorization and must be stated in a dedicated section of this file with exact scope, rationale, authority, approval date, and review/removal trigger; `DECISIONS.md` cannot waive workspace standards.
 
+## Workspace Standards Exception: FFmpeg Smart v0.2.0 without a Release
+
+- Exact scope: only the FFmpeg Smart Profiles `v0.2.0` tag may be advertised through this repository's `main` channel without a GitHub Release. Root/detail metadata must reference the immutable tag archive and exact source commit. The exception does not authorize a Release, manual ZIP, checksum asset, license claim, another FFmpeg Smart version, or another plugin.
+- Rationale: the complete beta.11 cycle and stable source trees passed automated, archive, installed, hardware, fallback, notification, and advanced-option validation. The operator explicitly wants this exact completed build available from the stable Dispatcharr channel while continuing to withhold Release packaging until inherited-wrapper licensing is resolved.
+- Authority: explicit user direction in Codex on `2026-08-26`: promote both source branches and tags and update the stable manifest, but do not create a Release until the license is resolved.
+- Approval date: `2026-08-26`.
+- Review/removal trigger: review immediately when inherited-wrapper licensing is resolved and before any later FFmpeg Smart version is considered for `main`. Remove the exception after FFmpeg Smart returns to a Release-backed stable version or is withdrawn from `main`; it cannot be reused for a correction or later version.
+
 
 ## Purpose
 
@@ -48,8 +56,8 @@ Track every current branch in `BRANCHES.md`. Before deleting a branch, preserve 
 - When `dev` and `main` advertise the same released plugin version, the `dev` root index may reference that plugin's `main` per-plugin manifest. Do not duplicate a no-op detail-manifest update.
 - When `dev` advertises a beta or a completed-but-unreleased stable tag, its root entry must reference a `dev` per-plugin manifest carrying that exact version.
 - A tag alone never authorizes stable publication.
-- Add a plugin to this repository's `main` branch only after the user explicitly approves and publishes a stable GitHub Release in the plugin source repository.
-- An unreleased plugin remains absent from `main`, regardless of how many test tags exist.
+- Add a plugin to this repository's `main` branch only after the user explicitly approves and publishes a stable GitHub Release in the plugin source repository, except for the exact FFmpeg Smart `v0.2.0` waiver above.
+- An unreleased plugin remains absent from `main`, regardless of how many test tags exist, unless a dedicated version-specific workspace-standards exception explicitly authorizes it.
 - Never move or replace an advertised tag. Publish a new plugin version when correcting an installed build.
 - Use an immutable tag or full commit SHA in every archive URL. Never point an install URL at a moving branch.
 
@@ -63,7 +71,7 @@ Track every current branch in `BRANCHES.md`. Before deleting a branch, preserve 
 - Version history is newest first, contains no duplicate versions, and retains previously advertised immutable builds.
 - `main` uses `matrix2669 Plugins` and `main` manifest URLs.
 - The `dev` root uses `matrix2669 Plugins (dev)`. Each entry references either its exact `dev` per-plugin manifest or, when the tagged build is identical to the released channel, the unchanged `main` per-plugin manifest.
-- `main` versions are normal Semantic Versions backed by approved GitHub Releases. `dev` versions may be either `-beta.N` prereleases or completed stable Semantic Versions without Releases.
+- `main` versions are normal Semantic Versions backed by approved GitHub Releases, except for the exact FFmpeg Smart `v0.2.0` waiver above. `dev` versions may be either `-beta.N` prereleases or completed stable Semantic Versions without Releases.
 
 The validator checks structural invariants, but it cannot infer release approval. Before changing `main`, independently verify the exact source tag, GitHub Release, artifact layout, commit, and user approval.
 
@@ -105,6 +113,6 @@ Use `--channel dev` for changes based on the testing branch.
 - [ ] Preserve existing version history and unrelated manifest entries
 - [ ] Run the validator for the target channel
 - [ ] Verify the exact archive and source commit before publication
-- [ ] For `main`, verify explicit release approval and the published GitHub Release
+- [ ] For `main`, verify explicit release approval and the published GitHub Release, or the exact evidence required by a dedicated version-specific exception
 - [ ] Confirm Dispatcharr refreshes and installs the intended version
 - [ ] Remove completed short-lived branch records only after their remote refs are deleted

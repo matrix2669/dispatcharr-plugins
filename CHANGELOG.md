@@ -13,6 +13,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Changed
 
+- Promote FFmpeg Smart Profiles `0.2.0` to the stable registry from its exact immutable tag and commit under the explicitly approved no-Release exception; retain `0.1.0` history and publish no GitHub Release or distributable ZIP while inherited-wrapper licensing remains unresolved.
 - Replace the stable Dispatcharr VOD Newznab listing with the renamed `arr-stack-connector` identity; retain the legacy detail manifest unindexed.
 - Rename the tagged-build registry channel from `dev-test` to `dev` after controlled consumer migration.
 - Keep each plugin in `dev` on its newest approved tag: beta while testing is active, otherwise the latest completed stable version whether released or not.
