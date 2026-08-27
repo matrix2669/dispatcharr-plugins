@@ -10,6 +10,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
+| `release/ffmpeg-smart-v0.2.0` | release | active | `main` | `main` | Advertise explicitly approved FFmpeg Smart `v0.2.0` through the stable channel under a temporary no-Release exception. |
 
 ## Branch Records
 
@@ -37,3 +38,15 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: moving source branches, untagged builds, and implicit promotion to `main`
 - Registry URL: `https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev/manifest.json`
 - Validation: GitHub manifest validation passed and Dispatcharr loaded all four expected entries after the channel migration
+
+### `release/ffmpeg-smart-v0.2.0`
+
+- Type: focused stable-channel publication branch
+- Status: active
+- Base: `main` at `f37db36fad4f2e7592704cfec7c046c948c9a370` after refreshing the registry and source repositories.
+- Target: `main` only; never merge the complete `dev` channel.
+- Purpose: advertise the fully validated plugin stable tag `v0.2.0` while preserving every unrelated stable entry.
+- Scope: root/detail FFmpeg Smart metadata, exact stable tag/commit/archive URL, retained immutable history, scan guidance, the user-approved no-Release exception, changelog, decisions, and branch records.
+- Exclusions: no GitHub Release, manual ZIP, checksum asset, license claim, beta or unrelated plugin promotion, Dispatcharr compatibility-floor change, or `dev` channel merge.
+- Approval: the user explicitly approved this exact stable manifest publication on `2026-08-26` and directed that no GitHub Release be created until licensing is resolved.
+- Completion trigger: stable source tags, source/plugin validation, immutable archive inspection, main-registry validation, public raw-manifest verification, and live stable-channel update validation.
