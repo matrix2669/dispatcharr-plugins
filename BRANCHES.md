@@ -1,6 +1,6 @@
 # Branches
 
-This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-24.
+This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-26.
 
 Before deleting a branch, record user-visible results in `CHANGELOG.md` and durable rationale in `DECISIONS.md` when applicable, then remove its index row and detailed record.
 
@@ -8,9 +8,9 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 
 | Branch | Type | Status | Base | Target | Purpose |
 |---|---|---|---|---|---|
-| `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
+| `main` | long-lived | active | historical repository root | stable channel | Advertise approved stable builds, normally backed by GitHub Releases, plus the exact FFmpeg Smart `v0.2.0` exception. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
-| `release/ffmpeg-smart-v0.2.0` | release | active | `main` | `main` | Advertise explicitly approved FFmpeg Smart `v0.2.0` through the stable channel under a temporary no-Release exception. |
+| `release/ffmpeg-smart-v0.2.0` | release | merged | `main` | `main` | Advertise explicitly approved FFmpeg Smart `v0.2.0` through the stable channel under a temporary no-Release exception. |
 
 ## Branch Records
 
@@ -24,14 +24,14 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Promotion rule: make a focused change from `main`; never merge the complete `dev` catalog into this branch
 - Registry URL: `https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/main/manifest.json`
 - Current Arr Stack build: released version `0.2.0` at source commit `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`
-- Current FFmpeg Smart build: pending focused promotion to completed stable tag `v0.2.0` at source commit `6eb5c8c8f437dcca6802967ceb193e37f984a7c1`; no GitHub Release or manual ZIP is authorized.
-- Validation: the stable validator and all registry tests pass; the source Release includes a verified plugin-only ZIP and SHA-256 checksum
-- Workspace governance: `main` and `dev` each contain the mandatory workspace standards reconciliation gate at revision `sha256:2717b7fb651e3541b6af68a4793b3c056ea3053bb177e629c97bf2d03a50878f`; this reconciliation changes no registry manifest or plugin publication metadata.
+- Current FFmpeg Smart build: published stable tag `v0.2.0` at source commit `6eb5c8c8f437dcca6802967ceb193e37f984a7c1`, backed by canonical `ffmpeg-asr v1.1.0` commit `448837f4f6267de1c6705cb670bcdb0c6991614f`; no GitHub Release or manual ZIP is authorized.
+- FFmpeg Smart validation: exact immutable tag/archive/source-pin inspection, executable launcher/wrapper modes, stable validator, seven registry tests, public raw-manifest agreement, and GitHub workflow `33027725444` pass.
+- Workspace governance: `main` contains the mandatory workspace standards reconciliation gate at revision `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`.
 
 ### `dev`
 
 - Type: long-lived
-- Status: active
+- Status: merged into and published through `main` at `efcf8c29a4af4b95a97d1f5d0a327b63256889ad`; public raw metadata and workflow `33027725444` pass
 - Purpose: continuous tagged-build registry containing the newest approved immutable tag for every retained plugin
 - Origin: created from the complete legacy `dev-test` history, then reconciled with stable entries that were added to `main` after the histories diverged
 - Versions: beta tags during active testing; completed stable tags after feature or fix completion, whether released or not
@@ -50,4 +50,4 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Scope: root/detail FFmpeg Smart metadata, exact stable tag/commit/archive URL, retained immutable history, scan guidance, the user-approved no-Release exception, changelog, decisions, and branch records.
 - Exclusions: no GitHub Release, manual ZIP, checksum asset, license claim, beta or unrelated plugin promotion, Dispatcharr compatibility-floor change, or `dev` channel merge.
 - Approval: the user explicitly approved this exact stable manifest publication on `2026-08-26` and directed that no GitHub Release be created until licensing is resolved.
-- Completion trigger: stable source tags, source/plugin validation, immutable archive inspection, main-registry validation, public raw-manifest verification, and live stable-channel update validation.
+- Completion: stable source tags, source/plugin validation, immutable archive inspection, main-registry validation, public raw-manifest verification, and GitHub workflow validation pass. Prior installed beta.11 testing covered the identical runtime tree; no GitHub Release or manual ZIP was created.
