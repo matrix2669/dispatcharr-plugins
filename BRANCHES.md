@@ -191,15 +191,28 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/stream-sort-v0.3.6-beta.14`
 
 - Type: short-lived feature publication branch
-- Status: active; publication and managed installation pending
+- Status: merged into and published through `dev` at `005cdf95900078197621d6615eadb173833d778f`; public raw metadata, registry workflow, and managed installation pass
 - Base: `dev` at `430dd5bbed7055c6d409f8cff5b7368b38f5ce17` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`
 - Target: `dev` only
 - Purpose: advance Dispatcharr Stream Sort from `0.3.6-beta.13` to approved immutable `v0.3.6-beta.14` for issue #7 settings and scoring simplification
 - Source evidence: tag `v0.3.6-beta.14` resolves to `250d9d4d7f80b492862819c18622ec23f780e5f9`; the verified GitHub archive preserves `stream_sorter/plugin.json`, reports beta.14, compiles, and passes all 157 source tests
 - Scope: Stream Sort root/detail metadata, preserved beta.13 and earlier history, registry changelog, and this branch ledger only
 - Exclusions: no unrelated plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior
-- Validation: development registry validator, registry tests, JSON parsing, complete-diff review, public raw-manifest agreement, GitHub workflow, and managed installation remain pending
-- Completion: merge only this focused publication into `dev`, verify the public channel and managed beta.14 installation, then reconcile final evidence before branch cleanup
+- Validation: the development registry validator, registry tests, JSON parsing, complete-diff review, public raw-manifest agreement, GitHub workflow `33135322510`, and managed beta.14 installation all pass
+- Completion: `dev` advertised immutable beta.14 from exact source commit `250d9d4`; beta.13 and earlier history remained indexed, and no `main` or unrelated plugin metadata changed
+
+### `feature/stream-sort-v0.3.6-beta.15`
+
+- Type: short-lived feature publication branch
+- Status: active; registry publication and managed installation pending
+- Base: `dev` at `005cdf95900078197621d6615eadb173833d778f` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`
+- Target: `dev` only
+- Purpose: advance Dispatcharr Stream Sort from `0.3.6-beta.14` to approved immutable `v0.3.6-beta.15` for descending M3U score selectors, aligned defaults and scope guidance, and evidence-aware TTL recommendations
+- Source evidence: tag `v0.3.6-beta.15` resolves to `e795ecebb4c531b4b801476f43c708dc21c34dee`; the verified GitHub archive preserves `stream_sorter/plugin.json`, reports beta.15, compiles, and passes all 159 source tests
+- Scope: Stream Sort root/detail metadata, preserved beta.14 and earlier history, registry changelog, and this branch ledger only
+- Exclusions: no unrelated plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior
+- Validation: development registry validation, publication workflow, public raw-manifest agreement, and managed beta.15 installation remain pending
+- Completion: merge only this focused publication into `dev`, verify the public channel and managed beta.15 installation, then reconcile final evidence before branch cleanup
 
 ### `dev`
 

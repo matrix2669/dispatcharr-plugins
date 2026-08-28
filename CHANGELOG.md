@@ -22,6 +22,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Changed
 
+- Advance Dispatcharr Stream Sort from `0.3.6-beta.14` to `0.3.6-beta.15` in `dev`, ordering M3U source scores from +5 through -5, aligning documented and runtime defaults, clarifying empty channel scopes, and reporting the evidence and confidence behind TTL recommendations.
 - Advance Dispatcharr Stream Sort from `0.3.6-beta.13` to `0.3.6-beta.14` in `dev`, simplifying settings and action order, bounding M3U source scores to -5 through +5 selectors, and accepting comma-separated stream-name scoring rules.
 - Advance Dispatcharr Stream Sort from `0.3.6-beta.12` to `0.3.6-beta.13` in `dev`, adding separate Analyze & Sort and Analyze Only scopes, a shared group/profile filter type, and case-insensitive name wildcards while preserving externally managed channel ordering.
 - Advance FFmpeg Smart Profiles from `0.2.0-beta.10` to corrective `0.2.0-beta.11` in `dev`, preserving compatible mapped subtitle/data/attachment streams and retaining degraded stream-copy routing for the complete hardware recheck.
