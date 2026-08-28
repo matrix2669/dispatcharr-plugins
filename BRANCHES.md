@@ -10,6 +10,8 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
+| `feature/stream-sort-v0.3.6-beta.15` | feature | published | `dev` | `dev` | Publish immutable Stream Sort beta.15 and validate the managed upgrade. |
+| `release/stream-sort-v0.3.6-dev` | release | published | `dev` | `dev` | Advance the tagged-build channel to completed stable Stream Sort `0.3.6`. |
 | `feature/ffmpeg-smart-v0.2.0-beta.3` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.3` test build. |
 | `feature/ffmpeg-smart-v0.2.0-beta.4` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.4` scoped-options test build. |
 | `feature/ffmpeg-smart-v0.2.0-beta.5` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.5` inherited-default guidance build. |
@@ -229,7 +231,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Current Mustarrd DVR build: beta `0.2.13-beta.2` from source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
 - Current FFmpeg Smart build: completed stable `0.2.0` from source commit `6eb5c8c8f437dcca6802967ceb193e37f984a7c1`, reusing the identical `main` detail manifest and immutable tag archive. The archive preserves executable launcher/wrapper modes and pins canonical `ffmpeg-asr v1.1.0` at `448837f4f6267de1c6705cb670bcdb0c6991614f`. The complete beta.11/stable validation evidence remains applicable; no GitHub Release or distributable ZIP is published while inherited-wrapper licensing remains unresolved. Beta.11 detail metadata remains unindexed for history.
-- Current Stream Sort build: beta `0.3.6-beta.14` from source commit `250d9d4d7f80b492862819c18622ec23f780e5f9`; the immutable tag archive preserves `stream_sorter/plugin.json`, reports the synchronized beta.14 version, compiles, and passes all 157 source tests. Settings and actions follow the operator workflow, M3U source preferences use bounded -5 through +5 selectors, and stream-name scoring rules accept comma-separated entries.
+- Current Stream Sort build: completed stable `0.3.6` from source commit `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`; the immutable public archive passes all 159 tests, and the tagged-build root/detail manifests preserve beta.15 and all earlier history. Stable `main` publication and managed repository 3 installation also pass.
 
 ### `feature/ffmpeg-smart-v0.2.0-beta.3`
 
@@ -296,13 +298,13 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `release/stream-sort-v0.3.6-dev`
 
 - Type: short-lived stable tagged-build publication branch
-- Status: active; `dev` registry publication and managed stable installation pending
+- Status: merged into and published through `dev` at `46e8e884f6ec4f72f6041f426348e332a2f21d05`; public raw metadata, workflow `33138596704`, and managed stable installation pass
 - Base: `dev` at `b8eb09120d3ea2fe826ad0992570fc27986a3105` after beta.15 publication and managed-install validation passed
 - Target: `dev` only
 - Purpose: advance the tagged-build channel from beta.15 to completed stable Stream Sort `0.3.6` while preserving all immutable beta and stable history
 - Source evidence: stable tag `v0.3.6` resolves to `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`; source `main` contains the release at `d16af98828fa8428cccea73e7dda672f7998fe24`; GitHub Release is public with a verified manual ZIP and checksum
 - Scope: Stream Sort root/detail stable metadata, preserved history, registry changelog, and this branch ledger only
 - Exclusions: no unrelated plugin metadata, stable registry `main`, minimum Dispatcharr version, runtime code, or Dispatcharr core behavior
-- Validation: development registry policy, tests, JSON parsing, standards reconciliation, public raw-manifest agreement, GitHub workflow, and managed stable installation
-- Completion: publish this focused change through `dev`, install exact stable `0.3.6`, and then perform a separate focused `main` registry release
+- Validation: development registry policy, seven tests, JSON parsing, standards reconciliation, public raw-manifest agreement, workflow `33138596704`, and managed stable installation through repository 37 all pass
+- Completion: `dev` advertises completed stable `0.3.6` from exact source commit `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`, retains beta.15 and earlier history, and the installation was subsequently moved to stable repository 3 after `main` publication
 - Started: `2026-08-27`
