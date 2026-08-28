@@ -204,15 +204,15 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/stream-sort-v0.3.6-beta.15`
 
 - Type: short-lived feature publication branch
-- Status: active; registry publication and managed installation pending
+- Status: merged into and published through `dev` at `b8eb09120d3ea2fe826ad0992570fc27986a3105`; public raw metadata, registry workflow `33138165588`, and managed beta.15 installation pass
 - Base: `dev` at `005cdf95900078197621d6615eadb173833d778f` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`
 - Target: `dev` only
 - Purpose: advance Dispatcharr Stream Sort from `0.3.6-beta.14` to approved immutable `v0.3.6-beta.15` for descending M3U score selectors, aligned defaults and scope guidance, and evidence-aware TTL recommendations
 - Source evidence: tag `v0.3.6-beta.15` resolves to `e795ecebb4c531b4b801476f43c708dc21c34dee`; the verified GitHub archive preserves `stream_sorter/plugin.json`, reports beta.15, compiles, and passes all 159 source tests
 - Scope: Stream Sort root/detail metadata, preserved beta.14 and earlier history, registry changelog, and this branch ledger only
 - Exclusions: no unrelated plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior
-- Validation: development registry validation, publication workflow, public raw-manifest agreement, and managed beta.15 installation remain pending
-- Completion: merge only this focused publication into `dev`, verify the public channel and managed beta.15 installation, then reconcile final evidence before branch cleanup
+- Validation: development registry validation, public raw-manifest agreement, workflow `33138165588`, and managed beta.15 installation all pass
+- Completion: `dev` advertised immutable beta.15 from exact source commit `e795ece`; beta.14 and earlier history remained indexed, and no `main` or unrelated plugin metadata changed
 
 ### `dev`
 
@@ -292,3 +292,17 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - HDHomeRun stream 185235 selected the fast 1s/1MB tier and produced 7,333,880 bytes during the bounded live check.
 - TVEverywhere CSPAN3 stream 193352 detected incomplete fast-tier audio metadata, selected the expanded 2s/2MB tier, and produced 7,702,924 bytes during the bounded live check.
 - Both live processes accepted normal termination with no orphan FFmpeg processes. Stable release publication remains excluded pending the documented licensing resolution.
+
+### `release/stream-sort-v0.3.6-dev`
+
+- Type: short-lived stable tagged-build publication branch
+- Status: active; `dev` registry publication and managed stable installation pending
+- Base: `dev` at `b8eb09120d3ea2fe826ad0992570fc27986a3105` after beta.15 publication and managed-install validation passed
+- Target: `dev` only
+- Purpose: advance the tagged-build channel from beta.15 to completed stable Stream Sort `0.3.6` while preserving all immutable beta and stable history
+- Source evidence: stable tag `v0.3.6` resolves to `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`; source `main` contains the release at `d16af98828fa8428cccea73e7dda672f7998fe24`; GitHub Release is public with a verified manual ZIP and checksum
+- Scope: Stream Sort root/detail stable metadata, preserved history, registry changelog, and this branch ledger only
+- Exclusions: no unrelated plugin metadata, stable registry `main`, minimum Dispatcharr version, runtime code, or Dispatcharr core behavior
+- Validation: development registry policy, tests, JSON parsing, standards reconciliation, public raw-manifest agreement, GitHub workflow, and managed stable installation
+- Completion: publish this focused change through `dev`, install exact stable `0.3.6`, and then perform a separate focused `main` registry release
+- Started: `2026-08-27`
