@@ -1,0 +1,30 @@
+{
+  "slug": "stream-sorter",
+  "name": "Dispatcharr Stream Sort",
+  "description": "Incrementally analyzes stream health, quality, delivery performance, playback metadata, and runtime reliability across all active M3U profiles while respecting viewer capacity before scoring and reordering streams.",
+  "author": "matrix2669",
+  "license": "MIT",
+  "repo_url": "https://github.com/matrix2669/DIspatcharr-Stream-Sort-Plugin",
+  "registry_name": "matrix2669 Plugins",
+  "registry_url": "https://github.com/matrix2669/dispatcharr-plugins",
+  "latest_version": "0.3.6",
+  "latest": {
+    "version": "0.3.6",
+    "url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.6",
+    "latest_url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.6",
+    "commit_sha": "bbae86f2ded0a1bcd09d2906e0530e70380ce5a4",
+    "commit_sha_short": "bbae86f",
+    "build_timestamp": "2026-08-28T03:17:10Z",
+    "min_dispatcharr_version": "v0.29.0"
+  },
+  "versions": [
+    {
+      "version": "0.3.6",
+      "url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.6",
+      "commit_sha": "bbae86f2ded0a1bcd09d2906e0530e70380ce5a4",
+      "commit_sha_short": "bbae86f",
+      "build_timestamp": "2026-08-28T03:17:10Z",
+      "min_dispatcharr_version": "v0.29.0"
+    }
+  ]
+}

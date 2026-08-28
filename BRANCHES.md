@@ -11,6 +11,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `main` | long-lived | active | historical repository root | stable channel | Advertise approved stable builds, normally backed by GitHub Releases, plus the exact FFmpeg Smart `v0.2.0` exception. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
 | `release/ffmpeg-smart-v0.2.0` | release | merged | `main` | `main` | Advertise explicitly approved FFmpeg Smart `v0.2.0` through the stable channel under a temporary no-Release exception. |
+| `release/stream-sort-v0.3.6-main` | release | active | `main` | `main` | Publish the explicitly approved Stream Sort `v0.3.6` GitHub Release without merging the `dev` catalog. |
 
 ## Branch Records
 
@@ -26,6 +27,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Current Arr Stack build: released version `0.2.0` at source commit `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`
 - Current FFmpeg Smart build: published stable tag `v0.2.0` at source commit `6eb5c8c8f437dcca6802967ceb193e37f984a7c1`, backed by canonical `ffmpeg-asr v1.1.0` commit `448837f4f6267de1c6705cb670bcdb0c6991614f`; no GitHub Release or manual ZIP is authorized.
 - FFmpeg Smart validation: exact immutable tag/archive/source-pin inspection, executable launcher/wrapper modes, stable validator, seven registry tests, public raw-manifest agreement, and GitHub workflow `33027725444` pass.
+- Current Stream Sort build: explicitly approved GitHub Release `v0.3.6` from source commit `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`, promoted into source `main` at `d16af98828fa8428cccea73e7dda672f7998fe24`, with a validated manual-install ZIP and SHA-256 checksum.
 - Workspace governance: `main` contains the mandatory workspace standards reconciliation gate at revision `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`.
 
 ### `dev`
@@ -51,3 +53,16 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: no GitHub Release, manual ZIP, checksum asset, license claim, beta or unrelated plugin promotion, Dispatcharr compatibility-floor change, or `dev` channel merge.
 - Approval: the user explicitly approved this exact stable manifest publication on `2026-08-26` and directed that no GitHub Release be created until licensing is resolved.
 - Completion: stable source tags, source/plugin validation, immutable archive inspection, main-registry validation, public raw-manifest verification, and GitHub workflow validation pass. Prior installed beta.11 testing covered the identical runtime tree; no GitHub Release or manual ZIP was created.
+
+### `release/stream-sort-v0.3.6-main`
+
+- Type: focused stable-channel publication branch
+- Status: active; stable registry publication and managed `main` installation pending
+- Base: `main` at `1a0a83bf7c702437f02022525041c5d98c0f969a` after refreshing source, registry, Release, and live deployment evidence
+- Target: `main` only; never merge the complete `dev` channel
+- Purpose: advertise the explicitly approved Dispatcharr Stream Sort `v0.3.6` GitHub Release through the stable registry
+- Scope: one root entry, one stable-only detail manifest, exact tag/commit/archive URL, changelog, and branch evidence
+- Exclusions: no beta history, unrelated plugin promotion, minimum Dispatcharr version change, runtime code, or Dispatcharr core behavior
+- Approval: the user explicitly approved source `main` promotion, GitHub publication, stable registry publication, and deployment on `2026-08-27`
+- Evidence: source tag `v0.3.6` resolves to `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`; source `main` is `d16af98828fa8428cccea73e7dda672f7998fe24`; the non-draft, non-prerelease GitHub Release includes a byte-verified 77,004-byte manual ZIP and checksum; all 159 source tests pass
+- Completion: validate and publish this focused `main` change, verify public raw metadata and workflow, refresh stable repository 3, install exact `0.3.6`, and confirm trusted loaded state

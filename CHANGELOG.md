@@ -6,6 +6,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Added
 
+- Publish the explicitly approved Dispatcharr Stream Sort `0.3.6` GitHub Release in the stable registry with its exact immutable tag and commit after source, public archive, manual ZIP, checksum, tagged-build registry, and managed-install validation.
 - Publish the approved Arr Stack Connector `0.2.0` GitHub Release in the stable registry.
 - Document the released and tagged-build registry contracts, branch ledger, decisions, and publication procedure.
 - Add automated validation for manifest structure, immutable archive references, version history, and channel-specific URLs.
