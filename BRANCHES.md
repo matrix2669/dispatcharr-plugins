@@ -1,6 +1,6 @@
 # Branches
 
-This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-26.
+This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-27.
 
 Before deleting a branch, record user-visible results in `CHANGELOG.md` and durable rationale in `DECISIONS.md` when applicable, then remove its index row and detailed record.
 
@@ -11,7 +11,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `main` | long-lived | active | historical repository root | stable channel | Advertise approved stable builds, normally backed by GitHub Releases, plus the exact FFmpeg Smart `v0.2.0` exception. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
 | `release/ffmpeg-smart-v0.2.0` | release | merged | `main` | `main` | Advertise explicitly approved FFmpeg Smart `v0.2.0` through the stable channel under a temporary no-Release exception. |
-| `release/stream-sort-v0.3.6-main` | release | active | `main` | `main` | Publish the explicitly approved Stream Sort `v0.3.6` GitHub Release without merging the `dev` catalog. |
+| `release/stream-sort-v0.3.6-main` | release | published | `main` | `main` | Publish the explicitly approved Stream Sort `v0.3.6` GitHub Release without merging the `dev` catalog. |
 
 ## Branch Records
 
@@ -57,7 +57,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `release/stream-sort-v0.3.6-main`
 
 - Type: focused stable-channel publication branch
-- Status: active; stable registry publication and managed `main` installation pending
+- Status: published through stable `main` at `f9c7e260e3c0522d1c07dff5ea4b73c347f264e2`; public raw metadata, workflow `33138696338`, and managed repository 3 installation pass
 - Base: `main` at `1a0a83bf7c702437f02022525041c5d98c0f969a` after refreshing source, registry, Release, and live deployment evidence
 - Target: `main` only; never merge the complete `dev` channel
 - Purpose: advertise the explicitly approved Dispatcharr Stream Sort `v0.3.6` GitHub Release through the stable registry
@@ -65,4 +65,4 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: no beta history, unrelated plugin promotion, minimum Dispatcharr version change, runtime code, or Dispatcharr core behavior
 - Approval: the user explicitly approved source `main` promotion, GitHub publication, stable registry publication, and deployment on `2026-08-27`
 - Evidence: source tag `v0.3.6` resolves to `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`; source `main` is `d16af98828fa8428cccea73e7dda672f7998fe24`; the non-draft, non-prerelease GitHub Release includes a byte-verified 77,004-byte manual ZIP and checksum; all 159 source tests pass
-- Completion: validate and publish this focused `main` change, verify public raw metadata and workflow, refresh stable repository 3, install exact `0.3.6`, and confirm trusted loaded state
+- Completion: stable `main` advertises only released Stream Sort `0.3.6` from exact source commit `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`; public root/detail manifests agree, workflow `33138696338` passes, and Dispatcharr reports trusted loaded stable `0.3.6` owned by repository 3 with no update pending
