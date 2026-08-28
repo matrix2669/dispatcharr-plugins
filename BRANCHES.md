@@ -27,6 +27,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/stream-sort-v0.3.6-beta.10` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.10` telemetry-integrity correction only to the tagged-build channel. |
 | `feature/stream-sort-v0.3.6-beta.11` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.11` adaptive analysis policies only to the tagged-build channel. |
 | `feature/stream-sort-v0.3.6-beta.13` | short-lived | merged | `dev` | `dev` | Publish the reviewed Stream Sort split analysis/sorting scopes only to the tagged-build channel. |
+| `feature/stream-sort-v0.3.6-beta.14` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort issue #7 settings and scoring controls only to the tagged-build channel. |
 
 ## Branch Records
 
@@ -187,6 +188,19 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: no unrelated plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
 - Completion: `dev` advertises immutable beta.13 from exact source commit `0d83cdb`; beta.12 and earlier history remain indexed, the public raw manifests agree, and no `main` or unrelated plugin metadata changed. Managed Dispatcharr installation remains pending and will be reported separately.
 
+### `feature/stream-sort-v0.3.6-beta.14`
+
+- Type: short-lived feature publication branch
+- Status: active; publication and managed installation pending
+- Base: `dev` at `430dd5bbed7055c6d409f8cff5b7368b38f5ce17` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`
+- Target: `dev` only
+- Purpose: advance Dispatcharr Stream Sort from `0.3.6-beta.13` to approved immutable `v0.3.6-beta.14` for issue #7 settings and scoring simplification
+- Source evidence: tag `v0.3.6-beta.14` resolves to `250d9d4d7f80b492862819c18622ec23f780e5f9`; the verified GitHub archive preserves `stream_sorter/plugin.json`, reports beta.14, compiles, and passes all 157 source tests
+- Scope: Stream Sort root/detail metadata, preserved beta.13 and earlier history, registry changelog, and this branch ledger only
+- Exclusions: no unrelated plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior
+- Validation: development registry validator, registry tests, JSON parsing, complete-diff review, public raw-manifest agreement, GitHub workflow, and managed installation remain pending
+- Completion: merge only this focused publication into `dev`, verify the public channel and managed beta.14 installation, then reconcile final evidence before branch cleanup
+
 ### `dev`
 
 - Type: long-lived
@@ -202,7 +216,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Current Mustarrd DVR build: beta `0.2.13-beta.2` from source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
 - Current FFmpeg Smart build: completed stable `0.2.0` from source commit `6eb5c8c8f437dcca6802967ceb193e37f984a7c1`, reusing the identical `main` detail manifest and immutable tag archive. The archive preserves executable launcher/wrapper modes and pins canonical `ffmpeg-asr v1.1.0` at `448837f4f6267de1c6705cb670bcdb0c6991614f`. The complete beta.11/stable validation evidence remains applicable; no GitHub Release or distributable ZIP is published while inherited-wrapper licensing remains unresolved. Beta.11 detail metadata remains unindexed for history.
-- Current Stream Sort build: beta `0.3.6-beta.13` from source commit `0d83cdb80f882223bceb67ec1afd09d348a4d084`; the immutable tag archive preserves `stream_sorter/plugin.json`, reports the synchronized beta.13 version, compiles, and passes all 154 source tests. Analyze & Sort and Analyze Only now have separate scopes under one group/profile selector, name filters support case-insensitive wildcards, and Analyze Only preserves ordering owned by Teamarr or another external manager.
+- Current Stream Sort build: beta `0.3.6-beta.14` from source commit `250d9d4d7f80b492862819c18622ec23f780e5f9`; the immutable tag archive preserves `stream_sorter/plugin.json`, reports the synchronized beta.14 version, compiles, and passes all 157 source tests. Settings and actions follow the operator workflow, M3U source preferences use bounded -5 through +5 selectors, and stream-name scoring rules accept comma-separated entries.
 
 ### `feature/ffmpeg-smart-v0.2.0-beta.3`
 

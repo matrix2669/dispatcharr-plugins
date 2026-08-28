@@ -46,9 +46,9 @@
       "author": "matrix2669",
       "license": "MIT",
       "repo_url": "https://github.com/matrix2669/DIspatcharr-Stream-Sort-Plugin",
-      "latest_version": "0.3.6-beta.13",
+      "latest_version": "0.3.6-beta.14",
       "manifest_url": "https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev/plugins/dispatcharr-stream-sort/manifest.json",
-      "latest_url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.6-beta.13",
+      "latest_url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.6-beta.14",
       "min_dispatcharr_version": "v0.29.0"
     }
   ]
