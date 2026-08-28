@@ -26,7 +26,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.10` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.10` telemetry-integrity correction only to the tagged-build channel. |
 | `feature/stream-sort-v0.3.6-beta.11` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.11` adaptive analysis policies only to the tagged-build channel. |
-| `feature/stream-sort-v0.3.6-beta.13` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort split analysis/sorting scopes only to the tagged-build channel. |
+| `feature/stream-sort-v0.3.6-beta.13` | short-lived | merged | `dev` | `dev` | Publish the reviewed Stream Sort split analysis/sorting scopes only to the tagged-build channel. |
 
 ## Branch Records
 
@@ -178,14 +178,14 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/stream-sort-v0.3.6-beta.13`
 
 - Type: short-lived feature publication branch
-- Status: active
+- Status: merged into and published through `dev` at `dfd228f94ff7c1e4212d845a48b7f3a71c6951db`; public raw metadata and registry workflow `33128776643` pass, with managed installation pending.
 - Base: `dev` at `ab2e429f53a77b1db5f4d2ad124948ad2179c91e` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`.
 - Target: `dev` only
 - Purpose: advance Dispatcharr Stream Sort from `0.3.6-beta.12` to approved immutable `v0.3.6-beta.13` for separate Analyze & Sort and Analyze Only channel scopes.
 - Source evidence: tag `v0.3.6-beta.13` resolves to `0d83cdb80f882223bceb67ec1afd09d348a4d084`; the verified GitHub archive preserves `stream_sorter/plugin.json`, reports beta.13, and the source passes 154 tests, Python compilation, diff checks, and workspace validation.
 - Scope: Stream Sort root/detail metadata, preserved beta.12 and earlier history, registry changelog, and this branch ledger only.
 - Exclusions: no unrelated plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
-- Completion: validate the development registry, merge into and publish `dev`, confirm remote raw metadata, then retain deployment validation as a separately reported state.
+- Completion: `dev` advertises immutable beta.13 from exact source commit `0d83cdb`; beta.12 and earlier history remain indexed, the public raw manifests agree, and no `main` or unrelated plugin metadata changed. Managed Dispatcharr installation remains pending and will be reported separately.
 
 ### `dev`
 
