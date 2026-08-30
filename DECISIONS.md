@@ -360,3 +360,9 @@ checks, and final viewer/process cleanup.
 - Canonical runtime `ffmpeg-adaptive v0.1.0-beta.2` at
   `4df6c12e395187fc0080f858685a3c6ebd7a8c42`
 - Plugin workflow `33333007420` and clean extracted-tag archive validation
+- Development-registry commit
+  `50489521b1b6350bc95f300ceaf77a8bb7c372da` and workflow `33333093699`
+- Managed repository 37 beta.2-to-beta.3 update, exact installed runtime and
+  MIT notice, idempotent profiles, valid VAAPI/HEVC 18/14 cache with confirmed
+  rejection at 19/15, decoded-frame actual-stream matrix, overlapping both-GPU
+  scheduler pass, cleanup, and final process audit on `2026-08-30`

@@ -25,7 +25,8 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/ffmpeg-smart-v0.2.1-beta.1` | feature | published | `dev` | `dev` | Advertise the immutable adaptive-probing FFmpeg Smart Profiles `v0.2.1-beta.1` test build. |
 | `feature/ffmpeg-smart-v0.2.1-beta.2` | feature | published | `dev` | `dev` | Advertise the modular MIT-runtime FFmpeg Smart Profiles `v0.2.1-beta.2` test build. |
 | `docs/ffmpeg-smart-beta2-live-validation` | documentation | integrated | `dev` at `d6495c9` | `dev` | Record managed beta.2 validation without changing registry metadata. |
-| `fix/ffmpeg-smart-v0.2.1-beta.3` | fix | active | `dev` at `1adc1fb` | `dev` | Advertise the corrective benchmark/runtime-fidelity FFmpeg Smart Profiles `v0.2.1-beta.3` test build. |
+| `fix/ffmpeg-smart-v0.2.1-beta.3` | fix | published | `dev` at `1adc1fb` | `dev` | Advertise the corrective benchmark/runtime-fidelity FFmpeg Smart Profiles `v0.2.1-beta.3` test build. |
+| `docs/ffmpeg-smart-beta3-live-validation` | documentation | active | `dev` at `5048952` | `dev` | Record managed beta.3 validation without changing registry metadata. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -39,7 +40,10 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `fix/ffmpeg-smart-v0.2.1-beta.3`
 
 - Type: short-lived corrective publication branch
-- Status: active
+- Status: published through `dev` at
+  `50489521b1b6350bc95f300ceaf77a8bb7c372da`; public manifests, workflow
+  `33333093699`, managed update, cache rebuild, actual-stream matrix, and
+  overlapping scheduler validation pass
 - Base: `dev` at
   `1adc1fb5986cc4a058bcf9a1bb3ec3d22901bb95` after workspace standards
   reconciliation at
@@ -58,11 +62,30 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Exclusions: no unrelated plugin metadata, Stream Sort, stable `main`, minimum
   Dispatcharr version, GitHub Release, manual ZIP, stable source promotion,
   runtime code, or Dispatcharr core behavior.
-- Validation required: development validator and unit tests, exact source tag
-  and archive, public manifests, workflow, managed repository 37 update,
-  installed source/license verification, zero-viewer cache rebuild, actual
-  1080p/1080i/720p Stream and finite `pipe:0` Output paths, overlapping
-  multi-GPU scheduling, and final viewer/process cleanup.
+- Validation: development validator and seven tests, exact source tag/archive,
+  public manifests, and workflow pass. Managed repository 37 updated beta.2 to
+  beta.3; the installed seven-file runtime and MIT notice match the tag; retired
+  HDR/10-bit controls remain absent; and profile reconciliation was idempotent.
+  The old cache became stale, then a rebuild with zero stopped transcodes
+  produced valid VAAPI/HEVC capacity 18/reject 19 on the Arc and 14/reject 15
+  on the iGPU. Priority-zero 1080p, MPEG-2 1080i, and 720p direct plus finite
+  `pipe:0` paths passed with zero decode errors, zero interlaced decoded output
+  frames, and monotonic nonnegative DTS. Overlapping jobs used both GPUs. Final
+  cache status was valid and no media process remained.
+
+### `docs/ffmpeg-smart-beta3-live-validation`
+
+- Type: short-lived documentation branch
+- Status: active
+- Base: `dev` at `50489521b1b6350bc95f300ceaf77a8bb7c372da`
+- Target: `dev` only
+- Purpose: preserve exact managed beta.3 update, cache-boundary, actual-stream,
+  decoded-frame, scheduler, cleanup, and final-process evidence without changing
+  the public registry metadata.
+- Scope: branch ledger, registry changelog, and ADR-011 provenance only.
+- Exclusions: manifests, plugin archives, unrelated plugins, Stream Sort,
+  stable `main`, GitHub Release, manual ZIP, stable promotion, and branch
+  deletion.
 
 ### `feature/ffmpeg-smart-v0.2.1-beta.2`
 
@@ -290,7 +313,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Validation: the development validator and all registry tests pass; the stable tag resolves to source commit `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`
 - Current Mustarrd DVR build: beta `0.2.13-beta.2` from source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
-- Current FFmpeg Smart build: beta `0.2.1-beta.2` from source commit `3c7b07cfe2d56540cd319179ef7c0d02318d2d38`, whose immutable archive bundles canonical MIT `ffmpeg-adaptive v0.1.0-beta.1` at `80d648bbb0f93c45d5a7198bd7bf9260e9febd32`. Source/archive checks, development workflow, managed migration, schema-2 cache rebuild, and actual 1080p/1080i/720p Stream plus `pipe:0` Output Profile validation pass. Stable `main` remains on `0.2.0`; no GitHub Release, manual ZIP, or stable promotion is authorized.
+- Current FFmpeg Smart build: beta `0.2.1-beta.3` from source commit `dd54d4cc82a454135c4eb3b75eeeb5eb48713fe6`, whose immutable archive bundles canonical MIT `ffmpeg-adaptive v0.1.0-beta.2` at `4df6c12e395187fc0080f858685a3c6ebd7a8c42`. Source/archive checks, development workflow, managed update, corrected VAAPI/HEVC 18/14 cache boundaries, actual 1080p/1080i/720p Stream plus finite `pipe:0` Output Profile validation, and overlapping both-GPU scheduling pass. Stable `main` remains on `0.2.0`; no GitHub Release, manual ZIP, or stable promotion is authorized.
 - Current Stream Sort build: completed stable `0.3.6` from source commit `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`; the immutable public archive passes all 159 tests, and the tagged-build root/detail manifests preserve beta.15 and all earlier history. Stable `main` publication and managed repository 3 installation also pass.
 
 ### `feature/ffmpeg-smart-v0.2.0-beta.3`

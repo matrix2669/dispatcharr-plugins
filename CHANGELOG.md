@@ -14,6 +14,13 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Validation
 
+- Validate FFmpeg Smart Profiles `0.2.1-beta.3` from development repository 37:
+  exact installed runtime and MIT notice, absent retired HDR/10-bit controls,
+  idempotent profiles, stale-to-valid cache transition, VAAPI/HEVC 18/14
+  capacity with confirmed 19/15 rejection, priority-zero 1080p/1080i/720p
+  direct and finite `pipe:0` paths, decoded-frame progressive output, and
+  overlapping both-GPU scheduling all pass. Final cache status is valid, no
+  media process remains, and the stable registry is unchanged.
 - Validate FFmpeg Smart Profiles `0.2.1-beta.2` from development repository 37:
   exact installed modules and MIT notice, retired HDR/10-bit UI and saved-value
   removal, idempotent profile reconciliation, zero-viewer schema-2 cache rebuild,
