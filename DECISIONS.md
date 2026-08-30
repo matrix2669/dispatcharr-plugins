@@ -302,3 +302,61 @@ The historical `v0.2.0` stable exception stays unchanged while `main` advertises
   profile migration/reconciliation, schema-2 cache rebuild, and actual
   1080p/1080i/720p Stream plus `pipe:0` Output Profile validation on
   `2026-08-30`
+
+---
+
+# ADR-011: Replace the development FFmpeg Smart beta with the corrective fidelity build
+
+## Status
+
+Accepted; supersedes ADR-010 only for the newest development-channel FFmpeg Smart build
+
+## Date
+
+2026-08-30
+
+## Decision
+
+Advance only the `dev` channel's FFmpeg Smart Profiles entry from
+`0.2.1-beta.2` to immutable corrective beta `0.2.1-beta.3` at source commit
+`dd54d4cc82a454135c4eb3b75eeeb5eb48713fe6`. Prepend beta.3 to the existing
+version history, retain beta.2 and every earlier immutable build, and leave
+stable `main` plus every unrelated plugin entry unchanged.
+
+Publish the tagged build for managed validation of
+`ffmpeg-adaptive v0.1.0-beta.2`: the cache policy must become stale, the
+operator must rebuild with zero viewers, and representative 1080p, 1080i,
+720p, finite `pipe:0`, and overlapping multi-GPU paths must pass. Deployment
+authorization covers the development registry and managed test instance only.
+It does not authorize a GitHub Release, manual ZIP, stable source promotion,
+stable registry update, Stream Sort change, or branch deletion.
+
+## Reason
+
+Canonical wrapper comparison proved that beta.1's capacity benchmark did not
+match runtime hardware decode and could under-report capabilities. The
+corrective beta uses the same hardware path for benchmark and runtime, applies
+the measured per-device low-power policy, ties capacity to the measured
+accelerator/codec pair, and gives upper-bound scans a deadline. The plugin's
+workflow and exact tag archive pass, so the remaining risk is the managed
+update, stale-cache transition, and live installed behavior.
+
+## Consequences
+
+Dispatcharr instances configured with `dev` can discover and update to
+`0.2.1-beta.3`. The root and detail manifests must agree on the exact tag,
+commit, URL, and minimum version while preserving the full history. Managed
+starts use the existing degraded stream-copy path until the fresh hardware
+rebuild succeeds. Publication is complete only after registry validation,
+exact remote and public-manifest verification, managed repository 37 update,
+installed source/license checks, cache rebuild, actual-stream and scheduler
+checks, and final viewer/process cleanup.
+
+## Provenance
+
+- Operator authorization in Codex on `2026-08-30`
+- Plugin tag `v0.2.1-beta.3` at
+  `dd54d4cc82a454135c4eb3b75eeeb5eb48713fe6`
+- Canonical runtime `ffmpeg-adaptive v0.1.0-beta.2` at
+  `4df6c12e395187fc0080f858685a3c6ebd7a8c42`
+- Plugin workflow `33333007420` and clean extracted-tag archive validation
