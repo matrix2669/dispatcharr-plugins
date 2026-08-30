@@ -25,6 +25,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/ffmpeg-smart-v0.2.1-beta.1` | feature | published | `dev` | `dev` | Advertise the immutable adaptive-probing FFmpeg Smart Profiles `v0.2.1-beta.1` test build. |
 | `feature/ffmpeg-smart-v0.2.1-beta.2` | feature | published | `dev` | `dev` | Advertise the modular MIT-runtime FFmpeg Smart Profiles `v0.2.1-beta.2` test build. |
 | `docs/ffmpeg-smart-beta2-live-validation` | documentation | integrated | `dev` at `d6495c9` | `dev` | Record managed beta.2 validation without changing registry metadata. |
+| `fix/ffmpeg-smart-v0.2.1-beta.3` | fix | active | `dev` at `1adc1fb` | `dev` | Advertise the corrective benchmark/runtime-fidelity FFmpeg Smart Profiles `v0.2.1-beta.3` test build. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -34,6 +35,34 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/stream-sort-v0.3.6-beta.14` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort issue #7 settings and scoring controls only to the tagged-build channel. |
 
 ## Branch Records
+
+### `fix/ffmpeg-smart-v0.2.1-beta.3`
+
+- Type: short-lived corrective publication branch
+- Status: active
+- Base: `dev` at
+  `1adc1fb5986cc4a058bcf9a1bb3ec3d22901bb95` after workspace standards
+  reconciliation at
+  `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`.
+- Target: `dev` only
+- Purpose: advance FFmpeg Smart Profiles from `0.2.1-beta.2` to corrective
+  immutable `v0.2.1-beta.3`, aligning benchmark and runtime hardware paths,
+  bounding capacity searches, and invalidating the superseded cache policy.
+- Source evidence: plugin tag `v0.2.1-beta.3` resolves to
+  `dd54d4cc82a454135c4eb3b75eeeb5eb48713fe6`; workflow `33333007420`
+  passes; the clean archive reports beta.3 and contains the stable plugin
+  directory, complete seven-file runtime, MIT notice, and executable launcher
+  and entrypoint bits.
+- Scope: FFmpeg Smart root/detail metadata, preserved version history, registry
+  changelog, decision record, and this branch ledger only.
+- Exclusions: no unrelated plugin metadata, Stream Sort, stable `main`, minimum
+  Dispatcharr version, GitHub Release, manual ZIP, stable source promotion,
+  runtime code, or Dispatcharr core behavior.
+- Validation required: development validator and unit tests, exact source tag
+  and archive, public manifests, workflow, managed repository 37 update,
+  installed source/license verification, zero-viewer cache rebuild, actual
+  1080p/1080i/720p Stream and finite `pipe:0` Output paths, overlapping
+  multi-GPU scheduling, and final viewer/process cleanup.
 
 ### `feature/ffmpeg-smart-v0.2.1-beta.2`
 
