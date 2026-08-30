@@ -261,3 +261,38 @@ Dispatcharr instances configured with the `dev` registry can discover and instal
 - Operator decision Q&A and beta deployment approval, 2026-08-27
 - Plugin tag: `v0.2.1-beta.1` at `d95aaf649b02e23dab76f19d274cb765b75bbca6`
 - Canonical wrapper tag: `v1.1.1-beta.1` at `ecc64244dae2c0e80761da6f16be92d95b91d29a`
+
+---
+
+# ADR-010: Publish the modular FFmpeg Adaptive plugin beta only to dev
+
+## Status
+
+Accepted; supersedes ADR-009 only for the newest development-channel FFmpeg Smart build
+
+## Date
+
+2026-08-30
+
+## Decision
+
+Advance only the `dev` channel's FFmpeg Smart Profiles entry from `0.2.1-beta.1` to immutable `0.2.1-beta.2` at source commit `3c7b07cfe2d56540cd319179ef7c0d02318d2d38`. Prepend beta.2 to the existing version history, preserve every earlier immutable build, and leave the stable `main` channel and every unrelated plugin entry unchanged.
+
+Publish the tagged build for managed Dispatcharr validation of the modular `ffmpeg-adaptive v0.1.0-beta.1` bundle, retired HDR/10-bit settings migration, automatic HDR/10-bit policy, explicit Force SDR/deinterlace behavior, hardware cache schema transition, and Stream/Output Profile execution. Deployment authorization covers the development registry and managed test instance only. It does not authorize a GitHub Release, stable source promotion, stable registry update, manual ZIP, Stream Sort change, or branch deletion.
+
+## Reason
+
+The source tag is immutable, its complete archive and seven-file runtime passed local and GitHub validation, and the canonical rewrite already passed comparative actual-stream coverage. The remaining risk is integration-specific: registry extraction must preserve the modular dependency, Dispatcharr must remove obsolete UI/saved values, and the managed launcher must rebuild its cache and run real Stream and `pipe:0` Output paths.
+
+## Consequences
+
+Dispatcharr instances configured with `dev` can discover and update to `0.2.1-beta.2`. The root and detail manifests must agree on the exact tag, commit, URL, and minimum version. Publication is complete only after registry validation, exact remote-head and public-manifest verification, managed update, installed module/license checks, profile reconciliation, zero-viewer cache rebuild, and representative live Stream/Output checks. Stable promotion remains a separate user decision.
+
+The historical `v0.2.0` stable exception stays unchanged while `main` advertises that inherited-wrapper build. The new runtime's MIT license resolves the licensing gate only for later source versions; it does not retroactively alter historical registry metadata.
+
+## Provenance
+
+- Operator authorization in Codex on `2026-08-30`
+- Plugin tag `v0.2.1-beta.2` at `3c7b07cfe2d56540cd319179ef7c0d02318d2d38`
+- Canonical runtime `ffmpeg-adaptive v0.1.0-beta.1` at `80d648bbb0f93c45d5a7198bd7bf9260e9febd32`
+- Plugin workflow `33320334916` and clean extracted-archive validation
