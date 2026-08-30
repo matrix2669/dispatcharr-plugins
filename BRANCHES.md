@@ -24,7 +24,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `release/ffmpeg-smart-v0.2.0-dev` | release | merged | `dev` | `dev` | Align the tagged-build channel with the completed stable FFmpeg Smart `v0.2.0` build. |
 | `feature/ffmpeg-smart-v0.2.1-beta.1` | feature | published | `dev` | `dev` | Advertise the immutable adaptive-probing FFmpeg Smart Profiles `v0.2.1-beta.1` test build. |
 | `feature/ffmpeg-smart-v0.2.1-beta.2` | feature | published | `dev` | `dev` | Advertise the modular MIT-runtime FFmpeg Smart Profiles `v0.2.1-beta.2` test build. |
-| `docs/ffmpeg-smart-beta2-live-validation` | documentation | active | `dev` at `d6495c9` | `dev` | Record managed beta.2 validation without changing registry metadata. |
+| `docs/ffmpeg-smart-beta2-live-validation` | documentation | integrated | `dev` at `d6495c9` | `dev` | Record managed beta.2 validation without changing registry metadata. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -50,7 +50,9 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `docs/ffmpeg-smart-beta2-live-validation`
 
 - Type: short-lived documentation branch
-- Status: active; validation evidence is ready for review and integration
+- Status: integrated into `dev` at
+  `32bb1131dcf2cc84835a0b599d4f6ce5c7c65215`; the remote documentation branch is
+  retained and no branch deletion is authorized
 - Base: `dev` at `d6495c932cd53248ac1128b18ebe7a872d1f20f1`
 - Target: `dev` only
 - Purpose: preserve exact registry, managed migration, cache, actual-stream, and
