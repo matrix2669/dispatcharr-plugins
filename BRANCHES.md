@@ -23,7 +23,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/ffmpeg-smart-v0.2.0-beta.11` | fix | merged | `dev` | `dev` | Publish canonical Map All and benchmark-lock corrections for installed validation. |
 | `release/ffmpeg-smart-v0.2.0-dev` | release | merged | `dev` | `dev` | Align the tagged-build channel with the completed stable FFmpeg Smart `v0.2.0` build. |
 | `feature/ffmpeg-smart-v0.2.1-beta.1` | feature | published | `dev` | `dev` | Advertise the immutable adaptive-probing FFmpeg Smart Profiles `v0.2.1-beta.1` test build. |
-| `feature/ffmpeg-smart-v0.2.1-beta.2` | feature | active | `dev` | `dev` | Advertise the modular MIT-runtime FFmpeg Smart Profiles `v0.2.1-beta.2` test build. |
+| `feature/ffmpeg-smart-v0.2.1-beta.2` | feature | integrated | `dev` | `dev` | Advertise the modular MIT-runtime FFmpeg Smart Profiles `v0.2.1-beta.2` test build. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -37,7 +37,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/ffmpeg-smart-v0.2.1-beta.2`
 
 - Type: short-lived feature publication branch
-- Status: active
+- Status: integrated into local `dev`; remote publication, public-manifest verification, and managed validation remain
 - Base: `dev` at `8113d40c4c17c958f8a5ea8c2620b36b28a8b96d` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`.
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from `0.2.1-beta.1` to approved immutable `v0.2.1-beta.2`, bundling the complete modular MIT `ffmpeg-adaptive` runtime and removing redundant HDR/10-bit plugin controls.
