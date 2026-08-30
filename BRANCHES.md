@@ -1,6 +1,6 @@
 # Branches
 
-This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-27.
+This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-08-30.
 
 Before deleting a branch, record user-visible results in `CHANGELOG.md` and durable rationale in `DECISIONS.md` when applicable, then remove its index row and detailed record.
 
@@ -22,7 +22,8 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/ffmpeg-smart-v0.2.0-beta.10` | fix | merged | `dev` | `dev` | Refresh persistent degraded notifications from Dispatcharr's authoritative API. |
 | `fix/ffmpeg-smart-v0.2.0-beta.11` | fix | merged | `dev` | `dev` | Publish canonical Map All and benchmark-lock corrections for installed validation. |
 | `release/ffmpeg-smart-v0.2.0-dev` | release | merged | `dev` | `dev` | Align the tagged-build channel with the completed stable FFmpeg Smart `v0.2.0` build. |
-| `feature/ffmpeg-smart-v0.2.1-beta.1` | feature | active | `dev` | `dev` | Advertise the immutable adaptive-probing FFmpeg Smart Profiles `v0.2.1-beta.1` test build. |
+| `feature/ffmpeg-smart-v0.2.1-beta.1` | feature | published | `dev` | `dev` | Advertise the immutable adaptive-probing FFmpeg Smart Profiles `v0.2.1-beta.1` test build. |
+| `feature/ffmpeg-smart-v0.2.1-beta.2` | feature | active | `dev` | `dev` | Advertise the modular MIT-runtime FFmpeg Smart Profiles `v0.2.1-beta.2` test build. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -33,10 +34,22 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 
 ## Branch Records
 
-### `feature/ffmpeg-smart-v0.2.1-beta.1`
+### `feature/ffmpeg-smart-v0.2.1-beta.2`
 
 - Type: short-lived feature publication branch
 - Status: active
+- Base: `dev` at `8113d40c4c17c958f8a5ea8c2620b36b28a8b96d` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`.
+- Target: `dev` only
+- Purpose: advance FFmpeg Smart Profiles from `0.2.1-beta.1` to approved immutable `v0.2.1-beta.2`, bundling the complete modular MIT `ffmpeg-adaptive` runtime and removing redundant HDR/10-bit plugin controls.
+- Source evidence: plugin tag `v0.2.1-beta.2` resolves to `3c7b07cfe2d56540cd319179ef7c0d02318d2d38`; source workflow `33320334916` passes; the clean archive reports beta.2 and contains the entrypoint, six pinned modules, exact dependency MIT notice, and intended executable/read-only modes.
+- Scope: FFmpeg Smart root/detail metadata, preserved version history, registry changelog, decision record, and this branch ledger only.
+- Exclusions: no unrelated plugin metadata, Stream Sort changes, stable `main`, minimum Dispatcharr version, GitHub Release, manual ZIP, stable source promotion, runtime code, or Dispatcharr core behavior.
+- Validation: development registry validator, unit tests, exact remote archive, public manifests, managed update, settings migration, cache rebuild, `pipe:0`, and representative actual streams are required before completion.
+
+### `feature/ffmpeg-smart-v0.2.1-beta.1`
+
+- Type: short-lived feature publication branch
+- Status: published through `dev` at `503c7c233bb75d7d36883de11925097d7fd95385`; public manifests, workflow, managed update, cache rebuild, HDHomeRun, and CSPAN3 checks pass
 - Base: `dev` at `1a954542bcfdeee6d3496ab486314ddadfdc2a7a` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`.
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from completed stable `0.2.0` to approved immutable `v0.2.1-beta.1` for adaptive input-probing validation.
