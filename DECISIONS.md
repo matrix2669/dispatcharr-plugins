@@ -296,3 +296,9 @@ The historical `v0.2.0` stable exception stays unchanged while `main` advertises
 - Plugin tag `v0.2.1-beta.2` at `3c7b07cfe2d56540cd319179ef7c0d02318d2d38`
 - Canonical runtime `ffmpeg-adaptive v0.1.0-beta.1` at `80d648bbb0f93c45d5a7198bd7bf9260e9febd32`
 - Plugin workflow `33320334916` and clean extracted-archive validation
+- Development registry commit `d6495c932cd53248ac1128b18ebe7a872d1f20f1`
+  and workflow `33320510384`
+- Managed repository 37 update, installed source/license verification,
+  profile migration/reconciliation, schema-2 cache rebuild, and actual
+  1080p/1080i/720p Stream plus `pipe:0` Output Profile validation on
+  `2026-08-30`
