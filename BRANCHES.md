@@ -23,7 +23,8 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `fix/ffmpeg-smart-v0.2.0-beta.11` | fix | merged | `dev` | `dev` | Publish canonical Map All and benchmark-lock corrections for installed validation. |
 | `release/ffmpeg-smart-v0.2.0-dev` | release | merged | `dev` | `dev` | Align the tagged-build channel with the completed stable FFmpeg Smart `v0.2.0` build. |
 | `feature/ffmpeg-smart-v0.2.1-beta.1` | feature | published | `dev` | `dev` | Advertise the immutable adaptive-probing FFmpeg Smart Profiles `v0.2.1-beta.1` test build. |
-| `feature/ffmpeg-smart-v0.2.1-beta.2` | feature | integrated | `dev` | `dev` | Advertise the modular MIT-runtime FFmpeg Smart Profiles `v0.2.1-beta.2` test build. |
+| `feature/ffmpeg-smart-v0.2.1-beta.2` | feature | published | `dev` | `dev` | Advertise the modular MIT-runtime FFmpeg Smart Profiles `v0.2.1-beta.2` test build. |
+| `docs/ffmpeg-smart-beta2-live-validation` | documentation | active | `dev` at `d6495c9` | `dev` | Record managed beta.2 validation without changing registry metadata. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -37,14 +38,26 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/ffmpeg-smart-v0.2.1-beta.2`
 
 - Type: short-lived feature publication branch
-- Status: integrated into local `dev`; remote publication, public-manifest verification, and managed validation remain
+- Status: published through `dev` at `d6495c932cd53248ac1128b18ebe7a872d1f20f1`; public manifests, workflow `33320510384`, managed update, cache rebuild, and live Stream/Output Profile checks pass
 - Base: `dev` at `8113d40c4c17c958f8a5ea8c2620b36b28a8b96d` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`.
 - Target: `dev` only
 - Purpose: advance FFmpeg Smart Profiles from `0.2.1-beta.1` to approved immutable `v0.2.1-beta.2`, bundling the complete modular MIT `ffmpeg-adaptive` runtime and removing redundant HDR/10-bit plugin controls.
 - Source evidence: plugin tag `v0.2.1-beta.2` resolves to `3c7b07cfe2d56540cd319179ef7c0d02318d2d38`; source workflow `33320334916` passes; the clean archive reports beta.2 and contains the entrypoint, six pinned modules, exact dependency MIT notice, and intended executable/read-only modes.
 - Scope: FFmpeg Smart root/detail metadata, preserved version history, registry changelog, decision record, and this branch ledger only.
 - Exclusions: no unrelated plugin metadata, Stream Sort changes, stable `main`, minimum Dispatcharr version, GitHub Release, manual ZIP, stable source promotion, runtime code, or Dispatcharr core behavior.
-- Validation: development registry validator, unit tests, exact remote archive, public manifests, managed update, settings migration, cache rebuild, `pipe:0`, and representative actual streams are required before completion.
+- Validation: the development validator, seven registry tests, exact remote archive, public manifests, and workflow pass. Managed repository 37 updated beta.1 to beta.2; the installed seven-file runtime and MIT notice match the tag; retired HDR/10-bit UI fields, saved keys, and options are absent; and a second reconciliation is idempotent. A zero-viewer rebuild produced a valid schema-2 VAAPI/H.264 cache with low-power disabled and measured capacities 15/11. Priority-zero 1080p, 1080i, and 720p sources pass both managed Stream and finite `pipe:0` Output Profile paths with successful full-video decodes and monotonic, nonnegative DTS. Final viewer and FFmpeg-process counts are zero.
+
+### `docs/ffmpeg-smart-beta2-live-validation`
+
+- Type: short-lived documentation branch
+- Status: active; validation evidence is ready for review and integration
+- Base: `dev` at `d6495c932cd53248ac1128b18ebe7a872d1f20f1`
+- Target: `dev` only
+- Purpose: preserve exact registry, managed migration, cache, actual-stream, and
+  final process/viewer evidence for FFmpeg Smart Profiles `0.2.1-beta.2`.
+- Scope: branch ledger, registry changelog, and ADR-010 provenance only.
+- Exclusions: manifests, plugin archives, unrelated plugins, Stream Sort, stable
+  `main`, GitHub Release, manual ZIP, stable promotion, and branch deletion.
 
 ### `feature/ffmpeg-smart-v0.2.1-beta.1`
 
@@ -56,7 +69,10 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Source evidence: plugin tag `v0.2.1-beta.1` resolves to `d95aaf649b02e23dab76f19d274cb765b75bbca6`; its verified archive reports beta.1, preserves executable launcher/wrapper modes, and pins canonical `ffmpeg-asr v1.1.1-beta.1` commit `ecc64244dae2c0e80761da6f16be92d95b91d29a` at SHA-256 `785a2ffe283452006ffa50d36e12fd2a013f54e0bd233f6d3c8d87f8a46f0f71`.
 - Scope: FFmpeg Smart root/detail metadata, imported stable `0.2.0` plus preserved beta history, registry changelog, decision record, and this branch ledger only.
 - Exclusions: no unrelated plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, distributable ZIP, runtime code, or Dispatcharr core behavior.
-- Validation: source and plugin local gates, immutable tag/archive inspection, development registry validation, and complete diff review pass; publication, live update, HDHomeRun, and CSPAN3 checks remain pending.
+- Validation: source and plugin local gates, immutable tag/archive inspection,
+  development registry validation, public manifests, managed update, cache
+  rebuild, HDHomeRun, and CSPAN3 HE-AACv2 checks pass; workflow and deployment
+  evidence remain immutable historical inputs to beta.2.
 
 
 ### `release/ffmpeg-smart-v0.2.0-dev`
@@ -243,7 +259,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Validation: the development validator and all registry tests pass; the stable tag resolves to source commit `2c7441bd4cceb8e2a68b50a0c24b064e87c6eb46`
 - Current Mustarrd DVR build: beta `0.2.13-beta.2` from source repository `matrix2669/Dispatcharr-Mustarrd-DVR-Plugin`; plugin name and slug remain unchanged
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
-- Current FFmpeg Smart build: completed stable `0.2.0` from source commit `6eb5c8c8f437dcca6802967ceb193e37f984a7c1`, reusing the identical `main` detail manifest and immutable tag archive. The archive preserves executable launcher/wrapper modes and pins canonical `ffmpeg-asr v1.1.0` at `448837f4f6267de1c6705cb670bcdb0c6991614f`. The complete beta.11/stable validation evidence remains applicable; no GitHub Release or distributable ZIP is published while inherited-wrapper licensing remains unresolved. Beta.11 detail metadata remains unindexed for history.
+- Current FFmpeg Smart build: beta `0.2.1-beta.2` from source commit `3c7b07cfe2d56540cd319179ef7c0d02318d2d38`, whose immutable archive bundles canonical MIT `ffmpeg-adaptive v0.1.0-beta.1` at `80d648bbb0f93c45d5a7198bd7bf9260e9febd32`. Source/archive checks, development workflow, managed migration, schema-2 cache rebuild, and actual 1080p/1080i/720p Stream plus `pipe:0` Output Profile validation pass. Stable `main` remains on `0.2.0`; no GitHub Release, manual ZIP, or stable promotion is authorized.
 - Current Stream Sort build: completed stable `0.3.6` from source commit `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`; the immutable public archive passes all 159 tests, and the tagged-build root/detail manifests preserve beta.15 and all earlier history. Stable `main` publication and managed repository 3 installation also pass.
 
 ### `feature/ffmpeg-smart-v0.2.0-beta.3`

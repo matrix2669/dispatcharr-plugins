@@ -8,6 +8,14 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 - Advance FFmpeg Smart Profiles from completed stable `0.2.0` to `0.2.1-beta.1` in `dev`, adding metadata-validated adaptive input probing, safe migration of manual probe-window settings, and browser-refresh guidance in the profile update confirmation.
 - Align the development channel with completed stable FFmpeg Smart Profiles `0.2.0`, reusing the identical stable detail manifest while retaining beta.11 metadata as unindexed history.
 
+### Validation
+
+- Validate FFmpeg Smart Profiles `0.2.1-beta.2` from development repository 37:
+  exact installed modules and MIT notice, retired HDR/10-bit UI and saved-value
+  removal, idempotent profile reconciliation, zero-viewer schema-2 cache rebuild,
+  and priority-zero 1080p, 1080i, and 720p Stream plus finite `pipe:0` Output
+  Profile execution all pass. The stable registry remains unchanged.
+
 ### Documentation
 
 - Clarify in the FFmpeg Smart registry description that new installations require a hardware capability scan, updates may require a recheck, and managed profiles use basic stream copy without FFmpeg Smart or hardware acceleration until a required scan succeeds.
