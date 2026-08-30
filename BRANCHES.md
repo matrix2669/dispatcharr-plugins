@@ -26,7 +26,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/ffmpeg-smart-v0.2.1-beta.2` | feature | published | `dev` | `dev` | Advertise the modular MIT-runtime FFmpeg Smart Profiles `v0.2.1-beta.2` test build. |
 | `docs/ffmpeg-smart-beta2-live-validation` | documentation | integrated | `dev` at `d6495c9` | `dev` | Record managed beta.2 validation without changing registry metadata. |
 | `fix/ffmpeg-smart-v0.2.1-beta.3` | fix | published | `dev` at `1adc1fb` | `dev` | Advertise the corrective benchmark/runtime-fidelity FFmpeg Smart Profiles `v0.2.1-beta.3` test build. |
-| `docs/ffmpeg-smart-beta3-live-validation` | documentation | active | `dev` at `5048952` | `dev` | Record managed beta.3 validation without changing registry metadata. |
+| `docs/ffmpeg-smart-beta3-live-validation` | documentation | integrated | `dev` at `5048952` | `dev` | Record managed beta.3 validation without changing registry metadata. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.9` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.9` combined-capture correction only to the tagged-build channel. |
@@ -76,7 +76,9 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `docs/ffmpeg-smart-beta3-live-validation`
 
 - Type: short-lived documentation branch
-- Status: active
+- Status: integrated into `dev` at
+  `9564bc8015d3d5efbf69a74f13eb168bbbd1bd4e`; the remote documentation
+  branch is retained and no branch deletion is authorized
 - Base: `dev` at `50489521b1b6350bc95f300ceaf77a8bb7c372da`
 - Target: `dev` only
 - Purpose: preserve exact managed beta.3 update, cache-boundary, actual-stream,
