@@ -10,7 +10,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
-| `feature/stream-sort-v0.3.7-beta.1` | feature | active | `dev` at `d266c2f` | `dev` | Publish immutable Stream Sort beta.1 telemetry retention build. |
+| `feature/stream-sort-v0.3.7-beta.1` | feature | published | `dev` at `d266c2f` | `dev` | Publish immutable Stream Sort beta.1 telemetry retention build. |
 | `feature/stream-sort-v0.3.6-beta.15` | feature | published | `dev` | `dev` | Publish immutable Stream Sort beta.15 and validate the managed upgrade. |
 | `release/stream-sort-v0.3.6-dev` | release | published | `dev` | `dev` | Advance the tagged-build channel to completed stable Stream Sort `0.3.6`. |
 | `feature/ffmpeg-smart-v0.2.0-beta.3` | feature | merged | `dev` | `dev` | Advertise the immutable FFmpeg Smart Profiles `v0.2.0-beta.3` test build. |
@@ -41,14 +41,14 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/stream-sort-v0.3.7-beta.1`
 
 - Type: short-lived feature publication branch
-- Status: prepared for focused `dev` publication; public registry and managed-install validation pending
+- Status: published through `dev` at `f757a22848e98931f6488e785f1b341c096b7ec3`; workflow `33706524101` and public manifest verification pass
 - Base: `dev` at `d266c2f2cbbd4640c89d850d7db14b06a84af973` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`
 - Target: `dev` only
 - Purpose: advance Dispatcharr Stream Sort from completed stable `0.3.6` to immutable `v0.3.7-beta.1` for retained media-change, direct-throughput, and applied-sort evidence
 - Source evidence: plugin tag `v0.3.7-beta.1` resolves to `8d3afff3bdd0bc0dbc780f211065d81f4da75149`; the public archive reports matching version metadata, contains the expected plugin layout, and passes all 164 tests plus compilation
 - Scope: Stream Sort root/detail metadata, preserved version history, registry changelog, and this branch ledger only
 - Exclusions: unrelated plugin metadata, stable `main`, minimum Dispatcharr version, GitHub Release, manual ZIP, stable source promotion, deployment, and Dispatcharr core behavior
-- Validation: development registry validator, registry tests, focused diff review, public manifests, workflow, and managed update remain required before completion
+- Validation: development registry validator, all seven registry tests, project validation, standards reconciliation, focused diff review, source tag/archive inspection, public root/detail manifests, and workflow `33706524101` pass. Managed repository refresh and installation were not performed because deployment remains separately scoped.
 
 ### `fix/ffmpeg-smart-v0.2.1-beta.3`
 

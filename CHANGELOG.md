@@ -14,6 +14,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Validation
 
+- Validate Dispatcharr Stream Sort `0.3.7-beta.1` source and public archive, all 164 plugin tests, compilation, development registry metadata, all seven registry tests, public root/detail manifests, exact source commit, preserved version history, and registry workflow `33706524101`. Managed installation remains separately scoped.
 - Validate FFmpeg Smart Profiles `0.2.1-beta.3` from development repository 37:
   exact installed runtime and MIT notice, absent retired HDR/10-bit controls,
   idempotent profiles, stale-to-valid cache transition, VAAPI/HEVC 18/14
