@@ -7,17 +7,25 @@
   "repo_url": "https://github.com/matrix2669/DIspatcharr-Stream-Sort-Plugin",
   "registry_name": "matrix2669 Plugins (dev)",
   "registry_url": "https://github.com/matrix2669/dispatcharr-plugins/tree/dev",
-  "latest_version": "0.3.6",
+  "latest_version": "0.3.7-beta.1",
   "latest": {
-    "version": "0.3.6",
-    "url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.6",
-    "latest_url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.6",
-    "commit_sha": "bbae86f2ded0a1bcd09d2906e0530e70380ce5a4",
-    "commit_sha_short": "bbae86f",
-    "build_timestamp": "2026-08-28T03:17:10Z",
+    "version": "0.3.7-beta.1",
+    "url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.7-beta.1",
+    "latest_url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.7-beta.1",
+    "commit_sha": "8d3afff3bdd0bc0dbc780f211065d81f4da75149",
+    "commit_sha_short": "8d3afff",
+    "build_timestamp": "2026-09-03T02:06:39Z",
     "min_dispatcharr_version": "v0.29.0"
   },
   "versions": [
+    {
+      "version": "0.3.7-beta.1",
+      "url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.7-beta.1",
+      "commit_sha": "8d3afff3bdd0bc0dbc780f211065d81f4da75149",
+      "commit_sha_short": "8d3afff",
+      "build_timestamp": "2026-09-03T02:06:39Z",
+      "min_dispatcharr_version": "v0.29.0"
+    },
     {
       "version": "0.3.6",
       "url": "https://api.github.com/repos/matrix2669/DIspatcharr-Stream-Sort-Plugin/zipball/v0.3.6",
