@@ -4,6 +4,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+- Advance Lineuparr from `1.26.2472002-beta.1` to `1.26.2472002-beta.2` in `dev`, replacing generic generated-lineup action feedback with explicit empty URL, unreachable URL, created filename, and refreshed filename results; stable `main` remains unchanged.
 - Advance Lineuparr from `1.26.2471558-beta.1` to `1.26.2472002-beta.1` in `dev`, adding persistent generated-lineup URL import while retaining channel-scoped negative stream matching; stable `main` remains unchanged.
 - Add Lineuparr `1.26.2471558-beta.1` to `dev` for development testing of channel-scoped negative stream matching through `excluded_aliases`; stable `main` remains unchanged.
 - Advance FFmpeg Smart Profiles from `0.2.1-beta.2` to corrective
@@ -16,6 +17,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Validation
 
+- Validate the immutable Lineuparr `v1.26.2472002-beta.2` tag, exact source composition, public archive contents and version, generated-import outcome checks, source matcher gates, development manifest history, registry tests, and unchanged unrelated entries; stable registry and deployment remain separately scoped.
 - Validate the immutable Lineuparr `v1.26.2472002-beta.1` tag, exact source composition, inner plugin archive layout and metadata, generated-import checks, source matcher gates, development manifest history, all seven registry tests, public root/detail/icon responses, and workflow `33914905385`; stable registry and deployment remain separately scoped.
 - Validate the immutable Lineuparr beta tag, exact source composition, archive layout, synchronized plugin metadata, source matcher gates, development registry metadata, all seven registry tests, public root/detail/icon responses, and workflow `33893350037`; the stable registry is unchanged and managed installation remains separately scoped.
 - Validate Dispatcharr Stream Sort `0.3.7-beta.1` source and public archive, all 164 plugin tests, compilation, development registry metadata, all seven registry tests, public root/detail manifests, exact source commit, preserved version history, and registry workflow `33706524101`. Managed installation remains separately scoped.

@@ -437,3 +437,38 @@ The operator requested the generated-lineup URL feature in the existing developm
 - Operator authorization dated `2026-09-04`: merge the generated-lineup URL importer into LineupARR `dev` and update the manifest
 - Source tag: `v1.26.2472002-beta.1`
 - Source commit: `2d13dee93d3d8695662a9e94c9236911718ea34d`
+
+---
+
+# ADR-014: Publish generated-lineup result feedback as sequential beta.2
+
+## Status
+
+Accepted
+
+## Date
+
+2026-09-04
+
+## Decision
+
+Advance Lineuparr in the `dev` registry from `1.26.2472002-beta.1` to `1.26.2472002-beta.2`. Advertise immutable source tag `v1.26.2472002-beta.2`, which dereferences to the validated fork `dev` composition at `251120aa51d67e555f9c9fba73244c461627c6ec`. Retain both earlier betas in version history and leave registry `main` unchanged.
+
+The new composition adds explicit generated-lineup action outcomes while retaining the existing URL importer and channel-scoped exclusions. Publication does not authorize a fork GitHub Release, managed Dispatcharr refresh, installation, or deployment.
+
+## Reason
+
+The current Dispatcharr panel substitutes a generic completion message when a handled plugin error omits `result.message`. The source fix safely mirrors import-error text for display and distinguishes newly created lineup files from refreshed files. The operator selected sequential prerelease numbering for further builds from this upstream baseline, making this update `beta.2`.
+
+## Consequences
+
+- Development users can discover the corrected action feedback through `matrix2669 Plugins (dev)` after publication.
+- Root and detail manifests must identify the exact beta.2 tag, source commit, archive, icon, and unchanged minimum Dispatcharr version.
+- Both earlier Lineuparr betas remain immutable and available in retained detail-manifest history.
+- Stable `main`, unrelated plugins, deployment, and upstream contribution state remain unchanged.
+
+## Provenance
+
+- Operator authorization dated `2026-09-04`: merge the generated-lineup result feedback into LineupARR `dev`
+- Source tag: `v1.26.2472002-beta.2`
+- Source commit: `251120aa51d67e555f9c9fba73244c461627c6ec`
