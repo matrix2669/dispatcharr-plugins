@@ -1,6 +1,6 @@
 # Branches
 
-This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-09-02.
+This ledger records every current branch on `matrix2669/dispatcharr-plugins`. GitHub remains authoritative for live refs, commits, pull requests, and checks. Status below was last refreshed on 2026-09-04.
 
 Before deleting a branch, record user-visible results in `CHANGELOG.md` and durable rationale in `DECISIONS.md` when applicable, then remove its index row and detailed record.
 
@@ -10,6 +10,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
+| `feature/lineuparr-v1.26.2471558-beta.1` | feature | active | `dev` at `5253442` | `dev` | Add immutable Lineuparr excluded-aliases beta.1 to the development registry. |
 | `feature/stream-sort-v0.3.7-beta.1` | feature | published | `dev` at `d266c2f` | `dev` | Publish immutable Stream Sort beta.1 telemetry retention build. |
 | `feature/stream-sort-v0.3.6-beta.15` | feature | published | `dev` | `dev` | Publish immutable Stream Sort beta.15 and validate the managed upgrade. |
 | `release/stream-sort-v0.3.6-dev` | release | published | `dev` | `dev` | Advance the tagged-build channel to completed stable Stream Sort `0.3.6`. |
@@ -37,6 +38,18 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/stream-sort-v0.3.6-beta.14` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort issue #7 settings and scoring controls only to the tagged-build channel. |
 
 ## Branch Records
+
+### `feature/lineuparr-v1.26.2471558-beta.1`
+
+- Type: short-lived feature publication branch
+- Status: active
+- Base: `dev` at `5253442ecedd1efdb6593b84a439a688a957b50f` after workspace standards reconciliation at `sha256:6456d4a722cfca0a03e6bce3d698208c844a114953c62d0fe757789d48f1c794`
+- Target: `dev` only
+- Purpose: add immutable Lineuparr `v1.26.2471558-beta.1` for development testing of channel-scoped `excluded_aliases`
+- Source evidence: annotated tag `v1.26.2471558-beta.1` dereferences to `f03ea7e1746e48640c94028758ba3325d0ceef62`; the downloaded archive contains the expected `Lineuparr/` package, matching runtime and manifest versions, and `Lineuparr/logo.png`
+- Scope: Lineuparr root/detail metadata, changelog, decision record, and this branch ledger only
+- Exclusions: unrelated plugin metadata, stable `main`, GitHub Release, manual ZIP, deployment, source runtime changes, and Dispatcharr core behavior
+- Validation: source static validation, Python compilation, core/client parity, 307-output matcher golden gate, publish audit, exact remote tag verification, archive inspection, development registry validation, registry tests, and public manifest checks are required before completion
 
 ### `feature/stream-sort-v0.3.7-beta.1`
 
@@ -330,6 +343,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
 - Current FFmpeg Smart build: beta `0.2.1-beta.3` from source commit `dd54d4cc82a454135c4eb3b75eeeb5eb48713fe6`, whose immutable archive bundles canonical MIT `ffmpeg-adaptive v0.1.0-beta.2` at `4df6c12e395187fc0080f858685a3c6ebd7a8c42`. Source/archive checks, development workflow, managed update, corrected VAAPI/HEVC 18/14 cache boundaries, actual 1080p/1080i/720p Stream plus finite `pipe:0` Output Profile validation, and overlapping both-GPU scheduling pass. Stable `main` remains on `0.2.0`; no GitHub Release, manual ZIP, or stable promotion is authorized.
 - Current Stream Sort build: completed stable `0.3.6` from source commit `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`; the immutable public archive passes all 159 tests, and the tagged-build root/detail manifests preserve beta.15 and all earlier history. Stable `main` publication and managed repository 3 installation also pass.
+- Current Lineuparr build after this publication: beta `1.26.2471558-beta.1` from source composition `f03ea7e1746e48640c94028758ba3325d0ceef62`; stable `main` remains absent and upstream remains the stable production source.
 
 ### `feature/ffmpeg-smart-v0.2.0-beta.3`
 

@@ -4,6 +4,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+- Add Lineuparr `1.26.2471558-beta.1` to `dev` for development testing of channel-scoped negative stream matching through `excluded_aliases`; stable `main` remains unchanged.
 - Advance FFmpeg Smart Profiles from `0.2.1-beta.2` to corrective
   `0.2.1-beta.3` in `dev`, aligning benchmark and runtime hardware paths,
   bounding capacity scans, and forcing a fresh cache rebuild for the corrected
@@ -14,6 +15,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ### Validation
 
+- Validate the immutable Lineuparr beta tag, exact source composition, archive layout, synchronized plugin metadata, source matcher gates, development registry metadata, and unchanged stable registry. Managed installation remains separately scoped.
 - Validate Dispatcharr Stream Sort `0.3.7-beta.1` source and public archive, all 164 plugin tests, compilation, development registry metadata, all seven registry tests, public root/detail manifests, exact source commit, preserved version history, and registry workflow `33706524101`. Managed installation remains separately scoped.
 - Validate FFmpeg Smart Profiles `0.2.1-beta.3` from development repository 37:
   exact installed runtime and MIT notice, absent retired HDR/10-bit controls,

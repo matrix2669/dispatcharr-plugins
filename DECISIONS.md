@@ -366,3 +366,39 @@ checks, and final viewer/process cleanup.
   MIT notice, idempotent profiles, valid VAAPI/HEVC 18/14 cache with confirmed
   rejection at 19/15, decoded-frame actual-stream matrix, overlapping both-GPU
   scheduler pass, cleanup, and final process audit on `2026-08-30`
+
+---
+
+# ADR-012: Publish the Lineuparr excluded-aliases beta only to dev
+
+## Status
+
+Accepted
+
+## Date
+
+2026-09-04
+
+## Decision
+
+Add Lineuparr `1.26.2471558-beta.1` only to the `dev` registry. Advertise immutable source tag `v1.26.2471558-beta.1`, which dereferences to the validated fork `dev` composition at `f03ea7e1746e48640c94028758ba3325d0ceef62`. Create a development per-plugin manifest, preserve every unrelated root entry, and leave registry `main` unchanged.
+
+The source composition is current upstream `main` plus the isolated `feature/excluded-aliases` implementation and a separate fork-only beta metadata branch. Publication does not authorize a fork GitHub Release, stable registry entry, managed Dispatcharr refresh, installation, or deployment.
+
+## Reason
+
+The operator wants to test denied M3U matches through the managed plugin workflow before proposing the Lineuparr schema and matcher change upstream. The immutable beta tag makes that exact composition reproducible, and the incremented synchronized version lets Dispatcharr distinguish it from upstream `1.26.2421451`.
+
+## Consequences
+
+- Development users can discover the beta from `matrix2669 Plugins (dev)`.
+- Root and detail manifests identify the exact tag, commit, version, archive, author, license, icon, and upstream minimum Dispatcharr version.
+- Upstream remains the stable Lineuparr source; the plugin stays absent from registry `main`.
+- A correction requires a new immutable beta version and tag; the existing tag and metadata must never move.
+- Managed installation and behavior validation remain separate, explicitly authorized work.
+
+## Provenance
+
+- Operator authorization dated `2026-09-04`: add the composed Lineuparr excluded-aliases build to the Dispatcharr development manifest
+- Source tag: `v1.26.2471558-beta.1`
+- Source commit: `f03ea7e1746e48640c94028758ba3325d0ceef62`
