@@ -10,6 +10,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
+| `feature/lineuparr-v1.26.2472002-beta.3` | feature | ready | `dev` at `4a64b36` | `dev` | Publish import confirmation and automatic active selection. |
 | `feature/lineuparr-v1.26.2472002-beta.2` | feature | published | `dev` at `be8e887` | `dev` | Publish explicit generated-lineup import results as sequential beta.2. |
 | `feature/lineuparr-v1.26.2472002-beta.1` | feature | published | `dev` at `0067dbd` | `dev` | Advance Lineuparr to the generated-lineup URL import beta. |
 | `feature/lineuparr-v1.26.2471558-beta.1` | feature | published | `dev` at `5253442` | `dev` | Add immutable Lineuparr excluded-aliases beta.1 to the development registry. |
@@ -40,6 +41,14 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/stream-sort-v0.3.6-beta.14` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort issue #7 settings and scoring controls only to the tagged-build channel. |
 
 ## Branch Records
+
+### `feature/lineuparr-v1.26.2472002-beta.3`
+
+- Base: dev `4a64b36f7c64d3bb2b3dc49410b3cadd568c4fc7`; target: dev only.
+- Purpose: publish confirmation and automatic activation as sequential beta.3.
+- Source: `v1.26.2472002-beta.3` at `7e76a8bae6231c87255b7c447f232aac67c17c45`, remotely verified. Public archive SHA-256: `fe8eea93cfb9d8724b921cb7e74049fdd59fd16dd96ec2adfa0d7262d4248c04`.
+- Scope: Lineuparr manifests and publication records; preserve all other plugins and history.
+- Status: source and archive validated; registry integration in progress.
 
 ### `feature/lineuparr-v1.26.2472002-beta.2`
 

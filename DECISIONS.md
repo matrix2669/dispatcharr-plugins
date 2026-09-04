@@ -472,3 +472,7 @@ The current Dispatcharr panel substitutes a generic completion message when a ha
 - Operator authorization dated `2026-09-04`: merge the generated-lineup result feedback into LineupARR `dev`
 - Source tag: `v1.26.2472002-beta.2`
 - Source commit: `251120aa51d67e555f9c9fba73244c461627c6ec`
+
+## Beta.3 publication (2026-09-04)
+
+The operator requested dev publication and a manifest update for import confirmation and automatic active-lineup selection. Advance only Lineuparr to immutable `v1.26.2472002-beta.3` at `7e76a8bae6231c87255b7c447f232aac67c17c45`. Preserve all earlier versions and unrelated entries. Source and archive checks passed; installation remains separately scoped. This continues the sequential beta policy on the same upstream baseline.

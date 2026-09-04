@@ -4,6 +4,8 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+- Publish Lineuparr `1.26.2472002-beta.3` to dev: confirm imports before proceeding, automatically select the successfully imported lineup, and explain the possible disable/re-enable requirement in Settings. Archive and source checks passed, including 307 matcher outputs. Previous beta history is retained.
+
 - Advance Lineuparr from `1.26.2472002-beta.1` to `1.26.2472002-beta.2` in `dev`, replacing generic generated-lineup action feedback with explicit empty URL, unreachable URL, created filename, and refreshed filename results; stable `main` remains unchanged.
 - Advance Lineuparr from `1.26.2471558-beta.1` to `1.26.2472002-beta.1` in `dev`, adding persistent generated-lineup URL import while retaining channel-scoped negative stream matching; stable `main` remains unchanged.
 - Add Lineuparr `1.26.2471558-beta.1` to `dev` for development testing of channel-scoped negative stream matching through `excluded_aliases`; stable `main` remains unchanged.
