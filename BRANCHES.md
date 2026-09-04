@@ -42,6 +42,15 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 
 ## Branch Records
 
+### `feature/lineuparr-v1.26.2472002-beta.4`
+
+- Base: dev `7da93df496cebaab8371b9ae73d9c096afa7cd38`; target dev only.
+- Scope: Lineuparr manifests and publication records; retain every older version and unrelated plugin.
+- Source: immutable `v1.26.2472002-beta.4` at `cc60a45beb2edc49b4a305460ec671b19093b061`.
+- Behavior: permanent Lineup from URL, per-action Exact matching, no Dispatcharr change; popup explains immediate selection versus plugin reload.
+- Archive SHA-256: `1eb086b419a5484f8d5f83ecd62222c27eb3d70ad2da68a284c0eaf9ba5f1de1`.
+- Status: source published; dev registry publication authorized. No deployment or stable promotion.
+
 ### `feature/lineuparr-v1.26.2472002-beta.3`
 
 - Base: dev `4a64b36f7c64d3bb2b3dc49410b3cadd568c4fc7`; target: dev only.

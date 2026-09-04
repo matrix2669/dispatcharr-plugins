@@ -475,4 +475,8 @@ The current Dispatcharr panel substitutes a generic completion message when a ha
 
 ## Beta.3 publication (2026-09-04)
 
+### Follow-up beta.4 decision
+
+The operator approved the plugin-only stable Lineup from URL workflow and next sequential beta. Publish `v1.26.2472002-beta.4` at `cc60a45beb2edc49b4a305460ec671b19093b061` to dev only. Retain older beta history and unrelated entries. Automatic saved-setting mutation is replaced by an explicit stable selection and effective Exact matching. No Dispatcharr change, installation, or stable release is authorized.
+
 The operator requested dev publication and a manifest update for import confirmation and automatic active-lineup selection. Advance only Lineuparr to immutable `v1.26.2472002-beta.3` at `7e76a8bae6231c87255b7c447f232aac67c17c45`. Preserve all earlier versions and unrelated entries. Source and archive checks passed; installation remains separately scoped. This continues the sequential beta policy on the same upstream baseline.
