@@ -10,7 +10,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
-| `feature/lineuparr-v1.26.2472002-beta.2` | feature | ready | `dev` at `be8e887` | `dev` | Publish explicit generated-lineup import results as sequential beta.2. |
+| `feature/lineuparr-v1.26.2472002-beta.2` | feature | published | `dev` at `be8e887` | `dev` | Publish explicit generated-lineup import results as sequential beta.2. |
 | `feature/lineuparr-v1.26.2472002-beta.1` | feature | published | `dev` at `0067dbd` | `dev` | Advance Lineuparr to the generated-lineup URL import beta. |
 | `feature/lineuparr-v1.26.2471558-beta.1` | feature | published | `dev` at `5253442` | `dev` | Add immutable Lineuparr excluded-aliases beta.1 to the development registry. |
 | `feature/stream-sort-v0.3.7-beta.1` | feature | published | `dev` at `d266c2f` | `dev` | Publish immutable Stream Sort beta.1 telemetry retention build. |
@@ -44,7 +44,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `feature/lineuparr-v1.26.2472002-beta.2`
 
 - Type: short-lived feature publication branch
-- Status: validated and ready for focused integration into `dev`
+- Status: published through `dev` at `3b10309d3d39960749cf42149909a2f4c221e915`; workflow `33918110443`, public root metadata, GitHub detail contents, and icon pass
 - Base: `dev` at `be8e8870147728736914989e7b2d0ed195fcdcd7`
 - Target: `dev` only
 - Purpose: advance Lineuparr to immutable sequential `v1.26.2472002-beta.2` so generated-lineup imports report empty and unreachable URLs plus the exact created or refreshed filename
@@ -52,7 +52,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Scope: Lineuparr root/detail metadata, retained version history, changelog, decision record, branch ledger, and standards reconciliation only
 - Exclusions: unrelated plugin metadata, stable `main`, GitHub Release, deployment, source runtime changes, upstream contribution state, and Dispatcharr core behavior
 - Validation: source static validation, generated-import outcome checks, Python compilation, core/client parity, 307-output matcher golden gate, exact remote branch/tag verification, downloaded archive inspection, development registry validation, registry tests, JSON parsing, standards reconciliation, focused diff review, and unrelated-entry preservation
-- Completion: pending focused merge into `dev`
+- Completion: `dev` advertises immutable Lineuparr `1.26.2472002-beta.2` from exact source composition `251120aa51d67e555f9c9fba73244c461627c6ec`; registry `main`, deployment, and every unrelated plugin entry remain unchanged
 
 ### `feature/lineuparr-v1.26.2472002-beta.1`
 
@@ -372,7 +372,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Mustarrd DVR validation: source tag resolves to `606d2c23775004581c22213b0b1c7ac59e00b4d6`; the GitHub tag archive preserves `mustarrd-dvr-handoff/`; the immutable icon URL is a 1254×1254 PNG; the development validator and all registry tests pass
 - Current FFmpeg Smart build: beta `0.2.1-beta.3` from source commit `dd54d4cc82a454135c4eb3b75eeeb5eb48713fe6`, whose immutable archive bundles canonical MIT `ffmpeg-adaptive v0.1.0-beta.2` at `4df6c12e395187fc0080f858685a3c6ebd7a8c42`. Source/archive checks, development workflow, managed update, corrected VAAPI/HEVC 18/14 cache boundaries, actual 1080p/1080i/720p Stream plus finite `pipe:0` Output Profile validation, and overlapping both-GPU scheduling pass. Stable `main` remains on `0.2.0`; no GitHub Release, manual ZIP, or stable promotion is authorized.
 - Current Stream Sort build: completed stable `0.3.6` from source commit `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`; the immutable public archive passes all 159 tests, and the tagged-build root/detail manifests preserve beta.15 and all earlier history. Stable `main` publication and managed repository 3 installation also pass.
-- Current Lineuparr build: beta `1.26.2472002-beta.1` from source composition `2d13dee93d3d8695662a9e94c9236911718ea34d`; source/archive checks, development workflow `33914905385`, and public root/detail/icon verification pass. Stable `main` remains absent, upstream remains the stable production source, and managed installation is pending separate authorization.
+- Current Lineuparr build: beta `1.26.2472002-beta.2` from source composition `251120aa51d67e555f9c9fba73244c461627c6ec`; source/archive checks, development workflow `33918110443`, public root metadata, GitHub detail contents, and icon verification pass. Stable `main` remains absent, upstream remains the stable production source, and managed installation is pending separate authorization.
 
 ### `feature/ffmpeg-smart-v0.2.0-beta.3`
 
