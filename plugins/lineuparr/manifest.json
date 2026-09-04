@@ -5,20 +5,28 @@
   "author": "PiratesIRC",
   "license": "MIT",
   "repo_url": "https://github.com/matrix2669/Dispatcharr-Lineuparr-Plugin",
-  "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Lineuparr-Plugin/v1.26.2471558-beta.1/Lineuparr/logo.png",
+  "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Lineuparr-Plugin/v1.26.2472002-beta.1/Lineuparr/logo.png",
   "registry_name": "matrix2669 Plugins (dev)",
   "registry_url": "https://github.com/matrix2669/dispatcharr-plugins/tree/dev",
-  "latest_version": "1.26.2471558-beta.1",
+  "latest_version": "1.26.2472002-beta.1",
   "latest": {
-    "version": "1.26.2471558-beta.1",
-    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2471558-beta.1",
-    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2471558-beta.1",
-    "commit_sha": "f03ea7e1746e48640c94028758ba3325d0ceef62",
-    "commit_sha_short": "f03ea7e",
-    "build_timestamp": "2026-09-04T16:02:40Z",
+    "version": "1.26.2472002-beta.1",
+    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2472002-beta.1",
+    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2472002-beta.1",
+    "commit_sha": "2d13dee93d3d8695662a9e94c9236911718ea34d",
+    "commit_sha_short": "2d13dee",
+    "build_timestamp": "2026-09-04T20:06:20Z",
     "min_dispatcharr_version": "v0.20.0"
   },
   "versions": [
+    {
+      "version": "1.26.2472002-beta.1",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2472002-beta.1",
+      "commit_sha": "2d13dee93d3d8695662a9e94c9236911718ea34d",
+      "commit_sha_short": "2d13dee",
+      "build_timestamp": "2026-09-04T20:06:20Z",
+      "min_dispatcharr_version": "v0.20.0"
+    },
     {
       "version": "1.26.2471558-beta.1",
       "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2471558-beta.1",

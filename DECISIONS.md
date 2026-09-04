@@ -402,3 +402,38 @@ The operator wants to test denied M3U matches through the managed plugin workflo
 - Operator authorization dated `2026-09-04`: add the composed Lineuparr excluded-aliases build to the Dispatcharr development manifest
 - Source tag: `v1.26.2471558-beta.1`
 - Source commit: `f03ea7e1746e48640c94028758ba3325d0ceef62`
+
+---
+
+# ADR-013: Advance the Lineuparr development entry for generated lineup imports
+
+## Status
+
+Accepted
+
+## Date
+
+2026-09-04
+
+## Decision
+
+Advance Lineuparr in the `dev` registry from `1.26.2471558-beta.1` to `1.26.2472002-beta.1`. Advertise immutable source tag `v1.26.2472002-beta.1`, which dereferences to the validated fork `dev` composition at `2d13dee93d3d8695662a9e94c9236911718ea34d`. Preserve `1.26.2471558-beta.1` as the next version-history entry and leave registry `main` unchanged.
+
+The new source composition adds persistent generated-lineup URL import while retaining channel-scoped `excluded_aliases`. Publication does not authorize a fork GitHub Release, managed Dispatcharr refresh, installation, or deployment.
+
+## Reason
+
+The operator requested the generated-lineup URL feature in the existing development composition and asked that the manifest advertise it. A new immutable tag and increasing version are required because an advertised tag cannot move and Dispatcharr must distinguish the update from the prior beta.
+
+## Consequences
+
+- Development users can discover the generated-lineup importer through `matrix2669 Plugins (dev)` after publication.
+- The root and detail manifests must identify the exact new tag, source commit, version, archive, icon, and existing minimum Dispatcharr version.
+- The prior beta remains immutable and available in retained detail-manifest history.
+- Stable `main`, unrelated plugins, deployment, and upstream contribution state remain unchanged.
+
+## Provenance
+
+- Operator authorization dated `2026-09-04`: merge the generated-lineup URL importer into LineupARR `dev` and update the manifest
+- Source tag: `v1.26.2472002-beta.1`
+- Source commit: `2d13dee93d3d8695662a9e94c9236911718ea34d`

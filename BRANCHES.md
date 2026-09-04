@@ -10,6 +10,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 |---|---|---|---|---|---|
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
+| `feature/lineuparr-v1.26.2472002-beta.1` | feature | ready | `dev` at `0067dbd` | `dev` | Advance Lineuparr to the generated-lineup URL import beta. |
 | `feature/lineuparr-v1.26.2471558-beta.1` | feature | published | `dev` at `5253442` | `dev` | Add immutable Lineuparr excluded-aliases beta.1 to the development registry. |
 | `feature/stream-sort-v0.3.7-beta.1` | feature | published | `dev` at `d266c2f` | `dev` | Publish immutable Stream Sort beta.1 telemetry retention build. |
 | `feature/stream-sort-v0.3.6-beta.15` | feature | published | `dev` | `dev` | Publish immutable Stream Sort beta.15 and validate the managed upgrade. |
@@ -38,6 +39,19 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/stream-sort-v0.3.6-beta.14` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort issue #7 settings and scoring controls only to the tagged-build channel. |
 
 ## Branch Records
+
+### `feature/lineuparr-v1.26.2472002-beta.1`
+
+- Type: short-lived feature publication branch
+- Status: validated and ready for focused integration into `dev`
+- Base: `dev` at `0067dbd46d8ae088ec48fc6a66c25e4cf97bb1e5` after workspace standards reconciliation at `sha256:a68828728963dccb02bbc0c02d4aa37efc2c7012e591525890d21a2f462d5f71`
+- Target: `dev` only
+- Purpose: advance Lineuparr to immutable `v1.26.2472002-beta.1` for development testing of persistent generated-lineup URL import while retaining channel-scoped exclusions
+- Source evidence: annotated tag `v1.26.2472002-beta.1` dereferences to `2d13dee93d3d8695662a9e94c9236911718ea34d`; the downloaded GitHub archive contains the expected inner `Lineuparr/` package, matching runtime and manifest versions, `lineup_import.py`, and `logo.png`
+- Scope: Lineuparr root/detail metadata, retained version history, changelog, decision record, branch ledger, and standards reconciliation only
+- Exclusions: unrelated plugin metadata, stable `main`, GitHub Release, deployment, source runtime changes, upstream contribution state, and Dispatcharr core behavior
+- Validation: source static validation, generated-import checks, Python compilation, core/client parity, 307-output matcher golden gate, exact remote branch/tag verification, downloaded archive inspection, development registry validation, all seven registry tests, JSON parsing, standards reconciliation, focused diff review, and unrelated-entry preservation pass
+- Completion: pending focused merge into `dev`
 
 ### `feature/lineuparr-v1.26.2471558-beta.1`
 
