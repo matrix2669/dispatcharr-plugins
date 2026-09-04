@@ -5,20 +5,28 @@
   "author": "PiratesIRC",
   "license": "MIT",
   "repo_url": "https://github.com/matrix2669/Dispatcharr-Lineuparr-Plugin",
-  "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Lineuparr-Plugin/v1.26.2472002-beta.3/Lineuparr/logo.png",
+  "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Lineuparr-Plugin/v1.26.2472002-beta.4/Lineuparr/logo.png",
   "registry_name": "matrix2669 Plugins (dev)",
   "registry_url": "https://github.com/matrix2669/dispatcharr-plugins/tree/dev",
-  "latest_version": "1.26.2472002-beta.3",
+  "latest_version": "1.26.2472002-beta.4",
   "latest": {
-    "version": "1.26.2472002-beta.3",
-    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2472002-beta.3",
-    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2472002-beta.3",
-    "commit_sha": "7e76a8bae6231c87255b7c447f232aac67c17c45",
-    "commit_sha_short": "7e76a8b",
-    "build_timestamp": "2026-09-04T22:21:54Z",
-    "min_dispatcharr_version": "v0.20.0"
+    "version": "1.26.2472002-beta.4",
+    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2472002-beta.4",
+    "commit_sha": "cc60a45beb2edc49b4a305460ec671b19093b061",
+    "commit_sha_short": "cc60a45",
+    "build_timestamp": "2026-09-04T23:06:00Z",
+    "min_dispatcharr_version": "v0.20.0",
+    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2472002-beta.4"
   },
   "versions": [
+    {
+      "version": "1.26.2472002-beta.4",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2472002-beta.4",
+      "commit_sha": "cc60a45beb2edc49b4a305460ec671b19093b061",
+      "commit_sha_short": "cc60a45",
+      "build_timestamp": "2026-09-04T23:06:00Z",
+      "min_dispatcharr_version": "v0.20.0"
+    },
     {
       "version": "1.26.2472002-beta.3",
       "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Lineuparr-Plugin/zipball/v1.26.2472002-beta.3",
