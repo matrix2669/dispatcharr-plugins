@@ -42,6 +42,14 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 
 ## Branch Records
 
+### `feature/lineuparr-v1.26.2472002-beta.5`
+
+- Base: dev at 48bb5ca20584adc936d382bbf7037d6222bfbf7a; target dev only.
+- Purpose: publish raw full-name exclusions with explicit star wildcards for testing.
+- Source: immutable v1.26.2472002-beta.5 at 45d572f16fae82b67b00b15622b65d9150126bb3; exact remote plugin bytes verified.
+- Preserve all previous versions and unrelated plugins. No stable publication or installation.
+- Validation: source static/import/parity and 307-output matcher gates passed; registry validation and tests required before publication.
+
 ### `feature/lineuparr-v1.26.2472002-beta.4`
 
 - Base: dev `7da93df496cebaab8371b9ae73d9c096afa7cd38`; target dev only.
