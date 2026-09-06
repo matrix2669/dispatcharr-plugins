@@ -1,5 +1,9 @@
 # DECISIONS.md
 
+## Lineuparr beta.5 publication closure (2026-09-05)
+
+The operator authorized dev publication and development-manifest update for testing. Advertise immutable v1.26.2472002-beta.5 at 45d572f16fae82b67b00b15622b65d9150126bb3. This replaces lossy normalized exclusions with case-insensitive full-name comparison, whitespace collapse, and explicit star wildcards. Retain previous beta history, unrelated entries, the existing Dispatcharr minimum and URL-import behavior. No stable registry change, GitHub Release, installation, Dispatcharr change, or GraceNoteScraper change. Upstream PR #26 stays draft pending testing and approval.
+
 This file records significant architecture and workflow decisions for the matrix2669 Dispatcharr plugin registry.
 
 ---
