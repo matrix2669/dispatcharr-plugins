@@ -31,6 +31,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/ffmpeg-smart-v0.2.1-beta.2` | feature | published | `dev` | `dev` | Advertise the modular MIT-runtime FFmpeg Smart Profiles `v0.2.1-beta.2` test build. |
 | `docs/ffmpeg-smart-beta2-live-validation` | documentation | integrated | `dev` at `d6495c9` | `dev` | Record managed beta.2 validation without changing registry metadata. |
 | `fix/ffmpeg-smart-v0.2.1-beta.3` | fix | published | `dev` at `1adc1fb` | `dev` | Advertise the corrective benchmark/runtime-fidelity FFmpeg Smart Profiles `v0.2.1-beta.3` test build. |
+| `fix/ffmpeg-smart-v0.2.1-beta.4` | fix | active | `dev` at `f6a5b88` | `dev` | Advertise the benchmark-log integrity beta.4 build. |
 | `docs/ffmpeg-smart-beta3-live-validation` | documentation | integrated | `dev` at `5048952` | `dev` | Record managed beta.3 validation without changing registry metadata. |
 | `fix/stream-sort-v0.3.6-beta.4` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.4` correction only to the tagged-build channel. |
 | `fix/stream-sort-v0.3.6-beta.6` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort `0.3.6-beta.6` cancellation and analyzer-serialization correction only to the tagged-build channel. |

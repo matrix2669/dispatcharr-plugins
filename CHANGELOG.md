@@ -4,6 +4,10 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+- Advance FFmpeg Smart Profiles to `0.2.1-beta.4` in `dev`, pinning the
+  benchmark-log integrity correction. Rebuilds now fail on diagnostic-write
+  errors and retain one consolidated log after success; stable remains unchanged.
+
 - Publish Lineuparr `1.26.2472002-beta.5` to dev for testing: exclusions compare full stream names without fuzzy or positive-name normalization, support explicit star wildcards, and preserve legitimate matches previously lost to normalization. Existing normalized exclusions may need full-name replacements; earlier beta history remains available.
 
 - Publish Lineuparr `1.26.2472002-beta.4`: stable **Lineup from URL** follows the latest import with Exact matching. The popup explains selecting it for immediate use or reloading the plugin to select an individual import. No Dispatcharr change is required.
