@@ -30,8 +30,7 @@ consumer-side manifest and archive-loading contract.
 - Reviewed repair scope: beta.4's version-reporting loop, benchmark diagnostic
   I/O/cache false-success paths, subprocess result propagation, stale tracking
   reference, stdout leak, and stale/admission cleanup defects pass the reviewed
-  automated and native installer checks. Live update/benchmark behavior remains
-  pending.
+  automated, native installer, managed-update, and zero-viewer benchmark checks.
 - Canonical adaptive runtime: beta.5's wrapper tag and exact source pin are
   verified above against the published archive and completed wrapper CI.
 
@@ -59,6 +58,10 @@ consumer-side manifest and archive-loading contract.
 ## Evidence status
 
 Current evidence includes the published beta.5 source/archive and Dispatcharr
-`0.31.0` installer validation above. Registry publication metadata is prepared;
-live update/benchmark validation remains pending. No stable promotion or
-deployment conclusion may be inferred.
+`0.31.0` installer validation above. Registry publication is complete through
+`dev` at `1e55f15ba3824f85209258b6b0dd3280c554924d`; public metadata and
+registry CI `35633913052` pass. Managed update and zero-viewer benchmark
+completed with settings/enabled preservation, valid cache, no PID/lock, and no
+residual media processes. Detailed plugin evidence is recorded in
+[the plugin validation report](https://github.com/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/blob/dev/docs/beta5-validation-2026-09-21.md). Stable promotion and GitHub Release remain
+excluded.

@@ -4,12 +4,16 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
-- Prepare publication of FFmpeg Smart Profiles `0.2.1-beta.5` in `dev` from
+- Publish and live-validate FFmpeg Smart Profiles `0.2.1-beta.5` through `dev`
   immutable tag `v0.2.1-beta.5` at source commit `a5c0777`; source archive,
   installer validation, exact-source plugin CI, and wrapper CI pass. The
   wrapper workflow definition is recorded at `10a6e4b8e16b66857df3b03a7bb6d0bb88fc9929`,
-  testing unchanged wrapper tag source `913a958`; live update/benchmark
-  validation remains pending and stable `main` is unchanged.
+  testing unchanged wrapper tag source `913a958`; registry commit is
+  `1e55f15ba3824f85209258b6b0dd3280c554924d`. Public root/detail metadata and
+  registry CI `35633913052` pass. Managed update preserved settings/enabled
+  state; zero-viewer benchmark completed with valid cache, return code 0, no
+  PID/lock, and no residual media processes. Stable `main` is unchanged and no
+  GitHub Release was created.
 
 - Advance FFmpeg Smart Profiles to `0.2.1-beta.4` in `dev`, pinning the
   benchmark-log integrity correction. Rebuilds now fail on diagnostic-write

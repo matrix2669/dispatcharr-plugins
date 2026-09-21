@@ -29,7 +29,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `release/ffmpeg-smart-v0.2.0-dev` | release | merged | `dev` | `dev` | Align the tagged-build channel with the completed stable FFmpeg Smart `v0.2.0` build. |
 | `feature/ffmpeg-smart-v0.2.1-beta.1` | feature | published | `dev` | `dev` | Advertise the immutable adaptive-probing FFmpeg Smart Profiles `v0.2.1-beta.1` test build. |
 | `feature/ffmpeg-smart-v0.2.1-beta.2` | feature | published | `dev` | `dev` | Advertise the modular MIT-runtime FFmpeg Smart Profiles `v0.2.1-beta.2` test build. |
-| `fix/ffmpeg-smart-v0.2.1-beta.5` | fix | active | `origin/dev` at `a05a18c6` | `dev` | Publish prepared beta.5 metadata; live update/benchmark validation remains pending. |
+| `fix/ffmpeg-smart-v0.2.1-beta.5` | fix | published | `origin/dev` at `a05a18c6` | `dev` | Published beta.5 metadata and completed zero-viewer managed update, benchmark, and bounded hardware validation. |
 | `docs/ffmpeg-smart-beta2-live-validation` | documentation | integrated | `dev` at `d6495c9` | `dev` | Record managed beta.2 validation without changing registry metadata. |
 | `fix/ffmpeg-smart-v0.2.1-beta.3` | fix | published | `dev` at `1adc1fb` | `dev` | Advertise the corrective benchmark/runtime-fidelity FFmpeg Smart Profiles `v0.2.1-beta.3` test build. |
 | `fix/ffmpeg-smart-v0.2.1-beta.4` | fix | active | `dev` at `f6a5b88` | `dev` | Advertise the benchmark-log integrity beta.4 build. |
@@ -47,13 +47,13 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 ### `fix/ffmpeg-smart-v0.2.1-beta.5`
 
 - Type: short-lived corrective publication branch
-- Status: active; source tag and registry metadata prepared, with live update/benchmark validation pending; no commit, push, or registry-channel publication has been completed
+- Status: published through `dev` at `1e55f15ba3824f85209258b6b0dd3280c554924d`; public metadata, registry CI, managed update, and zero-viewer validation pass; stable `main` remains unchanged
 - Base: `origin/dev` at `a05a18c6ad5f4fef9ec6a04ebc0ff381eded3efb`; target: `dev` only
 - Purpose: prepare the beta.5 development-registry repair for the FFmpeg Smart plugin and record the exact-source publication gates.
 - Source: plugin tag `v0.2.1-beta.5` at `a5c0777875056591e4e02c989993f43b3f43aa72`, exact-SHA CI `35631536698`, tag validation `35631993818`, archive SHA-256 `db31ce469ea52433af24cf4568463a782fced202124cdf3440c854fcf9754836`, and wrapper tag `v0.1.0-beta.4` at `913a958fd5f9edc231c49a70539a09f611fdcc5a`. Wrapper CI run `35633440274` passed with workflow-definition SHA `10a6e4b8e16b66857df3b03a7bb6d0bb88fc9929`, exact unchanged-tag source check, ShellCheck 0.11, checksum, complete suite, and clean-tree assertions.
 - Scope: FFmpeg Smart registry records, release procedure, dependency contracts, and standards reconciliation only.
 - Exclusions: unrelated plugins, stable `main`, GitHub Release, deployment, installation, and branch deletion.
-- Pending validation: task-authorized zero-viewer live update/benchmark checks only; source/archive, CI, registry validation, and metadata review are complete. Live checks remain separate from registry metadata publication.
+- Validation: registry CI `35633913052`, public root/detail metadata, managed update at 17:45 UTC, zero-viewer benchmark from 17:45:40 to 17:51:16.719376 UTC, valid cache, no PID/lock, and no residual viewers/transcodes/FFmpeg/ffprobe. VAAPI/HEVC capacities were renderD129=19 and renderD128=14. See the [plugin validation report](https://github.com/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/blob/dev/docs/beta5-validation-2026-09-21.md).
 
 ### `feature/lineuparr-v1.26.2472002-beta.5`
 

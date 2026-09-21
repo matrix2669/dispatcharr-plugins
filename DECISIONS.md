@@ -4,15 +4,17 @@
 
 ### Status
 
-Registry metadata is prepared and validated for `dev`; registry push and
-zero-viewer live update/benchmark validation remain separate pending outcomes.
+Registry metadata is published and validated for `dev` at
+`1e55f15ba3824f85209258b6b0dd3280c554924d`; managed update and zero-viewer
+live update/benchmark validation also pass. Stable `main` remains unchanged.
 
 ### Decision
 
 Advertise immutable plugin tag `v0.2.1-beta.5` at
 `a5c0777875056591e4e02c989993f43b3f43aa72`, retaining all prior history and
 leaving stable `main` unchanged. The published archive, exact-source plugin
-CI, wrapper CI, and Dispatcharr `0.31.0` native installer checks are complete.
+CI, wrapper CI, Dispatcharr `0.31.0` native installer checks, registry CI,
+managed update, and zero-viewer benchmark checks are complete.
 
 ### Reason
 
