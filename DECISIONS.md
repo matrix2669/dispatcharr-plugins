@@ -1,5 +1,39 @@
 # DECISIONS.md
 
+## FFmpeg Smart beta.5 publication (2026-09-21)
+
+### Status
+
+Registry metadata is prepared and validated for `dev`; registry push and
+zero-viewer live update/benchmark validation remain separate pending outcomes.
+
+### Decision
+
+Advertise immutable plugin tag `v0.2.1-beta.5` at
+`a5c0777875056591e4e02c989993f43b3f43aa72`, retaining all prior history and
+leaving stable `main` unchanged. The published archive, exact-source plugin
+CI, wrapper CI, and Dispatcharr `0.31.0` native installer checks are complete.
+
+### Reason
+
+The reviewed repairs require a new immutable beta so Dispatcharr can distinguish
+the corrected build from beta.4; existing tags and artifacts remain immutable.
+
+### Consequences and review trigger
+
+Root/detail metadata must remain synchronized, use the exact tag archive, and
+preserve unrelated entries. Registry publication, deployment, installation,
+and live behavioral validation remain distinct decisions. Revisit this record
+if the source tag, archive, wrapper pin, CI evidence, or Dispatcharr contract
+changes.
+
+### Provenance
+
+- Plugin tag/source: `v0.2.1-beta.5` / `a5c0777875056591e4e02c989993f43b3f43aa72`.
+- Wrapper tag/source: `v0.1.0-beta.4` / `913a958fd5f9edc231c49a70539a09f611fdcc5a`.
+- Plugin CI: `35631536698`; tag validation: `35631993818`.
+- Wrapper CI: `35633440274`; workflow definition SHA: `10a6e4b8e16b66857df3b03a7bb6d0bb88fc9929`.
+
 ## FFmpeg Smart beta.4 publication (2026-09-08)
 
 The operator authorized development-only publication of immutable plugin tag

@@ -15,12 +15,17 @@ Before changing either channel:
 2. If the supported, minimum, tested, or deployed Dispatcharr version changed, refresh the official Dispatcharr repository and revalidate its current plugin manifest, archive, layout, version comparison, and installation/update requirements. Record the reviewed Dispatcharr version or tag, exact commit, repository URL, and date.
 3. Confirm the source tag and full commit SHA.
 4. Inspect the exact archive URL that Dispatcharr will install.
-5. Confirm the archive contains the plugin at the layout expected by the reviewed Dispatcharr revision.
-6. Preserve all unrelated root entries and prior per-plugin version history.
-7. Update the root and per-plugin manifests together.
-8. Run `python3 scripts/validate_registry.py --channel <main|dev>`.
-9. Run `python3 -m unittest discover -s tests -v`.
-10. Review the complete diff for unintended plugin additions, removals, URL changes, or version-history rewrites.
+5. Confirm the downloaded archive is addressed by the exact immutable tag or
+   commit, contains the plugin at the layout expected by the reviewed
+   Dispatcharr revision, and reports the same plugin version in every source
+   and plugin metadata location used at runtime. Record the archive digest.
+6. Confirm the source repository's required CI checks passed for that exact
+   commit/tag. A historical or different-SHA green run is not sufficient.
+7. Preserve all unrelated root entries and prior per-plugin version history.
+8. Update the root and per-plugin manifests together.
+9. Run `python3 scripts/validate_registry.py --channel <main|dev>`.
+10. Run `python3 -m unittest discover -s tests -v`.
+11. Review the complete diff for unintended plugin additions, removals, URL changes, or version-history rewrites.
 
 If a Dispatcharr version changed and the matching current repository requirements cannot be verified, stop. Do not publish using cached assumptions.
 

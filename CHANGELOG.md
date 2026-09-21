@@ -4,9 +4,19 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+- Prepare publication of FFmpeg Smart Profiles `0.2.1-beta.5` in `dev` from
+  immutable tag `v0.2.1-beta.5` at source commit `a5c0777`; source archive,
+  installer validation, exact-source plugin CI, and wrapper CI pass. The
+  wrapper workflow definition is recorded at `10a6e4b8e16b66857df3b03a7bb6d0bb88fc9929`,
+  testing unchanged wrapper tag source `913a958`; live update/benchmark
+  validation remains pending and stable `main` is unchanged.
+
 - Advance FFmpeg Smart Profiles to `0.2.1-beta.4` in `dev`, pinning the
   benchmark-log integrity correction. Rebuilds now fail on diagnostic-write
   errors and retain one consolidated log after success; stable remains unchanged.
+  Subsequent review disproved the claimed failure propagation for all relevant
+  benchmark I/O/cache paths; beta.5 records the reviewed corrective build and
+  this historical beta.4 entry remains unchanged as release history.
 
 - Publish Lineuparr `1.26.2472002-beta.5` to dev for testing: exclusions compare full stream names without fuzzy or positive-name normalization, support explicit star wildcards, and preserve legitimate matches previously lost to normalization. Existing normalized exclusions may need full-name replacements; earlier beta history remains available.
 
