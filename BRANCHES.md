@@ -494,5 +494,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Base: fresh registry `dev` at `a528596398f5ac458e8574ee205b6914defd79f2`; target: approved `dev` only.
 - Scope: Mustarrd DVR root/detail metadata for immutable beta.3 at source `c5adaf5215daba6ea7211c9a5257b4f2beb8237f`, preservation of beta.2 and all prior history, changelog, decision and dependency evidence.
 - Exclusions: unrelated plugins, stable `main`, Release, live installation, force pushes, branch deletion.
-- Validation: registry validator and seven unit tests pass; exact-source work/dev/tag CI passes; published archive digest and byte identity, immutable icon, and disposable official installer/load/update checks pass. Independent review and public metadata/registry CI gate completion.
+- Validation: registry validator and seven unit tests pass; exact-source work/dev/tag CI passes; published archive digest and byte identity, immutable icon, and disposable official installer/load/update checks pass. Independent review passed; public raw root/detail agreement and exact-registry CI `37870739628` passed at `477689a7eda3f2120a133dd119fdc6a8f6191fa3`.
 - Authorization: operator approved the corrected existing `dev` source/registry beta destination on 2026-10-09.
+
+- Publication complete: registry `dev` advertises beta.3 from `477689a7eda3f2120a133dd119fdc6a8f6191fa3`. Stable `main` remains `199285784cfbb4caf51ebfd378548a5d1fa8b299`; no live installation or GitHub Release. This work branch remains retained.
