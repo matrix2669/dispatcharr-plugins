@@ -4,6 +4,8 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+- Advertise Mustarrd DVR Handoff `0.2.13-beta.3` through `dev`: zero final-handoff minutes keeps Dispatcharr schedules while Mustarrd mirroring continues. Previous versions and all other plugin entries are retained. Stable `main` and live installations are unchanged.
+
 - Publish and live-validate FFmpeg Smart Profiles `0.2.1-beta.5` through `dev`
   immutable tag `v0.2.1-beta.5` at source commit `a5c0777`; source archive,
   installer validation, exact-source plugin CI, and wrapper CI pass. The

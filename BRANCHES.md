@@ -488,3 +488,11 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Validation: development registry policy, seven tests, JSON parsing, standards reconciliation, public raw-manifest agreement, workflow `33138596704`, and managed stable installation through repository 37 all pass
 - Completion: `dev` advertises completed stable `0.3.6` from exact source commit `bbae86f2ded0a1bcd09d2906e0530e70380ce5a4`, retains beta.15 and earlier history, and the installation was subsequently moved to stable repository 3 after `main` publication
 - Started: `2026-08-27`
+
+### `feature/mustarrd-zero-handoff-beta3`
+
+- Base: fresh registry `dev` at `a528596398f5ac458e8574ee205b6914defd79f2`; target: approved `dev` only.
+- Scope: Mustarrd DVR root/detail metadata for immutable beta.3 at source `c5adaf5215daba6ea7211c9a5257b4f2beb8237f`, preservation of beta.2 and all prior history, changelog, decision and dependency evidence.
+- Exclusions: unrelated plugins, stable `main`, Release, live installation, force pushes, branch deletion.
+- Validation: registry validator and seven unit tests pass; exact-source work/dev/tag CI passes; published archive digest and byte identity, immutable icon, and disposable official installer/load/update checks pass. Independent review and public metadata/registry CI gate completion.
+- Authorization: operator approved the corrected existing `dev` source/registry beta destination on 2026-10-09.

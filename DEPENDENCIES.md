@@ -65,3 +65,11 @@ completed with settings/enabled preservation, valid cache, no PID/lock, and no
 residual media processes. Detailed plugin evidence is recorded in
 [the plugin validation report](https://github.com/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/blob/dev/docs/beta5-validation-2026-09-21.md). Stable promotion and GitHub Release remain
 excluded.
+
+## Mustarrd DVR Handoff zero-handoff beta.3
+
+- Approved development tag: `v0.2.13-beta.3`, source commit `c5adaf5215daba6ea7211c9a5257b4f2beb8237f`, annotated tag object `8b5727062277f976b647d3940151369103e8f99e`.
+- Exact-source CI passed: work branch run `37870492937`, source `dev` run `37870578490`, tag run `37870578514`; all run `Validate plugin` against the same source SHA.
+- Published archive: `https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/zipball/v0.2.13-beta.3`; SHA-256 `90899f25f6696f07ed895f845bc1e4dc3163407b1990dbe66dac6e9323b6bbf5`. Runtime files byte-match the exact tag; the immutable icon matches the archive.
+- Disposable official Dispatcharr `v0.31.0` installer and loader at freshly verified `bcbb68c4f054ee56383a41604cfcd7302b85da66` pass installation, beta.2 overwrite, runtime/manifest version discovery, default merging, update comparison and installed-package retention regressions. External framework/database boundaries are stubbed; no live service or recording is contacted. Minimum `v0.29.0` is unchanged.
+- Source tests: all 23 pass. Registry validator and seven tests pass. Production Mustarrd dependency audit remains open; beta publication does not clear it. Managed installation is outside authorization.
