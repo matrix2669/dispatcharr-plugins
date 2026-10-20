@@ -498,3 +498,29 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Authorization: operator approved the corrected existing `dev` source/registry beta destination on 2026-10-09.
 
 - Publication complete: registry `dev` advertises beta.3 from `477689a7eda3f2120a133dd119fdc6a8f6191fa3`. Stable `main` remains `199285784cfbb4caf51ebfd378548a5d1fa8b299`; no live installation or GitHub Release. This work branch remains retained.
+
+## 2026-10-20 FFmpeg Smart stable publication
+
+### `feature/ffmpeg-smart-v0.2.1-dev`
+
+- Base/target: current `dev` only; never merge the complete dev catalog.
+- Scope: FFmpeg Smart root/detail 0.2.1 metadata, preserving all prior version
+  records and every unrelated plugin; current release/compatibility records.
+- Source commit: `7f5b775d3b1cea71ed5931416e10b82fd9c445bd`; immutable tag `v0.2.1`.
+- Authority: operator approval on 2026-10-20 to finish promotion and release.
+- Preconditions: normal plugin Release with manual ZIP/checksum, exact archive
+  inspection, official Dispatcharr 0.32.0 isolated install/update, independent
+  review, channel validator and tests. Verify public raw root/detail after push.
+- No live repository refresh, update, profile action, stream or deployment.
+- Branch retained; no force push or deletion is authorized.
+
+- Verified publication evidence: plugin normal Release
+  https://github.com/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/releases/tag/v0.2.1
+  is non-draft/non-prerelease; downloaded manual ZIP SHA-256
+  `33fd1ae221d626ca8084142d84378031b27afdef28577a321feb777c610703e9`
+  matches its checksum and exact committed files. Immutable registry archive
+  SHA-256 `262da77577f44633755eeea49bc610456fd611713b8658360e0e3726524bb304`
+  passed official 0.32.0 isolated clean install and beta.5 overwrite.
+- Source feature/dev/main/tag checks completed successfully; plugin tag run
+  `39478668906` and main run `39478594348`. Independent registry review passed;
+  all unrelated root/detail metadata and prior history objects are unchanged.

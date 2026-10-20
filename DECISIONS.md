@@ -534,3 +534,30 @@ The operator requested dev publication and a manifest update for import confirma
 **Status:** Accepted. The operator approved source `dev` integration and publishing scoped beta `0.2.13-beta.3` through existing registry `dev`, correcting the obsolete `dev-test` route. Advertise immutable tag `v0.2.13-beta.3` at `c5adaf5215daba6ea7211c9a5257b4f2beb8237f` only after exact-source CI, disposable official Dispatcharr installer/loader validation, full regression tests and independent review pass. Root/detail versions, URLs and commit metadata must agree; preserve every prior version and unrelated entry. No stable promotion, GitHub Release, live installation, or production-readiness claim is authorized. The source’s dependency audit remains open. Revisit if tag identity, archive, runtime contract or validation changes.
 
 Publication evidence: source tag CI `37870578514` and registry CI `37870739628` passed; registry metadata reached `dev` at `477689a7eda3f2120a133dd119fdc6a8f6191fa3`. Public root/detail manifests match, and all historical/unrelated entries are preserved. This closes the publication gates above while retaining the production dependency and live-installation limitations.
+
+## 2026-10-20: Release-backed FFmpeg Smart 0.2.1 publication
+
+The operator approved finishing promotion and release. Publish only FFmpeg
+Smart Profiles 0.2.1 in this channel after its normal GitHub Release, package,
+checksum, immutable archive and exact source commit are verified. Preserve
+historical tags/versions, unrelated plugins and the v0.29.0 compatibility floor.
+
+The plugin's source is 7f5b775d3b1cea71ed5931416e10b82fd9c445bd; its runtime stays pinned
+to 913a958fd5f9edc231c49a70539a09f611fdcc5a. Standalone adaptive 0.1.0 does
+not require downstream rebundling. Current source compatibility was reviewed
+against official Dispatcharr v0.32.0 c52bf87acb7ff2d787d6dcfb9fe3d39999585912,
+compared with v0.31.0 bcbb68c4f054ee56383a41604cfcd7302b85da66.
+Registry/install/version APIs are unchanged. Profile lock changes are already
+respected by the plugin. Isolated official-installer clean extraction/update
+checks substitute for live actions expressly excluded by the operator; this
+record does not claim a live stable install or deployment.
+
+The old v0.2.0 no-Release exception is retired for current publication, retaining
+its historical provenance. The normal stable GitHub Release requirement applies.
+Dev retains its own detail manifest because adding stable 0.2.1 while preserving
+beta history is a substantive history update, not a duplicate no-op. Registry
+main is updated independently and never receives the complete dev catalog.
+
+Standards review found no conflict: the workspace revision adds documentation
+continuity rules, without changing manifest contracts or release authority.
+Record terminal CI and public root/detail identities in the publication report.

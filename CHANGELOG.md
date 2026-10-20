@@ -140,3 +140,13 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 - Initialize the matrix2669 Dispatcharr plugin registry.
 - Add the first Mustarrd DVR Handoff registry metadata.
+
+## 2026-10-20 — FFmpeg Smart Profiles 0.2.1
+
+- Publish the approved stable 0.2.1 plugin through this channel, retaining all
+  prior FFmpeg Smart versions and every unrelated root/detail entry.
+- Use the exact released tag/source and verified archive; the plugin retains
+  its tested immutable runtime, so standalone adaptive release publication
+  does not change the installed runtime or hardware cache.
+- Review official Dispatcharr 0.32.0 contracts and isolated clean install/update;
+  no live Dispatcharr refresh, update or deployment was performed.
