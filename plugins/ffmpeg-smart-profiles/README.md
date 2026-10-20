@@ -8,4 +8,12 @@ The plugin creates configurable managed Stream and Output Profiles backed by its
 
 New installations require a hardware capability scan; updates may require a recheck. Until a required scan completes successfully, managed profiles bypass FFmpeg Smart policy and hardware acceleration and use basic FFmpeg stream copy.
 
-Stable `v0.2.0` is advertised from its exact immutable tag archive under a narrow operator-approved exception. No GitHub Release or distributable plugin ZIP will be created until the bundled wrapper's inherited licensing is resolved.
+Historical `v0.2.0` remains in version history under its original narrow no-Release exception; those artifacts are not repackaged or relicensed.
+
+Stable `v0.2.1` uses the independently licensed MIT ffmpeg-adaptive runtime and
+normal GitHub Release publication with manual-install ZIP and SHA-256. The
+registry installs the verified immutable v0.2.1 tag archive. Historical v0.2.0
+rights/artifacts remain unchanged; its no-Release exception is no longer the
+current publication path. The stable plugin retains tested runtime commit
+913a958fd5f9edc231c49a70539a09f611fdcc5a, independent of standalone adaptive
+0.1.0. No running installation is changed by registry publication.

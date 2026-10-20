@@ -55,7 +55,7 @@ A completed stable tag in `dev` does not authorize a `main` change.
 
 The existence of a tag is insufficient. If the GitHub Release or explicit approval is missing, stop and keep the plugin absent from `main`.
 
-Exception: the user explicitly approved FFmpeg Smart Profiles `v0.2.0` for focused `main` publication without a GitHub Release on `2026-08-26`, while continuing to prohibit a Release and distributable ZIP until inherited-wrapper licensing is resolved. This exception is limited to that exact immutable tag archive and source commit, must be recorded in `AGENT.md` and `DECISIONS.md`, and cannot authorize another plugin or version.
+Historical exception (retired for current 0.2.1 publication): the user explicitly approved FFmpeg Smart Profiles `v0.2.0` for focused `main` publication without a GitHub Release on `2026-08-26`, while continuing to prohibit a Release and distributable ZIP until inherited-wrapper licensing is resolved. This exception is limited to that exact immutable tag archive and source commit, must be recorded in `AGENT.md` and `DECISIONS.md`, and cannot authorize another plugin or version.
 
 ## `dev-test` to `dev` migration
 
