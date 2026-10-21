@@ -4,6 +4,11 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+- Advertise Mustarrd DVR Handoff `0.3.0-beta.1` through dev: independent pre/post
+  padding overrides, blank legacy defaults and explicit zero. Immutable source
+  `b91e6b4729d2620b7d14355a049e0bf8be1d5910`; prior versions and every unrelated
+  plugin retained. Stable main and live installation remain unchanged.
+
 - Advertise Mustarrd DVR Handoff `0.2.13-beta.3` through `dev`: zero final-handoff minutes keeps Dispatcharr schedules while Mustarrd mirroring continues. Previous versions and all other plugin entries are retained. Stable `main` and live installations are unchanged.
 
 - Publish and live-validate FFmpeg Smart Profiles `0.2.1-beta.5` through `dev`

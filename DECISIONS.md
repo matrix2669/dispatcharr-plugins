@@ -561,3 +561,28 @@ main is updated independently and never receives the complete dev catalog.
 Standards review found no conflict: the workspace revision adds documentation
 continuity rules, without changing manifest contracts or release authority.
 Record terminal CI and public root/detail identities in the publication report.
+
+## 2026-10-21: DVR independent padding beta publication
+
+The operator approved the next DVR beta, plugin side only. Fresh source refs have
+latest v0.2.13-beta.3; the new options use the next minor feature beta 0.3.0-beta.1.
+Publish only immutable source tag/archive on registry dev after exact-source CI,
+package verification and independent review. The source workflow uses dev; legacy
+registry dev-test migrated to dev, and no new channel is needed. No Release,
+stable main, installation or recording action is authorized. Existing schedules
+and Mustarrd source/service/config/API remain unchanged.
+
+Compatibility refreshed against official Dispatcharr v0.32.0
+`c52bf87acb7ff2d787d6dcfb9fe3d39999585912` and v0.31.0
+`bcbb68c4f054ee56383a41604cfcd7302b85da66`; affected registry/install/version APIs,
+layout and numeric defaults are unchanged, loader change is logging only. Source
+exact-package tests cover clean install, beta3 overwrite and loader/default merging
+on both with framework/database stubs. This does not claim a live install.
+
+Reviewed central standards diff from 9dcd9b79… to 687a86e5… against complete registry
+AGENT/DECISIONS/BRANCHES/RELEASE and manifest/validator contracts: lifecycle gating,
+approval continuity, exact-SHA validation and durable workspace checkpoints require
+scoped process guidance updates, no metadata behavior change. AGENT is aligned;
+no contradiction remains. Existing release authority and unrelated entries are
+preserved. Decision closure establishes explicit version/channel/scope, immutable
+history preservation and pending live validation without needing chat context.

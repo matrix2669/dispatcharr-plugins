@@ -2,14 +2,26 @@
 
 ## Workspace Standards Reconciliation Gate
 
-Before any substantive work, locate the maintained local `matrix2669/workspace` checkout and run `<workspace>/scripts/reconcile-standards --check .` from this repository root. The workspace `AI-INSTRUCTIONS.md`, `AGENT-STANDARD.md`, and Git history must be available.
+Ordinary standalone branch work uses the pinned local guidance and applied
+WORKSPACE-STANDARDS.yaml. Reconcile current authoritative workspace standards at
+bootstrap/adoption, explicit governance work, and immediately before integration,
+main promotion or release publication. Status-only workspace synchronization does
+not itself promote source or require unrelated manifest migrations.
 
-If `WORKSPACE-STANDARDS.yaml` is missing, pending, or stale, stop project work and run `<workspace>/scripts/reconcile-standards --diff .`. Review the standards change against this complete `AGENT.md`, `DECISIONS.md`, code/configuration contracts, dependencies, `BRANCHES.md`, `RELEASE.md`, upstream requirements when applicable, and related projects.
+At those boundaries, locate the maintained matrix2669/workspace checkout and run
+`<workspace>/scripts/reconcile-standards --check .`. Review `--diff` against the
+complete project guidance, accepted decisions, code/configuration/dependency and
+branch/release contracts. Resolve contradictions explicitly before applying
+`--apply --confirm-reviewed-no-conflicts`. Missing authoritative standards/history
+blocks the boundary. Never advance the fingerprint merely to silence a check.
+Exceptions require explicit scope, authority and review criteria here.
 
-A contradiction blocks work. Ask focused follow-up questions to establish whether the changed standard, proposed work, new answer, or older accepted decision is authoritative; never choose silently. Record project-decision supersessions in `DECISIONS.md` and realign every affected artifact. Only after no contradiction remains, run `<workspace>/scripts/reconcile-standards --apply --confirm-reviewed-no-conflicts .`.
-
-Missing workspace standards or Git history is a hard block. Standards exceptions require explicit user authorization and must be stated in a dedicated section of this file with exact scope, rationale, authority, approval date, and review/removal trigger; `DECISIONS.md` cannot waive workspace standards.
-
+Validation evidence is exact-commit scoped. Reuse a complete original successful
+run only for the same commit and acceptance inputs; a different SHA requires fresh
+validation. Preserve approval provenance across delegation without broadening it.
+Checkpoint publication is distinct from integration/release/installation. Publish
+one truthful task-related workspace-main checkpoint per durable logical result,
+preserving concurrent unrelated work. Deletion and force pushes remain separate.
 
 ## Purpose
 

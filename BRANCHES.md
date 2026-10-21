@@ -524,3 +524,30 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Source feature/dev/main/tag checks completed successfully; plugin tag run
   `39478668906` and main run `39478594348`. Independent registry review passed;
   all unrelated root/detail metadata and prior history objects are unchanged.
+
+## feature/mustarrd-padding-beta
+
+- Base: fresh registry dev `a77e4e7`; target dev only. Scoped to DVR padding
+  beta 0.3.0-beta.1 root/detail metadata, preserved history, release evidence and
+  required governance reconciliation. All unrelated plugin entries stay intact.
+- Operator approves next DVR beta publication; no stable main, GitHub Release,
+  live plugin installation, recording operations or unrelated channel changes.
+- Source candidate is `b91e6b4729d2620b7d14355a049e0bf8be1d5910`; immutable tag,
+  exact-source CI, archive verification and independent review gate publication.
+- Official Dispatcharr 0.32.0 `c52bf87acb7ff2d787d6dcfb9fe3d39999585912` and
+  0.31.0 `bcbb68c4f054ee56383a41604cfcd7302b85da66` isolated installer/overwrite
+  and installed regression tests pass; compatible existing manifest schema,
+  min-version, archive/version extraction and loader defaults reviewed.
+- Reconciled current workspace lifecycle/approval/exact-SHA/durable-status rules
+  for this promotion; no runtime or unrelated manifest migration.
+
+- Source branch/dev/tag CI passes: owning `39523081671`, dev `39523140136`, tag
+  `39523141740`, all exact source `b91e6b4729d2620b7d14355a049e0bf8be1d5910`.
+  Tag object `98a5baaf6cfcc0768e35ea5ef2682bed87eb19c0`; downloaded immutable archive
+  SHA-256 `6ef378d2d5dfc5858fa322e42e5cf9d44ebe82adb3394bd305d128520212261f`
+  byte-matches source runtime and passes both official version installer/overwrite
+  and 16 installed-package regressions. Source independent release review passes.
+- Registry dev validator, seven tests, governed-project validation and diff checks
+  pass; explicit preservation checks confirm all unrelated root entries and prior
+  DVR version-history objects are unchanged. Independent registry review and
+  post-publication raw/CI verification remain gates; live installation pending.

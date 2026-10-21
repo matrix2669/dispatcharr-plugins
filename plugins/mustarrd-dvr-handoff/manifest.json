@@ -5,20 +5,28 @@
   "author": "matrix2669",
   "license": "MIT",
   "repo_url": "https://github.com/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin",
-  "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/v0.2.13-beta.3/mustarrd-dvr-handoff/logo.png",
+  "icon_url": "https://raw.githubusercontent.com/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/v0.3.0-beta.1/mustarrd-dvr-handoff/logo.png",
   "registry_name": "matrix2669 Plugins (dev)",
   "registry_url": "https://github.com/matrix2669/dispatcharr-plugins/tree/dev",
-  "latest_version": "0.2.13-beta.3",
+  "latest_version": "0.3.0-beta.1",
   "latest": {
-    "version": "0.2.13-beta.3",
-    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/zipball/v0.2.13-beta.3",
-    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/zipball/v0.2.13-beta.3",
-    "commit_sha": "c5adaf5215daba6ea7211c9a5257b4f2beb8237f",
-    "commit_sha_short": "c5adaf5",
-    "build_timestamp": "2026-10-09T01:36:01Z",
+    "version": "0.3.0-beta.1",
+    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/zipball/v0.3.0-beta.1",
+    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/zipball/v0.3.0-beta.1",
+    "commit_sha": "b91e6b4729d2620b7d14355a049e0bf8be1d5910",
+    "commit_sha_short": "b91e6b4",
+    "build_timestamp": "2026-10-21T00:45:23Z",
     "min_dispatcharr_version": "v0.29.0"
   },
   "versions": [
+    {
+      "version": "0.3.0-beta.1",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/zipball/v0.3.0-beta.1",
+      "commit_sha": "b91e6b4729d2620b7d14355a049e0bf8be1d5910",
+      "commit_sha_short": "b91e6b4",
+      "build_timestamp": "2026-10-21T00:45:23Z",
+      "min_dispatcharr_version": "v0.29.0"
+    },
     {
       "version": "0.2.13-beta.3",
       "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Mustarrd-DVR-Plugin/zipball/v0.2.13-beta.3",
