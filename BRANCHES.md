@@ -570,3 +570,11 @@ Advertises reviewed beta.3; preserve all prior versions and unrelated entries.
 Source CI41091130641 and canonical CI41090068901 passed. Exact tag archive
 passed isolated official Dispatcharr0.33.0 extraction/update verification.
 No live installation, stable/main publication, Release or branch deletion.
+
+## feature/ffmpeg-smart-v0.2.2-beta.4
+
+From registry dev be7f633; targets dev only under the owner's explicit beta.4
+publication request. Advertise final plugin66f4a620 while preserving previous
+versions and every unrelated entry. Runtime is byte-identical to accepted and
+live-tested candidate934c651. Exact final source CI and tag archive verification
+gate publication. No direct installation, stable main, Release or deletion.

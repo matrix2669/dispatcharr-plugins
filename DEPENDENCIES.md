@@ -113,3 +113,21 @@ installer functions from official Dispatcharr0.33.0 commit
 beta.3 overwrite, imported version, executable repair and prerelease comparison.
 This tests filesystem/import behavior, not a live database-managed update.
 The compatibility target and minimum version have not changed since beta.2.
+
+## Beta.4 updater publication — 2026-10-30
+
+Final source/dev/tag `66f4a620ac8682dcd2d6161ee16d327b8bb81dc1`,
+`v0.2.2-beta.4`, passed full exact-source CI41105638669. Runtime pin remains
+`bb834684eb2c513e832c43ba6dbc773d5af10cbc` (CI41103493960); source and package
+review accepted, isolated588 tests proved one upstream request and1.59/1.48s
+startup. Final documentation-only commit retains all tested runtime bytes.
+
+Downloaded tag archive SHA256:
+`d5130f6c2d6b7a219d669529fa552153e73b50b227d49032890381969e25f741`.
+Every packaged file matches final source. Isolated actual installer functions
+from official Dispatcharr0.33.0 commit2fa13a6707bdf0dae87e0c494bcd3ca282cdeb3e
+passed beta.3 extraction followed by beta.4 overwrite, imported version, script
+permission repair, all eight runtime hashes and prerelease update detection.
+No compatibility target/minimum change or live database-managed update claimed.
+Registry validator and all seven tests passed; prior history and unrelated
+entries were compared and preserved. Direct installation remains excluded.

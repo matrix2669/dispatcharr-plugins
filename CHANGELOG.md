@@ -1,3 +1,9 @@
+## FFmpeg Smart 0.2.2-beta.4 — 2026-10-30
+
+Publish approved response-based shared-input Auto detection to the development
+registry. Valid opaque TS shares one upstream media reader; HLS compatibility,
+fixed limits and existing generic codec policy remain. No direct installation.
+
 # Changelog
 
 Notable user-visible registry changes are recorded here. Plugin behavior and source release notes remain in each plugin's own changelog.

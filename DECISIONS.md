@@ -640,3 +640,13 @@ The package contains the accepted generic text-field/alias policy, automatic
 shared input and fixed plugin guards; no additional runtime changes.
 The source tag retains its preparation-era changelog label; a source documentation
 follow-up records publication without moving the immutable tag or altering code.
+
+## FFmpeg Smart beta.4 publication — 2026-10-30
+
+The owner requested publication after opaque-TS Auto detection passed review and
+588 startup tests. Publish only beta.4 on dev, sourced from immutable tag
+v0.2.2-beta.4 at66f4a620ac8682dcd2d6161ee16d327b8bb81dc1. This contains the
+reviewed canonicalbb834684 runtime and unchanged plugin policy; the final commit
+only completes release documentation. Preserve minimum0.29.0, historical
+versions and unrelated plugin entries. Installation remains operator-owned via
+Dispatcharr Update. Stable registry/main, Releases and deployment are excluded.
