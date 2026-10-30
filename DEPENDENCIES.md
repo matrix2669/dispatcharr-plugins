@@ -4,11 +4,20 @@ This registry contains metadata only. The plugin source repository owns runtime
 code, tags, archives, tests, and release artifacts; Dispatcharr owns the
 consumer-side manifest and archive-loading contract.
 
+## FFmpeg Smart beta.2 preparation (2026-10-30)
+
+- WIP proposed source: `eebdb45b4951a0c2c5df18d846ffba242b19ed2d`; tag `v0.2.2-beta.2` absent at preparation.
+- Runtime pin: `8156f96ce44c2ca0cb0360a8503f7862285b9f23`; parent supplied accepted plugin CI `41081772056`, runtime CI `41081025179` and independent source review.
+- Parent refreshed plugin dev and confirmed it is an ancestor of accepted `eebdb45`; plugin CI `41081772056` is successful at that exact SHA. Beta.1 is not represented as a historical registry publication: existing dev metadata advertises 0.2.1.
+- Verify final source dev/tag and exact CI before publication; then download the precise advertised tag archive, record SHA-256, check version/runtime byte identity/layout and disposable official install/update behavior. Proposed timestamp `2026-10-30T15:32:03Z` derives from candidate source commit. No archive digest is invented.
+- Minimum Dispatcharr `v0.29.0` remains unchanged. Existing reviewed 0.32.0/0.31.0 contracts below remain historical evidence; any changed supported/tested/deployed version requires a current official consumer review.
+- Registry preparation, dev publication, repository refresh and managed installation are distinct states. Direct installation is excluded by operator correction; no live action occurred during this preparation.
+
 ## FFmpeg Smart Profiles
 
 - Source repository: `matrix2669/Dispatcharr-FFmpeg-Smart-Plugin`.
 - Registry contract: the development entry must use the exact immutable
-  `v0.2.1-beta.N` tag (or full commit SHA), matching full and short source
+  versioned tag (including `v0.2.2-beta.2`) or full commit SHA, matching full and short source
   commit IDs in the detail manifest. The root and detail entries must agree on
   name, slug, repository, version, archive URL, and minimum Dispatcharr version.
 - Beta.5 publication contract: the immutable tag, tag-archive proof, and

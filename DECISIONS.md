@@ -1,5 +1,29 @@
 # DECISIONS.md
 
+## 2026-10-30: Prepare FFmpeg Smart shared-input beta through normal updater
+
+**Status:** Provisional WIP; metadata on an isolated work branch only. The
+operator correction requires normal Dispatcharr development-registry update
+distribution; direct installation is not authorized. Prepare `0.2.2-beta.2`
+from proposed source `eebdb45b4951a0c2c5df18d846ffba242b19ed2d`, retaining
+all prior versions, unrelated plugins and minimum `v0.29.0`. The tag does not
+yet exist; this is not proof of a publishable archive. Runtime candidate is
+`8156f96ce44c2ca0cb0360a8503f7862285b9f23`.
+
+Decision closure: use existing dev channel and immutable new beta; never replace
+a prior tag. Source integration and final exact-source/tag/archive validation
+precede registry publication. If the final source changes, refresh all SHA and
+source-commit timestamp fields and rerun applicable exact-revision checks.
+The proposed metadata timestamp is the candidate source commit time in UTC,
+not a claimed publication time. Source CI/review supplied by the parent are
+accepted implementation evidence, not tag/archive or live-update evidence.
+
+This checkpoint does not publish dev, create a tag/Release, modify stable main,
+or change Dispatcharr. After separately gated publication, the managed updater
+can discover and apply this version; installed-state and live behavior checks
+remain separate. Revisit if source identity, runtime pin, Dispatcharr version,
+archive contract or operator scope changes.
+
 ## FFmpeg Smart beta.5 publication (2026-09-21)
 
 ### Status

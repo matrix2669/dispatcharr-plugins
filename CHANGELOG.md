@@ -4,6 +4,11 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+- Prepare FFmpeg Smart Profiles `0.2.2-beta.2` for the development registry
+  updater on an isolated WIP branch. Candidate includes persisted Off/Auto/Strict
+  shared startup-input controls, default Off. Source/tag/archive publication
+  gates remain pending; this entry does not claim registry or live installation.
+
 - Advertise Mustarrd DVR Handoff `0.3.0-beta.1` through dev: independent pre/post
   padding overrides, blank legacy defaults and explicit zero. Immutable source
   `b91e6b4729d2620b7d14355a049e0bf8be1d5910`; prior versions and every unrelated

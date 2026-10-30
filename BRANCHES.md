@@ -8,6 +8,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 
 | Branch | Type | Status | Base | Target | Purpose |
 |---|---|---|---|---|---|
+| `feature/ffmpeg-smart-v0.2.2-beta.2` | feature | WIP preparation | `dev` at `49f0634` | `dev` | Prepare immutable shared-input beta.2 metadata; final source/tag/archive gates pending. |
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |
 | `dev` | long-lived | active | preserved legacy tagged-build history | independent tagged-build channel | Advertise each retained plugin's newest approved immutable tag. |
 | `feature/lineuparr-v1.26.2472002-beta.3` | feature | published | `dev` at `4a64b36` | `dev` | Publish import confirmation and automatic active selection. |
@@ -43,6 +44,17 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 | `feature/stream-sort-v0.3.6-beta.14` | short-lived | active | `dev` | `dev` | Publish the reviewed Stream Sort issue #7 settings and scoring controls only to the tagged-build channel. |
 
 ## Branch Records
+
+### `feature/ffmpeg-smart-v0.2.2-beta.2`
+
+- Status: WIP preparation only; no registry channel publication or installation.
+- Base: fresh remote `dev` at `49f063478d5ba030bf3cd63e1c78f3728e44cbb8`; target `dev` only.
+- Scope: FFmpeg Smart root/detail beta.2 metadata, preserved history, dependency, decision, user-note and changelog records.
+- Proposed source: `eebdb45b4951a0c2c5df18d846ffba242b19ed2d`; proposed immutable tag `v0.2.2-beta.2`, not present at preparation. Source integration gates can change this candidate; refresh commit, short SHA and source-derived UTC timestamp together if they do.
+- Runtime: `8156f96ce44c2ca0cb0360a8503f7862285b9f23`. Parent-provided accepted source evidence: plugin CI `41081772056`, runtime CI `41081025179`, independent source review.
+- Publication gates: final approved source dev/tag identity and exact-source CI; tag archive digest, byte identity/version/layout and disposable official installer/update checks; current workspace reconciliation; independent registry review; exact registry CI and public raw root/detail agreement after authorized dev publication.
+- Validation: dev structural validator, seven registry unit tests, diff checks and semantic preservation checks pass. The schema accepts immutable tag syntax before tag existence; it does not validate remote archive existence. Source/tag/archive/install gates remain pending.
+- Boundaries: no stable main, Release, tag creation, channel merge, live refresh/update, direct installation, force push or deletion. Normal managed updater is the required eventual installation path.
 
 ### `fix/ffmpeg-smart-v0.2.1-beta.5`
 
@@ -223,7 +235,6 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
   development registry validation, public manifests, managed update, cache
   rebuild, HDHomeRun, and CSPAN3 HE-AACv2 checks pass; workflow and deployment
   evidence remain immutable historical inputs to beta.2.
-
 
 ### `release/ffmpeg-smart-v0.2.0-dev`
 
