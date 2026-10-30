@@ -6,10 +6,10 @@ consumer-side manifest and archive-loading contract.
 
 ## FFmpeg Smart beta.2 preparation (2026-10-30)
 
-- WIP proposed source: `eebdb45b4951a0c2c5df18d846ffba242b19ed2d`; tag `v0.2.2-beta.2` absent at preparation.
+- WIP proposed source: `3b7f554c0aac64391768e4920178cacd6a15da8c`; tag `v0.2.2-beta.2` absent at preparation.
 - Runtime pin: `8156f96ce44c2ca0cb0360a8503f7862285b9f23`; parent supplied accepted plugin CI `41081772056`, runtime CI `41081025179` and independent source review.
-- Parent refreshed plugin dev and confirmed it is an ancestor of accepted `eebdb45`; plugin CI `41081772056` is successful at that exact SHA. Beta.1 is not represented as a historical registry publication: existing dev metadata advertises 0.2.1.
-- Verify final source dev/tag and exact CI before publication; then download the precise advertised tag archive, record SHA-256, check version/runtime byte identity/layout and disposable official install/update behavior. Proposed timestamp `2026-10-30T15:32:03Z` derives from candidate source commit. No archive digest is invented.
+- Parent refreshed plugin dev and confirmed it is an ancestor of accepted `3b7f554`; plugin CI `41081772056` is successful at that exact SHA. Beta.1 is not represented as a historical registry publication: existing dev metadata advertises 0.2.1.
+- Verify final source dev/tag and exact CI before publication; then download the precise advertised tag archive, record SHA-256, check version/runtime byte identity/layout and disposable official install/update behavior. Proposed timestamp `2026-10-30T15:54:31Z` derives from candidate source commit. No archive digest is invented.
 - Minimum Dispatcharr `v0.29.0` remains unchanged. Existing reviewed 0.32.0/0.31.0 contracts below remain historical evidence; any changed supported/tested/deployed version requires a current official consumer review.
 - Registry preparation, dev publication, repository refresh and managed installation are distinct states. Direct installation is excluded by operator correction; no live action occurred during this preparation.
 
@@ -84,3 +84,18 @@ excluded.
 - Source tests: all 23 pass. Registry validator and seven tests pass. Production Mustarrd dependency audit remains open; beta publication does not clear it. Managed installation is outside authorization.
 
 - Publication verified: registry `dev` metadata commit `477689a7eda3f2120a133dd119fdc6a8f6191fa3`; exact-commit registry CI `37870739628` passed. Public raw root/detail files equal the reviewed metadata and agree on beta.3 and source SHA. Previous history and unrelated entries are unchanged. Source documentation checkpoint `c46f246c4c2a219c9d72ca7309a15c1777aa35fc` also passes CI (`37870723593`, `37870723147`); it does not alter the tagged beta source. Live installation remains pending user action.
+
+
+### Publication evidence superseding preparation above
+
+Final source/tag: 3b7f554c0aac64391768e4920178cacd6a15da8c,
+v0.2.2-beta.2, exact complete CI41085032947 passed. Runtime pin remains
+8156f96ce44c2ca0cb0360a8503f7862285b9f23 (CI41081025179).
+Downloaded tag archive SHA256
+93134cc3b391b01bd747fd792f9f82e1f9b859aa63a79d771e7574a792d8bb2c.
+Compared every packaged file to accepted source. Isolated tests extracted the
+exact official Dispatcharr0.33.0 installer functions from
+2fa13a6707bdf0dae87e0c494bcd3ca282cdeb3e: clean stable installation and beta.2
+atomic replacement, imported version, executable repair, pinned dependency
+hashes and prerelease inequality passed. Full Django/database managed update is
+not claimed. No direct live installation or settings mutation is authorized.

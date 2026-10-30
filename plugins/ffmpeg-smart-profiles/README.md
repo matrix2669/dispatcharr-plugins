@@ -1,9 +1,8 @@
 # FFmpeg Smart Profiles
 
-This work branch prepares `0.2.2-beta.2` for the development registry updater.
-It is not published through the dev channel yet: the immutable source tag,
-archive and final source-integration gates remain pending. The currently
-published development build remains 0.2.1 until an authorized channel update.
+The development registry advertises `0.2.2-beta.2` using immutable source tag
+`v0.2.2-beta.2` at `3b7f554c0aac64391768e4920178cacd6a15da8c`.
+The stable registry and installed plugins are unchanged by this publication.
 
 The candidate vendors adaptive runtime
 `8156f96ce44c2ca0cb0360a8503f7862285b9f23` and provides persisted Off/Auto/Strict
@@ -15,3 +14,4 @@ behavior contract.
 After publication, use the configured development repository refresh and normal
 Dispatcharr Update action. Registry preparation does not perform installation
 or profile actions. Prior immutable versions remain in the detail history.
+

@@ -5,7 +5,7 @@
 **Status:** Provisional WIP; metadata on an isolated work branch only. The
 operator correction requires normal Dispatcharr development-registry update
 distribution; direct installation is not authorized. Prepare `0.2.2-beta.2`
-from proposed source `eebdb45b4951a0c2c5df18d846ffba242b19ed2d`, retaining
+from proposed source `3b7f554c0aac64391768e4920178cacd6a15da8c`, retaining
 all prior versions, unrelated plugins and minimum `v0.29.0`. The tag does not
 yet exist; this is not proof of a publishable archive. Runtime candidate is
 `8156f96ce44c2ca0cb0360a8503f7862285b9f23`.
@@ -610,3 +610,21 @@ scoped process guidance updates, no metadata behavior change. AGENT is aligned;
 no contradiction remains. Existing release authority and unrelated entries are
 preserved. Decision closure establishes explicit version/channel/scope, immutable
 history preservation and pending live validation without needing chat context.
+
+
+## Beta.2 publication gate completed — 2026-10-30
+
+Owner explicitly approved completing plugin publication and pushing workspace
+documentation to main. Publish only Smart beta.2 on dev; do not directly install
+or modify Dispatcharr, saved profiles, global defaults or running media. This
+supersedes the preceding WIP preparation restriction. Source dev and immutable
+v0.2.2-beta.2 tag resolve to 3b7f554c0aac64391768e4920178cacd6a15da8c;
+full source CI41085032947 passed. Reconciliation changed governance/CI dispatch
+only; packaged runtime is byte-identical to the independently accepted candidate.
+Official Dispatcharr0.33.0 installer functions passed isolated clean extraction,
+stable0.2.1 overwrite, imported Plugin.version, executable repair and all pinned
+runtime hashes. This is a filesystem/import test, not a live managed DB update.
+Exact tag zip SHA256: 93134cc3b391b01bd747fd792f9f82e1f9b859aa63a79d771e7574a792d8bb2c.
+Minimum0.29.0 remains unchanged. Preserve historical versions and unrelated
+entries; installed version stays0.2.2-beta.1 pending operator update. Registry CI
+and public readback are publication acceptance evidence recorded in workspace.
