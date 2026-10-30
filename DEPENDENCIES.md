@@ -99,3 +99,17 @@ exact official Dispatcharr0.33.0 installer functions from
 atomic replacement, imported version, executable repair, pinned dependency
 hashes and prerelease inequality passed. Full Django/database managed update is
 not claimed. No direct live installation or settings mutation is authorized.
+
+## Beta.3 publication evidence — 2026-10-30
+
+Source/tag b3f11557887b7e7388d3589a87646a049fe5d586 / v0.2.2-beta.3; runtime
+137103b0b5d2ed2f21976c65be2cd5bc816dbdb6. Exact source CI41091130641 and
+runtime CI41090068901 passed; independent implementation/package review accepted.
+Downloaded tag archive SHA256
+4ed267a3fb3e5b1fc65974f2899e68ff55bb7f9e3f2da45e21968be69f4f0f4b.
+Every packaged file matches source; all eight runtime pins pass. Isolated actual
+installer functions from official Dispatcharr0.33.0 commit
+2fa13a6707bdf0dae87e0c494bcd3ca282cdeb3e pass beta.2 clean extraction then
+beta.3 overwrite, imported version, executable repair and prerelease comparison.
+This tests filesystem/import behavior, not a live database-managed update.
+The compatibility target and minimum version have not changed since beta.2.

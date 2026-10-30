@@ -562,3 +562,11 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
   pass; explicit preservation checks confirm all unrelated root entries and prior
   DVR version-history objects are unchanged. Independent registry review and
   post-publication raw/CI verification remain gates; live installation pending.
+
+## feature/ffmpeg-smart-v0.2.2-beta.3
+
+Based on registry dev a27df665; targets dev only under explicit owner request.
+Advertises reviewed beta.3; preserve all prior versions and unrelated entries.
+Source CI41091130641 and canonical CI41090068901 passed. Exact tag archive
+passed isolated official Dispatcharr0.33.0 extraction/update verification.
+No live installation, stable/main publication, Release or branch deletion.

@@ -4,6 +4,10 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
 
 ## Unreleased
 
+- Advertise FFmpeg Smart Profiles0.2.2-beta.3 through dev: blank-default preferred
+  codec copy policy, mpeg2 alias, simplified controls and conservative automatic
+  shared input. Exact source/tag/archive verified; installation remains operator-owned.
+
 - Advertise FFmpeg Smart Profiles `0.2.2-beta.2` through the development
   updater: generic copy-codec/fallback settings and optional shared startup input
   (Off by default). Exact tag archive and isolated updater extraction checks pass.

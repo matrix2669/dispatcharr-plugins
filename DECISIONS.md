@@ -628,3 +628,15 @@ Exact tag zip SHA256: 93134cc3b391b01bd747fd792f9f82e1f9b859aa63a79d771e7574a792
 Minimum0.29.0 remains unchanged. Preserve historical versions and unrelated
 entries; installed version stays0.2.2-beta.1 pending operator update. Registry CI
 and public readback are publication acceptance evidence recorded in workspace.
+
+## FFmpeg Smart beta.3 updater publication — 2026-10-30
+
+Owner explicitly requested beta.3 in the development manifest for installation
+through Dispatcharr's update process. Publish the independently accepted exact
+source b3f11557887b7e7388d3589a87646a049fe5d586, immutable tag v0.2.2-beta.3.
+Full source CI41091130641 and runtime CI41090068901 passed. Keep minimum0.29.0
+and all immutable history/unrelated entries. No direct install or profile action.
+The package contains the accepted generic text-field/alias policy, automatic
+shared input and fixed plugin guards; no additional runtime changes.
+The source tag retains its preparation-era changelog label; a source documentation
+follow-up records publication without moving the immutable tag or altering code.
