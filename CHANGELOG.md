@@ -1,3 +1,8 @@
+## FFmpeg Smart 0.2.2-beta.6 — local preparation, 2026-11-13
+
+Prepare the next development candidate for supported Add audio-chain composition
+and explicit UI-mode gating. No publication or installed-plugin change yet.
+
 ## FFmpeg Smart 0.2.2-beta.5 — local preparation, 2026-11-13
 
 Prepare a focused development-registry update for the versioned plugin carrying

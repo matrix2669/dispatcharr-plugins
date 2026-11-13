@@ -673,3 +673,22 @@ Keep minimum Dispatcharr v0.29.0 unchanged, with no new supported/tested/deploye
 version or live instance involved. Stable/main publication and direct deployment
 remain excluded. Installation and live channel 505 playback acceptance remain
 separate from source, tag and registry publication.
+
+
+## Smart beta.6 local composition and explicit-mode correction — 2026-11-13
+
+The owner requests local repair/preparation after beta.5 rejected the valid
+resample-plus-normalization graph and after saved text was applied despite the
+UI selecting Use FFmpeg Smart defaults. Prepare the next unused beta.6 with the
+exact corrected canonical source and plugin UI-mode fix, then a focused
+root/detail registry candidate. Explicit Inherit must ignore dormant text;
+Add and Replace retain their expected selected behavior and saved text is not
+erased. Canonical expert CLI behavior remains a separate contract.
+
+Keep all beta.5 and older immutable history, unrelated plugins and minimum
+Dispatcharr v0.29.0. No canonical/plugin/registry push, source integration, tag,
+channel advertisement, installation, live-profile action or deployment is
+currently authorized. A local candidate reference is preparation only; later
+publication requires specific approval, exact CI and source/tag/archive checks
+in canonical→plugin→registry dependency order. Do not claim an unpublished
+future tag URL has been verified or that a locally tested package is installed.

@@ -8,6 +8,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 
 | Branch | Type | Status | Base | Target | Purpose |
 |---|---|---|---|---|---|
+| `feature/ffmpeg-smart-v0.2.2-beta.6` | feature | local preparation | `dev@d4a6d2a` | `dev` after approval | Prepare next beta metadata for actual Add audio-chain correction; source/tag/CI/publication gates pending. |
 | `feature/ffmpeg-smart-v0.2.2-beta.5` | feature | local preparation | `dev@4e05b83` | `dev` after approval | Prepare next beta metadata for reviewed AAC source repair; tag/archive/source CI and publication approval pending. |
 | `feature/ffmpeg-smart-v0.2.2-beta.2` | feature | publication preparation | `dev` at `49f0634` | `dev` | Prepare immutable shared-input beta.2 metadata; final source/tag/archive gates pending. |
 | `main` | long-lived | active | historical repository root | released channel | Advertise only explicitly approved plugin GitHub Releases. |

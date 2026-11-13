@@ -7,17 +7,25 @@
   "repo_url": "https://github.com/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin",
   "registry_name": "matrix2669 Plugins (dev)",
   "registry_url": "https://github.com/matrix2669/dispatcharr-plugins/tree/dev",
-  "latest_version": "0.2.2-beta.5",
+  "latest_version": "0.2.2-beta.6",
   "latest": {
-    "version": "0.2.2-beta.5",
-    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.2.2-beta.5",
-    "commit_sha": "57bef76032ed33300fbcecdd424df4174c099d79",
-    "commit_sha_short": "57bef76",
-    "build_timestamp": "2026-11-13T11:54:52Z",
+    "version": "0.2.2-beta.6",
+    "url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.2.2-beta.6",
+    "commit_sha": "0793da6e9e982aff41deec2a35d883192052b6cd",
+    "commit_sha_short": "0793da6",
+    "build_timestamp": "2026-11-13T14:14:00Z",
     "min_dispatcharr_version": "v0.29.0",
-    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.2.2-beta.5"
+    "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.2.2-beta.6"
   },
   "versions": [
+    {
+      "version": "0.2.2-beta.6",
+      "url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.2.2-beta.6",
+      "commit_sha": "0793da6e9e982aff41deec2a35d883192052b6cd",
+      "commit_sha_short": "0793da6",
+      "build_timestamp": "2026-11-13T14:14:00Z",
+      "min_dispatcharr_version": "v0.29.0"
+    },
     {
       "version": "0.2.2-beta.5",
       "url": "https://api.github.com/repos/matrix2669/Dispatcharr-FFmpeg-Smart-Plugin/zipball/v0.2.2-beta.5",

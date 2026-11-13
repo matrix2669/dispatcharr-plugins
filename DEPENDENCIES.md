@@ -4,6 +4,15 @@ This registry contains metadata only. The plugin source repository owns runtime
 code, tags, archives, tests, and release artifacts; Dispatcharr owns the
 consumer-side manifest and archive-loading contract.
 
+## Local Smart beta.6 preparation, 2026-11-13
+
+- Exact local plugin: `0793da6e9e982aff41deec2a35d883192052b6cd`, canonical local
+  `c7e53605242e611961ad4c3578d5c2c6d26234cf`.
+- Proposed `v0.2.2-beta.6` is not published; exact CI, canonical-first source
+  publication and inspection/digest of the actual remote archive remain gates.
+- Minimum v0.29.0, complete earlier version history and unrelated plugins remain
+  unchanged. Local tests do not claim installed update or live505 acceptance.
+
 ## Local Smart beta.5 preparation (2026-11-13)
 
 - Exact local plugin candidate: `57bef76032ed33300fbcecdd424df4174c099d79`, version `0.2.2-beta.5`.
