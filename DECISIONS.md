@@ -650,3 +650,26 @@ reviewed canonicalbb834684 runtime and unchanged plugin policy; the final commit
 only completes release documentation. Preserve minimum0.29.0, historical
 versions and unrelated plugin entries. Installation remains operator-owned via
 Dispatcharr Update. Stable registry/main, Releases and deployment are excluded.
+
+
+## FFmpeg Smart beta.5 local downstream preparation — 2026-11-13
+
+The owner clarified that canonical source dev alone does not update Dispatcharr.
+Prepare local source pin/version and root/detail manifest changes, with tests.
+No additional repository publication, tag, channel integration, live profile or
+installed-plugin change is authorized yet. Preserve this explicit local-only
+boundary over routine checkpoint-push instructions.
+
+The proposed next unused plugin version is 0.2.2-beta.5, pinning reviewed canonical
+fd6c400d49cff305df7c41a4149d2f00b80355bb. The proposed immutable source tag is
+v0.2.2-beta.5; it does not yet exist remotely. Registry metadata must record the
+exact local plugin candidate and use the planned tag URL, keeping all prior
+versions and unrelated plugin entries unchanged. Do not advertise this prepared
+metadata until specific approval, exact source CI, immutable tag verification
+and inspection/digest of the actual advertised remote archive. A locally built
+archive validates candidate contents but is not evidence for a future remote URL.
+
+Keep minimum Dispatcharr v0.29.0 unchanged, with no new supported/tested/deployed
+version or live instance involved. Stable/main publication and direct deployment
+remain excluded. Installation and live channel 505 playback acceptance remain
+separate from source, tag and registry publication.

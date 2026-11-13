@@ -1,5 +1,14 @@
 # AGENT.md
 
+## Local Smart beta.5 preparation boundary, 2026-11-13
+
+The owner authorizes local preparation/tests only for the FFmpeg Smart beta.5
+root/detail manifest update. Do not push, integrate a channel, publish a tag,
+install, alter live profiles or deploy without specific approval. This explicit
+local-only direction overrides routine checkpoint-push guidance for this phase.
+The planned source tag is not yet published; verify exact remote source CI, tag
+and archive before any later channel publication.
+
 ## Workspace Standards Reconciliation Gate
 
 Ordinary standalone branch work uses the pinned local guidance and applied

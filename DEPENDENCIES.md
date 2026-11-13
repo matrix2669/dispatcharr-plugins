@@ -4,6 +4,17 @@ This registry contains metadata only. The plugin source repository owns runtime
 code, tags, archives, tests, and release artifacts; Dispatcharr owns the
 consumer-side manifest and archive-loading contract.
 
+## Local Smart beta.5 preparation (2026-11-13)
+
+- Exact local plugin candidate: `57bef76032ed33300fbcecdd424df4174c099d79`, version `0.2.2-beta.5`.
+- Canonical runtime: `fd6c400d49cff305df7c41a4149d2f00b80355bb`.
+- Planned tag `v0.2.2-beta.5` is not published. Exact source CI and verification
+  of the actual tag-addressed remote archive/digest remain publication gates.
+- Candidate timestamps derive from the plugin commit; no remote archive digest
+  is invented. Local package extraction/launcher tests are separate evidence.
+- Minimum Dispatcharr v0.29.0, all existing versions and unrelated entries remain.
+- No registry publication, live profile change or installed-plugin update occurred.
+
 ## FFmpeg Smart beta.2 preparation (2026-10-30)
 
 - WIP proposed source: `3b7f554c0aac64391768e4920178cacd6a15da8c`; tag `v0.2.2-beta.2` absent at preparation.

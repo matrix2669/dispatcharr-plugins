@@ -1,3 +1,9 @@
+## FFmpeg Smart 0.2.2-beta.5 — local preparation, 2026-11-13
+
+Prepare a focused development-registry update for the versioned plugin carrying
+canonical AAC late-join repair `fd6c400`. No tag, registry publication or managed
+installation is implied. Preserve all existing history and unrelated entries.
+
 ## FFmpeg Smart 0.2.2-beta.4 — 2026-10-30
 
 Publish approved response-based shared-input Auto detection to the development
