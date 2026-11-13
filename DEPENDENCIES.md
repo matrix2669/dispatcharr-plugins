@@ -6,7 +6,7 @@ consumer-side manifest and archive-loading contract.
 
 ## Local Smart beta.6 preparation, 2026-11-13
 
-- Exact local plugin: `0793da6e9e982aff41deec2a35d883192052b6cd`, canonical local
+- Exact local plugin: `83366913a1a9431122b72a34dc020684637ada49`, canonical local
   `c7e53605242e611961ad4c3578d5c2c6d26234cf`.
 - Proposed `v0.2.2-beta.6` is not published; exact CI, canonical-first source
   publication and inspection/digest of the actual remote archive remain gates.
