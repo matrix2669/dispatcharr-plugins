@@ -1,5 +1,9 @@
 ## FFmpeg Smart 0.2.2-beta.6 — local preparation, 2026-11-13
 
+## 2026-11-14 — Stream Sort beta.2
+
+Prepare approved dev-channel Stream Sort 0.3.7-beta.2 with bounded reliability transactions; source c29b9fa78f11c6b3dd7009e28ecc3e8afcbbc0a3. Publication awaits source/tag and registry checks; other plugins and main remain unchanged.
+
 Prepare the next development candidate for supported Add audio-chain composition
 and explicit UI-mode gating. No publication or installed-plugin change yet.
 

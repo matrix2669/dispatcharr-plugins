@@ -580,3 +580,10 @@ publication request. Advertise final plugin66f4a620 while preserving previous
 versions and every unrelated entry. Runtime is byte-identical to accepted and
 live-tested candidate934c651. Exact final source CI and tag archive verification
 gate publication. No direct installation, stable main, Release or deletion.
+
+
+## `fix/stream-sort-reliability-beta2`
+
+- Base/target: dev only; preserve all unrelated entries.
+- Scope: approved Stream Sort 0.3.7-beta.2 immutable tag at c29b9fa78f11c6b3dd7009e28ecc3e8afcbbc0a3, scoped root/detail manifests.
+- Status: prepared; exact source CI and immutable tag verification precede registry publication. No main or GitHub Release.
