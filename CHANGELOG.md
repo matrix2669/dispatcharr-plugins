@@ -1,3 +1,7 @@
+## FFmpeg Smart 0.2.2-beta.7 — local preparation, 2026-11-15
+
+Prepare the development metadata for plugin commit `d6ca5571b14a7cfd896f34a9e30e5e5178cb2bfd` and the reviewed automatic audio copy/filter correction. The beta.7 tag and archive do not yet exist; remote verification, publication and installation remain pending. Other plugin entries are preserved.
+
 ## FFmpeg Smart 0.2.2-beta.6 — local preparation, 2026-11-13
 
 ## 2026-11-14 — Stream Sort beta.2

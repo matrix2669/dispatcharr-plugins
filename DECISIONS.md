@@ -692,3 +692,11 @@ currently authorized. A local candidate reference is preparation only; later
 publication requires specific approval, exact CI and source/tag/archive checks
 in canonical→plugin→registry dependency order. Do not claim an unpublished
 future tag URL has been verified or that a locally tested package is installed.
+
+## Local Smart beta.7 candidate — 2026-11-15
+
+Prepare beta.7 registry metadata against plugin commit
+`d6ca5571b14a7cfd896f34a9e30e5e5178cb2bfd` and the future immutable tag.
+The actual archive is unavailable and its checksum is not asserted. Verify the
+source and exact plugin commit, tag, archive and required CI before publication.
+No registry channel or installed plugin changes are authorized in this phase.
