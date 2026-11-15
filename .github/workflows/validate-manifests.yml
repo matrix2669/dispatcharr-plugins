@@ -5,6 +5,8 @@ on:
     branches:
       - main
       - dev
+      - "feature/**"
+      - "fix/**"
   pull_request:
     branches:
       - main
@@ -23,7 +25,7 @@ jobs:
         shell: bash
         run: |
           target="${{ github.base_ref || github.ref_name }}"
-          if [[ "$target" == "dev" ]]; then
+          if [[ "$target" == "dev" || "$target" == feature/* || "$target" == fix/* ]]; then
             echo "name=dev" >> "$GITHUB_OUTPUT"
           else
             echo "name=main" >> "$GITHUB_OUTPUT"
