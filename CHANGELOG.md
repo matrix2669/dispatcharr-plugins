@@ -1,3 +1,10 @@
+## FFmpeg Smart beta.8 candidate — 2026-11-15
+
+Prepare development metadata for plugin commit `398753702b8843ca03e07b2a01a1e582a539ad88`.
+The advertised beta.8 archive remains unverified. Beta.7 archive verification
+encountered HTTP 403; its specific exception does not apply to beta.8.
+No tag, registry promotion or installation is asserted by this local candidate.
+
 ## FFmpeg Smart 0.2.2-beta.7 — local preparation, 2026-11-15
 
 Prepare the development metadata for plugin commit `d6ca5571b14a7cfd896f34a9e30e5e5178cb2bfd` and the reviewed automatic audio copy/filter correction. The beta.7 tag and archive do not yet exist; remote verification, publication and installation remain pending. Other plugin entries are preserved.
