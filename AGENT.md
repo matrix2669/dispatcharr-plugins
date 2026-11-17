@@ -66,7 +66,7 @@ Because only `main` and `dev` exist, pushing either branch publishes that regist
 - During active testing that tag may use `-beta.N`; after feature or fix completion it advances to the completed stable Semantic Version.
 - If no beta is active, keep the plugin on its latest completed stable tag rather than removing it or falling back to a moving branch.
 - Beta and completed stable tags in `dev` do not require GitHub Releases.
-- When `dev` and `main` advertise the same released plugin version, the `dev` root index may reference that plugin's `main` per-plugin manifest. Do not duplicate a no-op detail-manifest update.
+- When `dev` and `main` advertise the same released plugin version, the `dev` root index may reference the `main` detail only if relevant history is also preserved. Otherwise retain the `dev` detail URL.
 - When `dev` advertises a beta or a completed-but-unreleased stable tag, its root entry must reference a `dev` per-plugin manifest carrying that exact version.
 - A tag alone never authorizes stable publication.
 - Add a plugin to this repository's `main` branch only after the user explicitly approves and publishes a stable GitHub Release in the plugin source repository.
