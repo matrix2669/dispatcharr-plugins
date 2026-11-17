@@ -592,4 +592,4 @@ gate publication. No direct installation, stable main, Release or deletion.
 
 ## Arr Stack lifecycle beta publication — 2026-11-17
 
-Owner approved publishing Arr Stack Connector 0.2.1-beta.1 to dev only. Prepared from registry dev b8e51f8. Source candidate ef3a245e7c478f734597b460fbaab77f76217c4e; exact source validation and immutable tag required before manifest publication. Preserve unrelated entries/history and stable main. Registry owns only main/dev; no temporary registry branch is created. No installation or live deployment.
+Owner approved publishing Arr Stack Connector 0.2.1-beta.1 to dev only. Prepared from registry dev b8e51f8. Source candidate 88d7ee6f6952a58c9915ad71485d78ebeb751a2b; exact source validation and immutable tag required before manifest publication. Preserve unrelated entries/history and stable main. Registry owns only main/dev; no temporary registry branch is created. No installation or live deployment.

@@ -11,8 +11,8 @@
   "latest": {
     "version": "0.2.1-beta.1",
     "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Arr-Stack-Plugin/zipball/v0.2.1-beta.1",
-    "commit_sha": "ef3a245e7c478f734597b460fbaab77f76217c4e",
-    "commit_sha_short": "ef3a245",
+    "commit_sha": "88d7ee6f6952a58c9915ad71485d78ebeb751a2b",
+    "commit_sha_short": "88d7ee6",
     "build_timestamp": "2026-11-17T17:05:50Z",
     "min_dispatcharr_version": "v0.29.0",
     "latest_url": "https://api.github.com/repos/matrix2669/Dispatcharr-Arr-Stack-Plugin/zipball/v0.2.1-beta.1"
@@ -21,8 +21,8 @@
     {
       "version": "0.2.1-beta.1",
       "url": "https://api.github.com/repos/matrix2669/Dispatcharr-Arr-Stack-Plugin/zipball/v0.2.1-beta.1",
-      "commit_sha": "ef3a245e7c478f734597b460fbaab77f76217c4e",
-      "commit_sha_short": "ef3a245",
+      "commit_sha": "88d7ee6f6952a58c9915ad71485d78ebeb751a2b",
+      "commit_sha_short": "88d7ee6",
       "build_timestamp": "2026-11-17T17:05:50Z",
       "min_dispatcharr_version": "v0.29.0"
     },
