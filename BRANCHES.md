@@ -4,6 +4,10 @@ This ledger records every current branch on `matrix2669/dispatcharr-plugins`. Gi
 
 Before deleting a branch, record user-visible results in `CHANGELOG.md` and durable rationale in `DECISIONS.md` when applicable, then remove its index row and detailed record.
 
+## Current branch policy, 2026-11-17
+
+Only `main` and `dev` are authorized long-lived registry branches. Scoped changes are prepared directly on the intended channel; never merge `dev` wholesale into `main`. This standalone repository owns its records, and workspace standards reconciliation does not require a workspace status record or closeout. Historical branch entries and release notes below are retained as history, not authority to create or delete branches.
+
 ## Branch Index
 
 | Branch | Type | Status | Base | Target | Purpose |
@@ -37,7 +41,7 @@ Before deleting a branch, record user-visible results in `CHANGELOG.md` and dura
 - Purpose: continuous tagged-build registry containing the newest approved immutable tag for every retained plugin
 - Origin: created from the complete legacy `dev-test` history, then reconciled with stable entries that were added to `main` after the histories diverged
 - Versions: beta tags during active testing; completed stable tags after feature or fix completion, whether released or not
-- Stable reuse: when the newest tagged version is identical to `main`, the root index reuses the unchanged `main` per-plugin manifest
+- Stable reuse: the root index may reuse the `main` detail when current version and relevant history match; otherwise it retains the `dev` detail.
 - Exclusions: moving source branches, untagged builds, and implicit promotion to `main`
 - Registry URL: `https://raw.githubusercontent.com/matrix2669/dispatcharr-plugins/dev/manifest.json`
 - Validation: GitHub manifest validation passed and Dispatcharr loaded all four expected entries after the channel migration

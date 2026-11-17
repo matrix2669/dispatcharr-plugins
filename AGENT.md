@@ -2,13 +2,20 @@
 
 ## Workspace Standards Reconciliation Gate
 
-Before any substantive work, locate the maintained local `matrix2669/workspace` checkout and run `<workspace>/scripts/reconcile-standards --check .` from this repository root. The workspace `AI-INSTRUCTIONS.md`, `AGENT-STANDARD.md`, and Git history must be available.
+Before substantive work, refresh the maintained `matrix2669/workspace` checkout and check current standards against this repository's applied `WORKSPACE-STANDARDS.yaml`. Reconcile changes before proceeding, and recheck before integration or channel publication.
 
-If `WORKSPACE-STANDARDS.yaml` is missing, pending, or stale, stop project work and run `<workspace>/scripts/reconcile-standards --diff .`. Review the standards change against this complete `AGENT.md`, `DECISIONS.md`, code/configuration contracts, dependencies, `BRANCHES.md`, `RELEASE.md`, upstream requirements when applicable, and related projects.
+At the pre-work check and those publication boundaries, locate the maintained matrix2669/workspace checkout and run
+`<workspace>/scripts/reconcile-standards --check .`. Review `--diff` against the
+complete project guidance, accepted decisions, code/configuration/dependency and
+branch/release contracts. Resolve contradictions explicitly before applying
+`--apply --confirm-reviewed-no-conflicts`. Missing authoritative standards/history
+blocks the affected substantive work or publication. Never advance the fingerprint merely to silence a check.
+Exceptions require explicit scope, authority and review criteria here.
 
-A contradiction blocks work. Ask focused follow-up questions to establish whether the changed standard, proposed work, new answer, or older accepted decision is authoritative; never choose silently. Record project-decision supersessions in `DECISIONS.md` and realign every affected artifact. Only after no contradiction remains, run `<workspace>/scripts/reconcile-standards --apply --confirm-reviewed-no-conflicts .`.
-
-Missing workspace standards or Git history is a hard block. Standards exceptions require explicit user authorization and must be stated in a dedicated section of this file with exact scope, rationale, authority, approval date, and review/removal trigger; `DECISIONS.md` cannot waive workspace standards.
+Validation evidence is exact-commit scoped. Reuse a complete original successful
+run only for the same commit and acceptance inputs; a different SHA requires fresh
+validation. Preserve approval provenance across delegation without broadening it.
+Checkpoint publication is distinct from integration, release and installation. This is a standalone repository: keep its branch, decision, changelog and validation records here. Do not create a workspace status record or workspace-main closeout for registry publication. Deletion and force pushes remain separate.
 
 ## Purpose
 
@@ -32,11 +39,17 @@ This standalone metadata repository follows the workspace's supported metadata-r
 
 - `main` is the stable Dispatcharr registry.
 - `dev` is the continuous tagged-build registry. It advertises the newest approved tag for each plugin, whether that tag is a beta or a completed stable version.
-- short-lived `feature/*` and `fix/*` branches start from the channel they intend to change and return only to that channel.
+- Per the owner's 2026-11-15 direction, only `main` and `dev` may exist. Make scoped authorized channel updates directly; do not create feature or fix branches in this metadata registry.
 
 Do not merge `dev` wholesale into `main`. Promote one explicitly approved plugin release by making a focused stable-manifest change based on `main`. Stable-only removals or corrections likewise remain focused on `main` unless the same change is intentionally needed in `dev`.
 
 Track every current branch in `BRANCHES.md`. Before deleting a branch, preserve user-visible results in `CHANGELOG.md` and significant rationale in `DECISIONS.md`, then remove its ledger entry.
+
+## Session Completion and Remote Continuity
+
+GitHub is the authoritative continuation source. Refresh the intended channel's remote head and preserve unrelated entries before preparing a change. The owner's two-branch rule forbids isolated registry work branches. Commit scoped metadata locally and run all prepublication gates; push only with explicit channel-publication authority and passing required validation. Never publish incomplete WIP or failed/unavailable validation merely to create a remote checkpoint. If publication is blocked, retain the local candidate and report the blocker instead. Never commit credentials, generated archives, runtime code, machine state, or unrelated metadata. Verify the exact remote channel head after an authorized push and collect its mandatory CI result before declaring completion.
+
+Because only `main` and `dev` exist, pushing either branch publishes that registry channel. Do not treat a registry checkpoint as a non-publishing branch: require explicit scoped channel-publication authority before pushing. That authority does not imply a source tag or Release, live installation/deployment, force-push, or branch deletion. Report the target channel, exact manifest commit, source tag/Release and installed state separately.
 
 ## Distribution Rules
 
@@ -44,11 +57,11 @@ Track every current branch in `BRANCHES.md`. Before deleting a branch, preserve 
 - During active testing that tag may use `-beta.N`; after feature or fix completion it advances to the completed stable Semantic Version.
 - If no beta is active, keep the plugin on its latest completed stable tag rather than removing it or falling back to a moving branch.
 - Beta and completed stable tags in `dev` do not require GitHub Releases.
-- When `dev` and `main` advertise the same released plugin version, the `dev` root index may reference that plugin's `main` per-plugin manifest. Do not duplicate a no-op detail-manifest update.
+- When `dev` and `main` advertise the same released plugin version, the `dev` root index may reference the `main` detail only if relevant history is also preserved. Otherwise retain the `dev` detail URL.
 - When `dev` advertises a beta or a completed-but-unreleased stable tag, its root entry must reference a `dev` per-plugin manifest carrying that exact version.
 - A tag alone never authorizes stable publication.
 - Add a plugin to this repository's `main` branch only after the user explicitly approves and publishes a stable GitHub Release in the plugin source repository.
-- An unreleased plugin remains absent from `main`, regardless of how many test tags exist, unless a dedicated version-specific workspace-standards exception explicitly authorizes it.
+- An unreleased plugin remains absent from `main`, regardless of how many test tags exist.
 - Never move or replace an advertised tag. Publish a new plugin version when correcting an installed build.
 - Use an immutable tag or full commit SHA in every archive URL. Never point an install URL at a moving branch.
 
@@ -104,6 +117,10 @@ Use `--channel dev` for changes based on the testing branch.
 - [ ] Preserve existing version history and unrelated manifest entries
 - [ ] Run the validator for the target channel
 - [ ] Verify the exact archive and source commit before publication
-- [ ] For `main`, verify explicit release approval and the published GitHub Release, or the exact evidence required by a dedicated version-specific exception
+- [ ] For `main`, verify explicit release approval and the published GitHub Release
 - [ ] Confirm Dispatcharr refreshes and installs the intended version
 - [ ] Remove completed short-lived branch records only after their remote refs are deleted
+
+## Development generated archives — owner clarification, 2026-11-15
+
+For development registry publication, trust GitHub-generated archive API output once source, exact tag/version and other checks pass; do not require a separate archive download verification step. Stable release archives retain full verification requirements. This supersedes contrary development-only archive verification wording, not source/CI checks or installation authority.

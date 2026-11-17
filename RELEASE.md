@@ -33,7 +33,7 @@ Never move an advertised tag, replace an artifact for an existing version, or po
 3. Choose the newest approved tag: `MAJOR.MINOR.PATCH-beta.N` during active testing or `MAJOR.MINOR.PATCH` after feature or fix work is complete.
 4. Add or update the plugin only in the `dev` manifests.
 5. Keep the root registry identity on `matrix2669 Plugins (dev)` and `tree/dev`.
-6. If the newest tag differs from `main`, use a `/dev/` per-plugin manifest containing that exact tag. If it is the same released version already advertised by `main`, reuse the `/main/` per-plugin manifest instead of duplicating a no-op detail update.
+6. Use a `/dev/` per-plugin manifest when its version or history differs from `main`. Reuse the `/main/` detail only when it preserves the relevant history as well as the current version.
 7. Push the focused registry change.
 8. Refresh the tagged-build repository in Dispatcharr and confirm it detects the version increment.
 9. Install or update the plugin and verify the installed version and required behavior.

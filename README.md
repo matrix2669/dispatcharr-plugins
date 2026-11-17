@@ -26,10 +26,14 @@ During active testing, the newest tag may be a beta such as `1.2.0-beta.3`. Afte
 
 A completed stable version and a released version are different states. Tags in `dev` do not authorize publication to `main`.
 
-When the newest tagged build is already the same released version advertised by `main`, the `dev` index may reuse that `main` per-plugin manifest. A separate `dev` per-plugin manifest is needed only when `dev` advertises a different beta or completed-but-unreleased stable tag.
+When the newest tagged build is the same release advertised by `main`, the `dev` index may reuse the `main` detail only if doing so preserves the relevant version history. Otherwise use the `dev` detail to retain access to its beta history.
 
 Add the appropriate URL under **Plugins → Plugin Repositories**. Users who want only generally released plugins should configure only `main`.
 
 ## Repository scope
 
 This repository does not package plugin code and does not publish releases or versions of its own. Plugin source repositories own their tags, releases, installable artifacts, and changelogs. See `RELEASE.md` for the registry publication procedure.
+
+## Compatibility policy
+
+FFmpeg Smart Profiles 0.2.2, Arr Stack Connector 0.2.1, and Stream Sort 0.3.7 support Dispatcharr 0.33 and 0.34. These are the last releases of those plugins guaranteed to support 0.33; future releases target 0.34 and later.
