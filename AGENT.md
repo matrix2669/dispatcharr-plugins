@@ -54,7 +54,7 @@ This standalone metadata repository follows the workspace's supported metadata-r
 
 - `main` is the stable Dispatcharr registry.
 - `dev` is the continuous tagged-build registry. It advertises the newest approved tag for each plugin, whether that tag is a beta or a completed stable version.
-- short-lived `feature/*` and `fix/*` branches start from the channel they intend to change and return only to that channel.
+- Per the owner's 2026-11-15 direction, only `main` and `dev` may exist. Make scoped authorized channel updates directly; do not create feature or fix branches in this metadata registry.
 
 Do not merge `dev` wholesale into `main`. Promote one explicitly approved plugin release by making a focused stable-manifest change based on `main`. Stable-only removals or corrections likewise remain focused on `main` unless the same change is intentionally needed in `dev`.
 
@@ -62,9 +62,9 @@ Track every current branch in `BRANCHES.md`. Before deleting a branch, preserve 
 
 ## Session Completion and Remote Continuity
 
-GitHub is the authoritative continuation source. Start by fetching `origin` and resume from the exact remote head of the branch that owns the metadata change. A repository-change request authorizes checkpoint commits and pushes to an isolated branch based on the one channel it may eventually modify. Before ending or handing off a session, preserve unrelated entries, update branch and validation records, run the applicable gates, commit every in-scope committable change, push every local commit, and verify through a fresh remote query that the exact GitHub head matches the intended local checkpoint. Incomplete work is pushed as explicit WIP with failures or unavailable validation recorded; never commit credentials, generated archives, runtime code, machine state, or unrelated metadata merely to clean the worktree.
+GitHub is the authoritative continuation source. Refresh the intended channel's remote head and preserve unrelated entries before preparing a change. The owner's two-branch rule forbids isolated registry work branches. Commit scoped metadata locally and run all prepublication gates; push only with explicit channel-publication authority and passing required validation. Never publish incomplete WIP or failed/unavailable validation merely to create a remote checkpoint. If publication is blocked, retain the local candidate and report the blocker instead. Never commit credentials, generated archives, runtime code, machine state, or unrelated metadata. Verify the exact remote channel head after an authorized push and collect its mandatory CI result before declaring completion.
 
-The checkpoint branch is not a registry channel and does not change what Dispatcharr installs. The checkpoint does not authorize merging into `dev` or `main`, publishing a plugin tag or Release, changing a registry channel, deploying, force-pushing, or deleting a branch. Report the work branch, target channel, source tag, source Release, registry merge, and installed state separately.
+Because only `main` and `dev` exist, pushing either branch publishes that registry channel. Do not treat a registry checkpoint as a non-publishing branch: require explicit scoped channel-publication authority before pushing. That authority does not imply a source tag or Release, live installation/deployment, force-push, or branch deletion. Report the target channel, exact manifest commit, source tag/Release and installed state separately.
 
 ## Distribution Rules
 
@@ -135,3 +135,7 @@ Use `--channel dev` for changes based on the testing branch.
 - [ ] For `main`, verify explicit release approval and the published GitHub Release
 - [ ] Confirm Dispatcharr refreshes and installs the intended version
 - [ ] Remove completed short-lived branch records only after their remote refs are deleted
+
+## Development generated archives — owner clarification, 2026-11-15
+
+For development registry publication, trust GitHub-generated archive API output once source, exact tag/version and other checks pass; do not require a separate archive download verification step. Stable release archives retain full verification requirements. This supersedes contrary development-only archive verification wording, not source/CI checks or installation authority.

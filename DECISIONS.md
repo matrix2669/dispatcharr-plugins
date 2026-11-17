@@ -700,3 +700,7 @@ Prepare beta.7 registry metadata against plugin commit
 The actual archive is unavailable and its checksum is not asserted. Verify the
 source and exact plugin commit, tag, archive and required CI before publication.
 No registry channel or installed plugin changes are authorized in this phase.
+
+## Arr Stack lifecycle beta — 2026-11-17
+
+Owner requested next beta promotion and manifest update. Publish only `0.2.1-beta.1` at `ef3a245e7c478f734597b460fbaab77f76217c4e` after exact candidate validation and immutable tag verification. The source has no GitHub Actions workflows; run its complete prescribed local/Linux validation and preserve the evidence rather than claiming remote CI. Registry CI remains mandatory. Official Dispatcharr v0.34.0 `3e322c537f26207bf219aa5b4beaa69d3f5f19a4` refreshed: API zipball archives, nested plugin.py discovery, normalized arr_stack_connector key, managed config retention and differing-beta update detection are compatible. Minimum v0.29.0 remains unchanged. Development generated GitHub archives follow the owner-approved no-separate-download-verification workflow; stable release artifacts still need full verification. No stable Release, main update or live deployment.

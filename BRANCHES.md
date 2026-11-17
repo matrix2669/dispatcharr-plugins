@@ -589,3 +589,7 @@ gate publication. No direct installation, stable main, Release or deletion.
 - Base/target: dev only; preserve all unrelated entries.
 - Scope: approved Stream Sort 0.3.7-beta.2 immutable tag at c29b9fa78f11c6b3dd7009e28ecc3e8afcbbc0a3, scoped root/detail manifests.
 - Status: prepared; exact source CI and immutable tag verification precede registry publication. No main or GitHub Release.
+
+## Arr Stack lifecycle beta publication — 2026-11-17
+
+Owner approved publishing Arr Stack Connector 0.2.1-beta.1 to dev only. Prepared from registry dev b8e51f8. Source candidate ef3a245e7c478f734597b460fbaab77f76217c4e; exact source validation and immutable tag required before manifest publication. Preserve unrelated entries/history and stable main. Registry owns only main/dev; no temporary registry branch is created. No installation or live deployment.

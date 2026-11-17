@@ -196,3 +196,7 @@ Notable user-visible registry changes are recorded here. Plugin behavior and sou
   does not change the installed runtime or hardware cache.
 - Review official Dispatcharr 0.32.0 contracts and isolated clean install/update;
   no live Dispatcharr refresh, update or deployment was performed.
+
+## 2026-11-17 — Arr Stack lifecycle beta
+
+- Advertise Arr Stack Connector `0.2.1-beta.1` on development channel for Dispatcharr 0.34 startup compatibility and recovery. Stable main remains unchanged. A clean Dispatcharr restart is required after installing this first reconciler beta.
