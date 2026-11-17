@@ -704,3 +704,12 @@ No registry channel or installed plugin changes are authorized in this phase.
 ## Arr Stack lifecycle beta — 2026-11-17
 
 Owner requested next beta promotion and manifest update. Publish only `0.2.1-beta.1` at `88d7ee6f6952a58c9915ad71485d78ebeb751a2b` after exact candidate validation and immutable tag verification. The source has no GitHub Actions workflows; run its complete prescribed local/Linux validation and preserve the evidence rather than claiming remote CI. Registry CI remains mandatory. Official Dispatcharr v0.34.0 `3e322c537f26207bf219aa5b4beaa69d3f5f19a4` refreshed: API zipball archives, nested plugin.py discovery, host-selected key (0.33 underscore, fresh 0.34 hyphen; managed updates retain existing key), managed config retention and differing-beta update detection are compatible. Minimum v0.29.0 remains unchanged. Development generated GitHub archives follow the owner-approved no-separate-download-verification workflow; stable release artifacts still need full verification. No stable Release, main update or live deployment.
+
+
+## 2026-11-17 — Primary standards and standalone documentation ownership
+
+The owner clarified that workspace is the primary instruction source: check for changes before substantive project work and reconcile updates into the current project. Contradictions must be brought to the owner, then the repository instructions, workspace standards, or both corrected as necessary. This supersedes earlier guidance allowing unchecked pinned standards during ordinary standalone work and any interpretation requiring a workspace-main status checkpoint for every standalone result.
+
+Standalone instructions, decisions, branch records, changelogs and status belong in the owning repository. Workspace documentation synchronization applies only to workspace-owned work and upstream-fork sidecars. Consuming workspace standards does not create workspace ownership of project records. The withdrawn Arr Stack status draft is not part of this correction. Publication, integration, tags, deployment and branch deletion remain subject to their separate authorization and validation gates. Historical decision entries remain as provenance, superseded on these two points.
+
+Independent review cleared the central standards and source-skill ownership correction. The affected standalone project fingerprints are reconciled to that reviewed local standards candidate; this does not assert remote publication or authorize it.

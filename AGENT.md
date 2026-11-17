@@ -11,26 +11,20 @@ canonical/plugin CI, immutable source/tag/archive and registry CI in order.
 
 ## Workspace Standards Reconciliation Gate
 
-Ordinary standalone branch work uses the pinned local guidance and applied
-WORKSPACE-STANDARDS.yaml. Reconcile current authoritative workspace standards at
-bootstrap/adoption, explicit governance work, and immediately before integration,
-main promotion or release publication. Status-only workspace synchronization does
-not itself promote source or require unrelated manifest migrations.
+Before substantive work, refresh the maintained `matrix2669/workspace` checkout and check current standards against this repository's applied `WORKSPACE-STANDARDS.yaml`. Reconcile changes before proceeding, and recheck before integration or channel publication.
 
-At those boundaries, locate the maintained matrix2669/workspace checkout and run
+At the pre-work check and those publication boundaries, locate the maintained matrix2669/workspace checkout and run
 `<workspace>/scripts/reconcile-standards --check .`. Review `--diff` against the
 complete project guidance, accepted decisions, code/configuration/dependency and
 branch/release contracts. Resolve contradictions explicitly before applying
 `--apply --confirm-reviewed-no-conflicts`. Missing authoritative standards/history
-blocks the boundary. Never advance the fingerprint merely to silence a check.
+blocks the affected substantive work or publication. Never advance the fingerprint merely to silence a check.
 Exceptions require explicit scope, authority and review criteria here.
 
 Validation evidence is exact-commit scoped. Reuse a complete original successful
 run only for the same commit and acceptance inputs; a different SHA requires fresh
 validation. Preserve approval provenance across delegation without broadening it.
-Checkpoint publication is distinct from integration/release/installation. Publish
-one truthful task-related workspace-main checkpoint per durable logical result,
-preserving concurrent unrelated work. Deletion and force pushes remain separate.
+Checkpoint publication is distinct from integration, release and installation. This is a standalone repository: keep its branch, decision, changelog and validation records here. Do not create a workspace status record or workspace-main closeout for registry publication. Deletion and force pushes remain separate.
 
 ## Purpose
 
